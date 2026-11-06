@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/saiko-nenba.mp3&quot;, &quot;title&quot;: &quot;西湖根场&quot;, &quot;dur&quot;: 80.66}]" aria-label="播放器">
+<audio preload="metadata" src="a/saiko-nenba.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="80.66" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:21</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>茅草屋顶上的小窗</li><li>河边的茅屋</li><li>砂防资料馆</li></ol>
+</section>
+<article class="story"><p>眼前这片老村子，其实大多是新盖的。</p><p>这里本来有一个村子，叫根场。一九六六年九月，台风带来暴雨，泥石流冲进了村子。四十多间茅草屋，只剩下四间。有人再也没能回来。</p><p>后来，地质学家发现，村子本来就建在老泥石流堆出来的地上。所以，大家没有在原地重建。活下来的人，搬走了。</p><p>过了很多年，人们用旧木料，照老样子，在这里重新盖起茅草屋。其中有一间，是灾后留下来的老屋，现在是国家登记的文化财。</p><p>请先走到最近的那间茅屋前，再抬头看屋顶。屋顶的一头，被切开一块，开了小窗，好让阁楼透光通风，方便养蚕。这种屋顶，叫兜造，因为样子像武士的头盔。茅屋沿小河两岸，一间一间排开。之后到了白川乡，你也会见到茅草屋顶，那里的阁楼，也养过蚕。</p><p>再走进砂防资料馆。里面的照片，记录了这次灾难，和灾后的重建。</p><p>出来以后，往湖那边望一望。这个村子，正面就是富士山。如果云散开，它就在那边。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/西湖いやしの里根場" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/西湖いやしの里根場</a></li><li><a href="https://saikoiyashinosatonenba.jp/aboutus/" rel="noopener noreferrer">https://saikoiyashinosatonenba.jp/aboutus/</a></li><li><a href="https://saikoiyashinosatonenba.jp/shop/watanabe/" rel="noopener noreferrer">https://saikoiyashinosatonenba.jp/shop/watanabe/</a></li><li><a href="https://saikoiyashinosatonenba.jp/shop/sabou/" rel="noopener noreferrer">https://saikoiyashinosatonenba.jp/shop/sabou/</a></li><li><a href="https://saikoiyashinosatonenba.jp/" rel="noopener noreferrer">https://saikoiyashinosatonenba.jp/</a></li><li><a href="https://online.bunka.go.jp/heritages/detail/241223" rel="noopener noreferrer">https://online.bunka.go.jp/heritages/detail/241223</a></li><li><a href="https://ja.wikipedia.org/wiki/兜造り" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/兜造り</a></li><li><a href="https://ja.wikipedia.org/wiki/合掌造り" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/合掌造り</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="fuji-five-lakes.html">听富士五湖的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>

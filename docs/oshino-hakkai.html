@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/oshino-hakkai.mp3&quot;, &quot;title&quot;: &quot;忍野八海&quot;, &quot;dur&quot;: 81.12}]" aria-label="播放器">
+<audio preload="metadata" src="a/oshino-hakkai.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="81.12" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:21</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>刻了和歌的龙王石碑</li><li>最小的釜池</li><li>最清的涌池</li></ol>
+</section>
+<article class="story"><p>八海，说的是八个池子。可是这个名字，来自一条巡礼的路。</p><p>江户时代，富士讲的信徒，登富士山以前，先到这些池子。他们一个一个拜过去，洗净身子。到了江户末年，一位信徒，给每个池子，都供奉了一位龙王。</p><p>这些水，很多是富士山的雨和雪。它们渗进地下，要过很多年，才从这里冒出来。</p><p>请别走太快，每个池子都看一眼。池边的石碑上，刻了龙王的名字，和一首和歌。拜的顺序，从最大的出口池开始，到菖蒲池结束。出口池离得比较远，很多人都没走到。</p><p>最小的是釜池，你一不小心，就走过去了。</p><p>请你走到涌池边。它涌出的水最多，也最清。低头看，池底的水草，在涌上来的水里，轻轻摇动。池底下，藏了一个水下洞穴。潜水员进去探过，从池底一直往里，有五十多米。</p><p>这里是国家的天然纪念物，后来又和富士山一起，进了世界遗产。另外一个池子，叫镜池，因为能映出富士山。如果云散开，请你走到池边，低头看一看。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/忍野八海" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/忍野八海</a></li><li><a href="https://www.pref.yamanashi.jp/bunka/bunkazaihogo/bunkazai_data/yamanashinobunkazai_nb0021.html" rel="noopener noreferrer">https://www.pref.yamanashi.jp/bunka/bunkazaihogo/bunkazai_data/yamanashinobunkazai_nb0021.html</a></li><li><a href="https://oshino-navi.com/187-2" rel="noopener noreferrer">https://oshino-navi.com/187-2</a></li><li><a href="https://www.vill.oshino.lg.jp/site/kanko/1613.html" rel="noopener noreferrer">https://www.vill.oshino.lg.jp/site/kanko/1613.html</a></li><li><a href="https://www.mlit.go.jp/tagengo-db/common/001538305.docx" rel="noopener noreferrer">https://www.mlit.go.jp/tagengo-db/common/001538305.docx</a></li><li><a href="https://rurubu.jp/andmore/spot/80043708" rel="noopener noreferrer">https://rurubu.jp/andmore/spot/80043708</a></li><li><a href="https://news.mynavi.jp/article/20151009-oshino/" rel="noopener noreferrer">https://news.mynavi.jp/article/20151009-oshino/</a></li><li><a href="https://oshino-navi.com/" rel="noopener noreferrer">https://oshino-navi.com/</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="fuji-five-lakes.html">听富士五湖的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>
