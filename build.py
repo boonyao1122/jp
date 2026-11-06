@@ -168,6 +168,150 @@ def fmt(sec):
     return "%d:%02d" % (sec // 60, sec % 60)
 
 
+# ---------- voice (spec Section 5 step 3) ----------
+VOICE = "zh-CN-XiaoxiaoNeural"
+SECONDS = {"spot": (60, 90), "city": (75, 105), "japan": (60, 90)}  # per audio file; Section 4
+CHARS_PER_MIN = 237  # measured 6 Nov
+HANZI = re.compile(r"[㐀-鿿豈-﫿]")
+BAD_FOR_TTS = re.compile(r"[0-9()（）\[\]【】/⚠<>]")
+
+
+def spoken(s):
+    """[(audio rel path, text read aloud)] for one story."""
+    if s["level"] == "japan":
+        return [("a/japan-%d.mp3" % i, "\n".join(ps)) for i, ps in enumerate(chapter_scripts(s["body"]), 1)]
+    return [("a/%s.mp3" % s["slug"], "\n".join(paragraphs(s["body"])))]
+
+
+def sha(text):
+    return hashlib.sha1(text.encode("utf-8")).hexdigest()[:12]
+
+
+def text_sha(s):
+    """Ties a fact-check file to the exact text it checked."""
+    return sha("\n\n".join(t for _, t in spoken(s)))
+
+
+def factcheck_problem(s, fc_dir):
+    path = os.path.join(fc_dir, s["slug"] + ".md")
+    if not os.path.isfile(path):
+        return "no fact-check file %s" % path
+    with open(path, encoding="utf-8") as f:
+        fc = f.read()
+    m = re.search(r"(?m)^unsupported:\s*(\d+)\s*$", fc)
+    if not m:
+        return "fact-check file has no 'unsupported: N' line"
+    if int(m.group(1)) != 0:
+        return "fact-check says unsupported %s (gate is 0)" % m.group(1)
+    m = re.search(r"(?m)^text_sha:\s*(\w+)\s*$", fc)
+    if not m or m.group(1) != text_sha(s):
+        return "fact-check text_sha %s does not match the story text (%s): text changed after the check" % (
+            m.group(1) if m else "missing", text_sha(s))
+    return None
+
+
+def edge_tts_bin(src):
+    return os.environ.get("EDGE_TTS") or os.path.join(src, "..", ".venv-tts", "bin", "edge-tts")
+
+
+def synth(src, text, out):
+    with open(out + ".txt", "w", encoding="utf-8") as f:
+        f.write(text)
+    try:
+        subprocess.run([edge_tts_bin(src), "--voice", VOICE, "--file", out + ".txt", "--write-media", out],
+                       capture_output=True, text=True, check=True, timeout=180)
+    except (OSError, subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
+        return "edge-tts failed: %s" % (getattr(e, "stderr", "") or e)
+    finally:
+        os.remove(out + ".txt")
+    return None
+
+
+def set_front_matter(path, updates):
+    """Replace (or add after `status:`) scalar keys inside the front matter block only."""
+    with open(path, encoding="utf-8") as f:
+        text = f.read()
+    m = re.match(r"^(---\n)(.*?)(\n---\n?.*)$", text, re.S)
+    lines = m.group(2).split("\n")
+    for key, val in updates.items():
+        idx = [i for i, l in enumerate(lines) if l.startswith(key + ":")]
+        if idx:
+            lines[idx[0]] = "%s: %s" % (key, val)
+        else:
+            at = [i for i, l in enumerate(lines) if l.startswith("status:")][0]
+            lines.insert(at + 1, "%s: %s" % (key, val))
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(m.group(1) + "\n".join(lines) + m.group(3))
+
+
+def voice_all(src, stories, fc_dir):
+    """Voice every checked/voiced story whose spoken text (or voice) changed. Returns (made, skipped, failures)."""
+    docs_a = os.path.join(src, "docs", "a")
+    made, skipped, failures = 0, 0, []
+    for slug in sorted(stories):
+        s = stories[slug]
+        if s["status"] not in ("checked", "voiced"):
+            continue
+        why = factcheck_problem(s, fc_dir)
+        if why:
+            failures.append("%s: %s" % (slug, why))
+            s["voice_failed"] = True
+            continue
+        parts = spoken(s)
+        bad = [t for _, t in parts if BAD_FOR_TTS.search(t)]
+        if bad or not all(t.strip() for _, t in parts):
+            failures.append("%s: text is empty or has digits/brackets/slash/⚠ (write numbers as words): %r"
+                            % (slug, sorted(set(BAD_FOR_TTS.findall("".join(bad))))))
+            s["voice_failed"] = True
+            continue
+        stored = (s.get("voice_hash") or "").split(",")
+        new_hashes, ok = [], True
+        lo, hi = SECONDS[s["level"]]
+        for i, (rel, t) in enumerate(parts):
+            h = sha(VOICE + "\n" + t)
+            new_hashes.append(h)
+            final = os.path.join(src, "docs", rel)
+            if os.path.isfile(final) and i < len(stored) and stored[i] == h:
+                skipped += 1
+                continue
+            tmp = os.path.join(docs_a, ".tmp-" + os.path.basename(rel))
+            err = synth(src, t, tmp)
+            if not err:
+                size = os.path.getsize(tmp) if os.path.isfile(tmp) else 0
+                d = duration(tmp) if size else 0
+                if size == 0:
+                    err = "audio is 0 bytes"
+                elif not lo <= d <= hi:
+                    err = "audio is %.1f s, outside %d–%d s for a %s (text has %d characters)" % (
+                        d, lo, hi, s["level"], len(HANZI.findall(t)))
+            if err:
+                if os.path.exists(tmp):
+                    os.remove(tmp)
+                failures.append("%s %s: %s" % (slug, rel, err))
+                ok = False
+                s["voice_failed"] = True
+                break
+            os.replace(tmp, final)
+            made += 1
+        if ok:
+            if s["status"] != "voiced" or s.get("voice_hash") != ",".join(new_hashes):
+                set_front_matter(os.path.join(src, "stories", s["file"] + ".md"),
+                                 {"status": "voiced", "voice_hash": ",".join(new_hashes)})
+            s["status"], s["voice_hash"] = "voiced", ",".join(new_hashes)
+    return made, skipped, failures
+
+
+def info(stories, slug):
+    s = stories.get(slug) or sys.exit("no story %r" % slug)
+    print("slug %s | level %s | status %s | text_sha %s" % (slug, s["level"], s["status"], text_sha(s)))
+    lo, hi = SECONDS[s["level"]]
+    for rel, t in spoken(s):
+        n = len(HANZI.findall(t))
+        print("  %s: %d characters, about %.0f s (range %d–%d s = about %d–%d characters)%s" % (
+            rel, n, n * 60.0 / CHARS_PER_MIN, lo, hi, lo * CHARS_PER_MIN // 60, hi * CHARS_PER_MIN // 60,
+            "" if not BAD_FOR_TTS.search(t) else " | BAD for TTS: %r" % sorted(set(BAD_FOR_TTS.findall(t)))))
+
+
 # ---------- rendering ----------
 E = html.escape
 BLOCK = re.compile(r"\{\{#(\w+)\}\}(.*?)\{\{/\1\}\}", re.S)
@@ -200,15 +344,28 @@ def main():
     here = os.path.dirname(os.path.abspath(__file__))
     ap = argparse.ArgumentParser()
     ap.add_argument("--src", default=here, help="site directory (default: this script's directory)")
-    src = os.path.abspath(ap.parse_args().src)
+    ap.add_argument("--factcheck", help="fact-check folder (default: <src>/../factcheck)")
+    ap.add_argument("--no-voice", action="store_true", help="skip the voice step, only render pages")
+    ap.add_argument("--info", metavar="SLUG", help="print text_sha and character counts for one story, then exit")
+    args = ap.parse_args()
+    src = os.path.abspath(args.src)
+    fc_dir = os.path.abspath(args.factcheck or os.path.join(src, "..", "factcheck"))
 
     stories, errors = load_all(src)
+    for slug, s in stories.items():
+        s["slug"] = slug
+    if args.info:
+        info(stories, args.info)
+        return
     errors = validate(stories, errors)
     if errors:
         print("VALIDATION FAILED (%d problem%s), nothing written:" % (len(errors), "" if len(errors) == 1 else "s"), file=sys.stderr)
         for e in errors:
             print("  - " + e, file=sys.stderr)
         sys.exit(1)
+
+    os.makedirs(os.path.join(src, "docs", "a"), exist_ok=True)
+    made, skipped, failures = (0, 0, []) if args.no_voice else voice_all(src, stories, fc_dir)
 
     docs = os.path.join(src, "docs")
     tdir = os.path.join(src, "templates")
@@ -245,7 +402,7 @@ def main():
 
     def is_voiced(slug):
         s = stories[slug]
-        if s["status"] != "voiced":
+        if s["status"] != "voiced" or s.get("voice_failed"):
             return False
         missing = [r for r in audio_files(slug) if not os.path.isfile(os.path.join(docs, r))]
         if missing:
@@ -341,10 +498,25 @@ def main():
             stale += 1
 
     c = {lv: sum(1 for s in stories.values() if s["level"] == lv) for lv in LEVELS}
-    print("slugs %d (japan %d, city %d, spot %d) | pages written %d | full pages %d | placeholders %d | audio files found %d | stale removed %d"
-          % (len(stories), c["japan"], c["city"], c["spot"], len(written), full, placeholders, audio_found, stale))
+    # check 6 on every build: each voiced file's length is inside its level's range
+    for slug, s in stories.items():
+        if voiced[slug]:
+            lo, hi = SECONDS[s["level"]]
+            for rel in audio_files(slug):
+                if not lo <= dur(rel) <= hi:
+                    failures.append("%s %s: %.1f s, outside %d–%d s" % (slug, rel, dur(rel), lo, hi))
+    st = {k: sum(1 for s in stories.values() if s["status"] == k) for k in STATUSES}
+    print("slugs %d (japan %d, city %d, spot %d) | pages written %d | full pages %d | placeholders %d | "
+          "audio made %d | audio skipped %d | audio files found %d | stale removed %d | status %s"
+          % (len(stories), c["japan"], c["city"], c["spot"], len(written), full, placeholders, made, skipped,
+             audio_found, stale, " ".join("%s %d" % (k, st[k]) for k in STATUSES)))
     if len(written) != len(stories):
         sys.exit("pages written (%d) != slugs (%d)" % (len(written), len(stories)))
+    if failures:
+        print("VOICE FAILED (%d), those stories keep their placeholder page:" % len(failures), file=sys.stderr)
+        for f in failures:
+            print("  - " + f, file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":
