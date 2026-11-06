@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/sannenzaka-ninenzaka.mp3&quot;, &quot;title&quot;: &quot;三年坂二年坂&quot;, &quot;dur&quot;: 78.86}]" aria-label="播放器">
+<audio preload="metadata" src="a/sannenzaka-ninenzaka.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="78.86" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:19</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>脚下的石头台阶</li><li>石阶边卖葫芦的老店</li><li>两边保存下来的老街屋</li></ol>
+</section>
+<article class="story"><p>走这段坡的时候，请小心脚下。老话说，在三年坂摔倒的人，三年之内会死。这只是民间的说法。</p><p>传说里有个办法。身上带一个葫芦。据说，要跑出身体的魂，会被葫芦吸住。</p><p>至于名字，有人说，三年坂原本写作产宁坂，意思是平安生产。从前的女人，一步步走上这条坡，去清水寺拜子安观音，求孩子平安出生。这条坡，就是去子安塔参拜的路。那座塔今天还在清水寺里，是一座三层的小塔。</p><p>也有人说，它叫再念坂。愿望实现以后，人们再走一次这条坡，回去向观音道谢。名字的来历有好几种说法，没有人能肯定，哪一种才是真的。一条坡，装着三样东西，怕，求，谢。</p><p>现在，请你低头看石头台阶。石阶一级接一级，走快了容易脚下不稳。石阶边上，有一家卖葫芦的老店。</p><p>一九七六年，国家把这一带选为保存地区，两边的老街屋受到了保护。别怕，走稳就好。慢慢走，别摔跤。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/産寧坂" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/産寧坂</a></li><li><a href="https://en.wikipedia.org/wiki/Sannenzaka" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Sannenzaka</a></li><li><a href="https://www.leafkyoto.net/en/?p=15312" rel="noopener noreferrer">https://www.leafkyoto.net/en/?p=15312</a></li><li><a href="https://kanpai-japan.com/kyoto/ninenzaka-sannenzaka" rel="noopener noreferrer">https://kanpai-japan.com/kyoto/ninenzaka-sannenzaka</a></li><li><a href="https://www.jalan.net/kankou/spt_guide000000180132/spot/" rel="noopener noreferrer">https://www.jalan.net/kankou/spt_guide000000180132/spot/</a></li><li><a href="https://ja.wikipedia.org/wiki/清水寺" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/清水寺</a></li><li><a href="https://www.japan-guide.com/e/e3901.html" rel="noopener noreferrer">https://www.japan-guide.com/e/e3901.html</a></li><li><a href="https://www.bunka.go.jp/seisaku/bunkazai/shokai/hozonchiku/judenken_ichiran.html" rel="noopener noreferrer">https://www.bunka.go.jp/seisaku/bunkazai/shokai/hozonchiku/judenken_ichiran.html</a></li><li><a href="https://ja.wikipedia.org/wiki/重要伝統的建造物群保存地区" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/重要伝統的建造物群保存地区</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="kyoto.html">听京都的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>
