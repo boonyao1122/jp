@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/kamakura-hachimangu.mp3&quot;, &quot;title&quot;: &quot;鹤冈八幡宫&quot;, &quot;dur&quot;: 74.45}]" aria-label="播放器">
+<audio preload="metadata" src="a/kamakura-hachimangu.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="74.45" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:14</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>大台阶旁的银杏树桩</li><li>笔直通向山脚的参道</li><li>参道旁的源氏池和平家池</li></ol>
+</section>
+<article class="story"><p>你面前这段大台阶，八百年前，据说有一位将军在这里被杀。</p><p>一二一九年，将军源实朝来这里参拜。他的侄子公晓，从台阶旁冲出来，挥刀杀了他。</p><p>这座神社，是源赖朝选的位置。最早，它建在靠海的地方。他把它搬到现在的山脚，成了镰仓武士的守护神。传说，舞者静御前，还在这里为他跳过舞。</p><p>请你看台阶旁边。那里有一截银杏的树桩。传说，公晓就躲在这棵树后面。可是当时的史书里，并没有这样写。</p><p>二零一零年三月，一场大风，把这棵老树吹倒了。现在，树桩旁边，长出了新的枝芽。</p><p>你进门的时候，参道两边有两个池，一个叫源氏池，一个叫平家池。这里在明治以前，也是一座佛寺，有大约七百年。后来神和佛被分开，很多老建筑，就这样消失了。</p><p>树倒了，故事还在。走上台阶，再回头看。那条笔直的参道，从你脚下，一直铺到海边，将近两公里。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://en.wikipedia.org/wiki/Tsurugaoka_Hachiman-g%C5%AB" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Tsurugaoka_Hachiman-g%C5%AB</a></li><li><a href="https://ja.wikipedia.org/wiki/鶴岡八幡宮" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/鶴岡八幡宮</a></li><li><a href="https://www.hachimangu.or.jp/knowledge/" rel="noopener noreferrer">https://www.hachimangu.or.jp/knowledge/</a></li><li><a href="https://www.hachimangu.or.jp/sightseeing/keidai/" rel="noopener noreferrer">https://www.hachimangu.or.jp/sightseeing/keidai/</a></li><li><a href="https://www.hachimangu.or.jp/activity/news/" rel="noopener noreferrer">https://www.hachimangu.or.jp/activity/news/</a></li><li><a href="https://ja.wikipedia.org/wiki/公暁" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/公暁</a></li><li><a href="https://en.wikipedia.org/wiki/Minamoto_no_Sanetomo" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Minamoto_no_Sanetomo</a></li><li><a href="https://ja.wikipedia.org/wiki/源実朝" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/源実朝</a></li><li><a href="https://ja.wikipedia.org/wiki/静御前" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/静御前</a></li><li><a href="https://en.wikipedia.org/wiki/Shizuka_Gozen" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Shizuka_Gozen</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="kamakura.html">听镰仓的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>
