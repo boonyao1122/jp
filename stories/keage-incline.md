@@ -6,7 +6,7 @@ order: 5
 name_zh: 蹴上倾斜铁道
 name_ja: 蹴上インクライン
 status: voiced
-voice_hash: 663bf09c7476
+voice_hash: 1bcfc8745e37
 look_for:
   - 铁轨上的老台车
   - 铺着铁轨的斜坡
@@ -14,6 +14,9 @@ look_for:
 ja_names:
   - 田边朔郎
   - 琵琶湖
+book_refs:
+  - 'Handbook 1913, Route 37, Ke-age and Nanzenji, txt line 44051: "what looks like a railway but is really only a portage between the two sections of the Lake Biwa, Canal"'
+  - 'Handbook 1913, Route 38, General Information, txt line 45151: "the boats, placed in wheeled cradles, are drawn by an electric motor stationed at the foot of the incline."'
 sources:
   - https://ja.wikipedia.org/wiki/蹴上インクライン
   - https://ja.wikipedia.org/wiki/琵琶湖疏水
@@ -27,14 +30,14 @@ sources:
 ---
 你脚下的铁轨，当年拉的不是火车，是船。
 
-天皇搬去东京以后，京都不再是首都，人口变少，生意也冷清了。明治时代的人想了个办法，从琵琶湖引水，挖一条运河，想让这座老城活下去。
+一百多年前，《日本旅行手册》这样看这道坡。它说，这里看上去像铁路，其实是让船翻过坡的一段旱路。船被放进带轮子的台车，一台电动机，把它们拉上拉下。
 
-负责设计和监工的，是一位刚毕业的年轻工程师，田边朔郎。他在上学的时候，就把这条运河的计划，写成了毕业论文。
+天皇搬去东京以后，京都人口变少，生意也冷清了。明治时代的人想了个办法，从琵琶湖引水，挖一条运河，想让这座老城活下去。
 
-运河到了这里，遇上一道坡，船过不去。人们就把船整个装上台车，用缆绳把台车拉上拉下。这样一直用到二战以后。
+设计和监工的，是刚毕业的年轻工程师，田边朔郎。他在学校的时候，就把运河的计划写成了毕业论文。
 
 这段斜坡铁道大约有六百米，坡顶比坡底高出大约三十六米。修好的时候，它是世界上最长的斜坡铁道。
 
 现在，请你看铁轨上的老台车。它是后来复原的。当年，船就坐在这样的台车上。再回头看看，这道坡有多陡。
 
-运河的水，也用来发电。旁边就是日本第一座商用的水力发电站，拉台车的电，就是它发的。后来，京都的电车也用上了这里的电。现在，这段斜坡铁道和运河的其他设施一起，成了日本的国宝。顺着铁轨，慢慢往上走。
+旁边就是日本第一座商用的水力发电站。现在，这段斜坡铁道和运河的其他设施一起，成了日本的国宝。顺着铁轨，慢慢往上走。

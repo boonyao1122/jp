@@ -6,7 +6,7 @@ order: 6
 name_zh: 哲学之道
 name_ja: 哲学の道
 status: voiced
-voice_hash: 8cde7b1bca0d
+voice_hash: 39073fd533af
 look_for:
   - 身边那条水渠
   - 水渠边的樱花树
@@ -15,6 +15,8 @@ ja_names:
   - 西田几多郎
   - 桥本关雪
   - 蹴上
+book_refs:
+  - 'Handbook 1913, Route 38, General Information, txt line 45154: "At Ke-age, at the top of the incline, the water of the canal divides, one part flowing in a branch canal"'
 sources:
   - https://ja.wikipedia.org/wiki/哲学の道
   - https://tetsugakunomichi.jp/about_tm.html
@@ -23,6 +25,7 @@ sources:
   - https://www.japan.travel/en/spot/1162/
   - https://ja.wikipedia.org/wiki/西田幾多郎
   - https://ja.wikipedia.org/wiki/橋本関雪
+  - https://ja.wikipedia.org/wiki/琵琶湖疏水
 ---
 这条路，最早只是一条小路。明治时代，它是给水渠做管理用的。这条水渠，是琵琶湖运河分出来的一段。
 
@@ -32,6 +35,6 @@ sources:
 
 现在，请你看水渠边的樱花树。最早的树苗，是画家桥本关雪和妻子送的，有几百棵。所以，人们叫这些樱花关雪樱。现在的树，多是后来换上的。春天，它们会开花。
 
-再看看身边的水渠。这里的水，是在蹴上分出来的，就是你刚才看过的那条运河。一条水渠，一排树，一条小路。你看到的，就是这些。
+再看看身边的水渠。一百多年前，《日本旅行手册》写这条运河，说水到了蹴上就分开，一支流向京都北边，用来灌田，也提供水力。就是你刚才看过的那条运河，分出来的这一支。一条水渠，一排树，一条小路。
 
 它就在一条水渠旁边，有一两公里。不赶路的话，走完大约半个小时。你不用走完。走到哪里，哪里就是一段。
