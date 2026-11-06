@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/enakyo.mp3&quot;, &quot;title&quot;: &quot;惠那峡&quot;, &quot;dur&quot;: 74.18}]" aria-label="播放器">
+<audio preload="metadata" src="a/enakyo.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="74.18" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:14</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>公园小路边的伞岩</li><li>船上找屏风岩和品字岩</li><li>红色拱桥惠那峡大桥</li></ol>
+</section>
+<article class="story"><p>眼前这片水，看上去像天生的，其实是一座水坝造出来的。</p><p>一百多年前，地理学家志贺重昂，给这段河谷起了名字，叫惠那峡。那时候，这里没有湖。一九二四年，水坝完工，河水涨起来，才有了你眼前这片湖面。从水坝往上游，大约十公里，都是这片水。</p><p>先有名字，后有湖。</p><p>上船以后，留意两岸的岩石。很多岩石都有名字。有的像屏风，有的像军舰，有的像狮子。还有一块，像汉字的品字。</p><p>上岸以后，去惠那峡公园的林间小路走走。路边有一块大岩石，像一把撑开的伞，叫伞岩。伞面最宽的地方，大约三米多。它是国家的天然纪念物。</p><p>这个季节，叶子红到哪一步，要看运气。先别急着找满山的红，先看水。</p><p>天黑以后，如果赶上亮灯，再回来看一眼。同一片水面，会换另一个样子。</p><p>惠那峡是今天的开头。再往前走，就是江户时代的山路了。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://www.city.ena.lg.jp/material/files/group/2/ena100_11.pdf" rel="noopener noreferrer">https://www.city.ena.lg.jp/material/files/group/2/ena100_11.pdf</a></li><li><a href="https://www.kankou-gifu.jp/spot/detail_1341.html" rel="noopener noreferrer">https://www.kankou-gifu.jp/spot/detail_1341.html</a></li><li><a href="https://www.kankou-gifu.jp/blog/detail_284.html" rel="noopener noreferrer">https://www.kankou-gifu.jp/blog/detail_284.html</a></li><li><a href="https://www.kankou-ena.jp/494.php" rel="noopener noreferrer">https://www.kankou-ena.jp/494.php</a></li><li><a href="https://ja.wikipedia.org/wiki/恵那峡" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/恵那峡</a></li><li><a href="https://ja.wikipedia.org/wiki/大井ダム" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/大井ダム</a></li><li><a href="https://ja.wikipedia.org/wiki/志賀重昂" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/志賀重昂</a></li><li><a href="https://en.wikipedia.org/wiki/Ōi_Dam" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Ōi_Dam</a></li><li><a href="https://ja.wikipedia.org/wiki/中山道" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/中山道</a></li><li><a href="https://tenki.jp/kouyou/5/24/30223.html" rel="noopener noreferrer">https://tenki.jp/kouyou/5/24/30223.html</a></li><li><a href="https://koyo.walkerplus.com/detail/ar0621e13192/data.html" rel="noopener noreferrer">https://koyo.walkerplus.com/detail/ar0621e13192/data.html</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="kiso-nakasendo.html">听木曾路与中山道的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>
