@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/ryogoku-kokugikan.mp3&quot;, &quot;title&quot;: &quot;两国国技馆&quot;, &quot;dur&quot;: 64.94}]" aria-label="播放器">
+<audio preload="metadata" src="a/ryogoku-kokugikan.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="64.94" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:05</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>正门左边的稻荷小神社</li><li>屋顶上的金色部分</li><li>一楼的相扑博物馆</li></ol>
+</section>
+<article class="story"><p>两国的相扑馆，曾经有过一把大铁伞。</p><p>早在江户时代，附近的回向院就办起了相扑。一九零九年，第一座国技馆，就建在回向院里。设计它的人里，有建东京站的辰野金吾。它是日本第一座钢架圆顶的大楼，人们叫它大铁伞。</p><p>后来，老馆被大火烧过，又毁于关东大地震。战时，它还被拿去做气球炸弹的工厂。战后，相扑离开了两国。</p><p>现在这一座新馆，一九八五年启用，相扑才回到了这里。建馆的钱，全是日本相扑协会自己出的。</p><p>如果你是十一月来，这里没有大赛。那个月的大赛，在福冈举行。</p><p>请你看正门左边的稻荷门，里面有两座小神社。再抬头，找屋顶上金色的部分。平日白天，一楼的相扑博物馆也开着。</p><p>一座老馆，一座新馆。相扑走了一圈，又回到了两国。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://en.wikipedia.org/wiki/Ry%C5%8Dgoku_Kokugikan" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Ry%C5%8Dgoku_Kokugikan</a></li><li><a href="https://ja.wikipedia.org/wiki/両国国技館" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/両国国技館</a></li><li><a href="https://www.pref.fukuoka.lg.jp/press-release/yokozuna081027.html" rel="noopener noreferrer">https://www.pref.fukuoka.lg.jp/press-release/yokozuna081027.html</a></li><li><a href="https://www.museum.or.jp/museum/2319" rel="noopener noreferrer">https://www.museum.or.jp/museum/2319</a></li><li><a href="https://eplus.jp/sf/venue/1300020/events" rel="noopener noreferrer">https://eplus.jp/sf/venue/1300020/events</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="tokyo.html">听东京的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>

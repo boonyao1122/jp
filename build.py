@@ -175,6 +175,8 @@ CHARS_PER_MIN = 235  # estimate; measured 243/min (test) and 228/min (Japan chap
 RATE_FAST, RATE_SLOW = 243, 228  # safe band: lo at the fast rate, hi at the slow rate
 HANZI = re.compile(r"[㐀-鿿豈-﫿]")
 BAD_FOR_TTS = re.compile(r"[0-9()（）\[\]【】/⚠<>]")
+# public site (spec D9): no trip dates, hotels, bookings, romanised names or IDs
+PRIVATE = re.compile(r"十一月[一二三四五六七八九十]{1,3}[号日]|酒店|旅馆|民宿|入住|预订|订单|[A-Za-z]")
 
 
 def spoken(s):
@@ -263,6 +265,12 @@ def voice_all(src, stories, fc_dir):
         if bad or not all(t.strip() for _, t in parts):
             failures.append("%s: text is empty or has digits/brackets/slash/⚠ (write numbers as words): %r"
                             % (slug, sorted(set(BAD_FOR_TTS.findall("".join(bad))))))
+            s["voice_failed"] = True
+            continue
+        leak = PRIVATE.findall("".join(t for _, t in parts) + "".join(s.get("look_for") or []))
+        if leak:
+            failures.append("%s: public-site rule: remove %r (no trip dates, hotels, bookings, Latin letters)"
+                            % (slug, sorted(set(leak))))
             s["voice_failed"] = True
             continue
         stored = (s.get("voice_hash") or "").split(",")

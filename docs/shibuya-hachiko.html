@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/shibuya-hachiko.mp3&quot;, &quot;title&quot;: &quot;八公与涩谷路口&quot;, &quot;dur&quot;: 65.98}]" aria-label="播放器">
+<audio preload="metadata" src="a/shibuya-hachiko.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="65.98" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:06</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>广场上的八公铜像</li><li>对面的十字路口</li><li>路口四周的大屏幕</li></ol>
+</section>
+<article class="story"><p>有一条狗，在这座车站前，等了差不多十年。</p><p>它叫八公，是一条秋田犬，出生在秋田县的一个农场。大学教授上野英三郎收养了它。</p><p>一九二五年，教授在学校突然去世，再也没有回来。</p><p>八公没有走。它继续来车站，一等就是九年多。人们开始给它带吃的，报纸也写了它的故事。</p><p>一九三四年，雕刻家安藤照做了一座铜像，那时八公还活着。第二年，它去世了，十一岁。战争里，那座铜像被拿去熔掉了。现在这一座，是战后由安藤照的儿子重做的，后来搬过好几次，如今面朝车站。</p><p>请你找到广场上的铜像。看它的左耳，是垂着的。上野的博物馆里，它的标本，两只耳朵却都竖着。</p><p>车站这一带，正在大规模翻修，周围如果围着施工板，也别急。路口的人流，会替你讲完这个故事。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://en.wikipedia.org/wiki/Hachik%C5%8D" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Hachik%C5%8D</a></li><li><a href="https://ja.wikipedia.org/wiki/ハチ公" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/ハチ公</a></li><li><a href="https://en.wikipedia.org/wiki/Shibuya_Crossing" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Shibuya_Crossing</a></li><li><a href="https://ja.wikipedia.org/wiki/渋谷スクランブル交差点" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/渋谷スクランブル交差点</a></li><li><a href="https://biz.shibuyabunka.com/watch/49/?wovn=en" rel="noopener noreferrer">https://biz.shibuyabunka.com/watch/49/?wovn=en</a></li><li><a href="https://tetsudo-ch.com/13001143.html" rel="noopener noreferrer">https://tetsudo-ch.com/13001143.html</a></li><li><a href="https://www.gotokyo.org/en/spot/86/index.html" rel="noopener noreferrer">https://www.gotokyo.org/en/spot/86/index.html</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="tokyo.html">听东京的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>

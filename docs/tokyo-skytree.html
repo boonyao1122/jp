@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/tokyo-skytree.mp3&quot;, &quot;title&quot;: &quot;晴空塔&quot;, &quot;dur&quot;: 63.72}]" aria-label="播放器">
+<audio preload="metadata" src="a/tokyo-skytree.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="63.72" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:04</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>底座是三角形</li><li>往上渐渐变圆的塔身</li><li>带一点淡蓝的白色塔身</li></ol>
+</section>
+<article class="story"><p>请你抬头，数一数这座塔有多高。六百三十四米。</p><p>这个数字是故意选的。六、三、四，日语里念起来，正好是这一带的古名字。</p><p>它在二零一二年开业，比东京铁塔高得多，也接过了电视台的发射任务。</p><p>设计师遇到一个难题，地震。他们在中间立了一根钢筋混凝土的心柱，再加上油压阻尼器，用来吸掉晃动的力气。</p><p>他们还做了一件小事。塔的底座是三角形，往上，大约到一半高的地方，一路变成圆的。</p><p>请你站在塔下，找到那个三角形的底座，再顺着塔身往上看，圆形是从哪里开始的。</p><p>再看它的颜色。那是一种带点淡蓝的白，参考的是日本传统的蓝白色。</p><p>他们没有把塔做成一根直直的针，而是让它从三角，慢慢变成一个圆。</p><p>东京铁塔守着老东京，晴空塔看着新东京。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://en.wikipedia.org/wiki/Tokyo_Skytree" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Tokyo_Skytree</a></li><li><a href="https://ja.wikipedia.org/wiki/東京スカイツリー" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/東京スカイツリー</a></li><li><a href="https://www.tokyo-skytree.jp/news/" rel="noopener noreferrer">https://www.tokyo-skytree.jp/news/</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="tokyo.html">听东京的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>
