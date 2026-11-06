@@ -5,10 +5,12 @@ Usage: python3 build.py [--src DIR]
 Idempotent. Validates first (spec Section 9 check 1) and writes nothing if invalid.
 """
 import argparse
+import base64
 import glob
 import hashlib
 import html
 import json
+import math
 import os
 import re
 import shutil
@@ -48,7 +50,7 @@ def parse_story(path):
         key, val = kv.group(1), (kv.group(2) or "").strip()
         if key in fm:
             raise ValueError("line %d: duplicate key %s" % (n, key))
-        if val == "[]" or (val == "" and key in ("look_for", "ja_names", "sources", "chapters")):
+        if val == "[]" or (val == "" and key in ("look_for", "ja_names", "sources", "chapters", "book_refs")):
             fm[key] = []
         else:
             fm[key] = unquote(val)
@@ -217,17 +219,184 @@ def edge_tts_bin(src):
     return os.environ.get("EDGE_TTS") or os.path.join(src, "..", ".venv-tts", "bin", "edge-tts")
 
 
-def synth(src, text, out):
-    with open(out + ".txt", "w", encoding="utf-8") as f:
+# ---------- timing files (Phase D): docs/a/<name>.json beside each mp3 ----------
+FPS = 20
+ENDERS = "。！？"
+CLOSERS = "」』”’）)"
+LONG_CUE = 28  # hanzi; a longer sentence is split once at the ， nearest its middle
+
+
+def synth_timed(src, text, out_mp3, out_words):
+    """Voice `text` to out_mp3 and save the word boundaries to out_words. Returns an error string or None."""
+    tmp = out_mp3 + ".txt"
+    with open(tmp, "w", encoding="utf-8") as f:
         f.write(text)
+    py = os.path.join(os.path.dirname(edge_tts_bin(src)), "python")
+    helper = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tts_timed.py")
     try:
-        subprocess.run([edge_tts_bin(src), "--voice", VOICE, "--file", out + ".txt", "--write-media", out],
-                       capture_output=True, text=True, check=True, timeout=180)
+        subprocess.run([py, helper, VOICE, tmp, out_mp3, out_words],
+                       capture_output=True, text=True, check=True, timeout=240)
     except (OSError, subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
         return "edge-tts failed: %s" % (getattr(e, "stderr", "") or e)
     finally:
-        os.remove(out + ".txt")
+        if os.path.exists(tmp):
+            os.remove(tmp)
     return None
+
+
+def split_cues(text):
+    """[(start, end)] character ranges of `text`: split at 。！？ (and at paragraph breaks); a sentence of more
+    than LONG_CUE hanzi is split once at the ， nearest its middle. Newlines belong to no cue."""
+    spans, i, n = [], 0, len(text)
+    while i < n:
+        if text[i] == "\n":
+            i += 1
+            continue
+        j = i
+        while j < n and text[j] != "\n":
+            if text[j] in ENDERS:
+                j += 1
+                while j < n and (text[j] in ENDERS or text[j] in CLOSERS):
+                    j += 1
+                break
+            j += 1
+        spans.append((i, j))
+        i = j
+    out = []
+    for a, b in spans:
+        seg = text[a:b]
+        commas = [k for k, c in enumerate(seg) if c == "，" and k < len(seg) - 1]
+        if len(HANZI.findall(seg)) > LONG_CUE and commas:
+            mid = len(seg) / 2.0
+            k = min(commas, key=lambda x: abs(x + 1 - mid)) + 1
+            out += [(a, a + k), (a + k, b)]
+        else:
+            out.append((a, b))
+    return out
+
+
+def word_spans(text, words):
+    """Place each timed word in `text`, in order. Returns ([(start, end, t0, t1)], unmatched count)."""
+    pos, placed, unmatched = 0, [], 0
+    for w in words:
+        k = text.find(w["t"], pos)
+        if k < 0 or HANZI.search(text[pos:k]):
+            unmatched += 1
+            continue
+        placed.append((k, k + len(w["t"]), w["o"], w["o"] + w["d"]))
+        pos = k + len(w["t"])
+    return placed, unmatched
+
+
+def make_env(mp3, dur):
+    """One byte per 50 ms: RMS of the 8 kHz mono decode, scaled so the 95th percentile is 255. Returns base64."""
+    import array
+    import base64
+    try:
+        raw = subprocess.run([ffprobe_bin().replace("ffprobe", "ffmpeg"), "-v", "error", "-i", mp3, "-ac", "1",
+                              "-ar", "8000", "-f", "s16le", "-"], capture_output=True, check=True).stdout
+    except (OSError, subprocess.CalledProcessError) as e:
+        raise SystemExit("ffmpeg failed on %s: %s" % (mp3, e))
+    a = array.array("h")
+    a.frombytes(raw[: len(raw) // 2 * 2])
+    step = 8000 // FPS
+    n = int(math.ceil(dur * FPS))
+    rms = []
+    for k in range(n):
+        ch = a[k * step:(k + 1) * step]
+        rms.append(math.sqrt(sum(x * x for x in ch) / len(ch)) if len(ch) else 0.0)
+    ordered = sorted(rms)
+    p95 = ordered[min(len(ordered) - 1, int(len(ordered) * 0.95))] or 1.0
+    return base64.b64encode(bytes(min(255, int(round(r / p95 * 255))) for r in rms)).decode("ascii")
+
+
+def build_timing(mp3, text, words):
+    """The timing dict for one audio file. Raises ValueError when the words do not fit the text."""
+    dur = duration(mp3)
+    placed, unmatched = word_spans(text, words)
+    if unmatched or not placed:
+        raise ValueError("%d of %d timed words not found in the text" % (unmatched, len(words)))
+    cues = []
+    for a, b in split_cues(text):
+        inside = [p for p in placed if a <= p[0] < b]
+        if not inside:
+            raise ValueError("no timed word inside the cue %r" % text[a:b])
+        cues.append({"t0": round(inside[0][2], 2), "t1": round(min(inside[-1][3], dur), 2), "text": text[a:b]})
+    return {"v": 1, "dur": round(dur, 2), "fps": FPS, "env": make_env(mp3, dur), "cues": cues}
+
+
+def write_timing(path, obj):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, ensure_ascii=False, separators=(",", ":"))
+
+
+def timing_problem(path, text):
+    """None when the timing file is good, else why not. The build check."""
+    if not os.path.isfile(path):
+        return "no timing file %s" % os.path.basename(path)
+    try:
+        with open(path, encoding="utf-8") as f:
+            t = json.load(f)
+        cues = t["cues"]
+    except (OSError, ValueError, KeyError, TypeError) as e:
+        return "timing file does not parse: %s" % e
+    if t.get("v") != 1 or not cues:
+        return "timing file has no cues or a wrong version"
+    if "".join(c["text"] for c in cues) != text.replace("\n", ""):
+        return "cues joined do not equal the spoken text"
+    last = -1.0
+    for c in cues:
+        if not c["t0"] < c["t1"] or c["t0"] < last:
+            return "cue times out of order at %r" % c["text"][:10]
+        last = c["t0"]
+    if abs(len(base64.b64decode(t["env"])) - t["dur"] * FPS) > 2:
+        return "env length does not match the duration"
+    return None
+
+
+def backfill_timings(src, stories):
+    """build.py --timings: write the missing json for audio already live, keeping every mp3. Returns (made, problems)."""
+    import tempfile
+    from concurrent.futures import ThreadPoolExecutor
+    jobs = []
+    for slug in sorted(stories):
+        s = stories[slug]
+        if s["status"] != "voiced":
+            continue
+        for rel, text in spoken(s):
+            mp3 = os.path.join(src, "docs", rel)
+            js = os.path.splitext(mp3)[0] + ".json"
+            if os.path.isfile(mp3) and timing_problem(js, text) is not None:
+                jobs.append((rel, text, mp3, js))
+    tmpdir = tempfile.mkdtemp(prefix="timings-")
+
+    def one(job):
+        rel, text, mp3, js = job
+        base = os.path.join(tmpdir, os.path.basename(rel))
+        err = synth_timed(src, text, base, base + ".words")
+        if err:
+            return rel, err
+        d_live, d_new = duration(mp3), duration(base)
+        if abs(d_live - d_new) > 0.05:
+            return rel, "re-voiced length %.2f s differs from the live file %.2f s: no json written" % (d_new, d_live)
+        try:
+            with open(base + ".words", encoding="utf-8") as f:
+                words = json.load(f)
+            obj = build_timing(mp3, text, words)  # env and dur come from the live mp3
+        except ValueError as e:
+            return rel, str(e)
+        write_timing(js, obj)
+        return rel, None
+
+    made, problems = 0, []
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        for rel, err in ex.map(one, jobs):
+            if err:
+                problems.append("%s: %s" % (rel, err))
+            else:
+                made += 1
+    shutil.rmtree(tmpdir, ignore_errors=True)
+    return made, problems
 
 
 def set_front_matter(path, updates):
@@ -284,7 +453,7 @@ def voice_all(src, stories, fc_dir):
                 skipped += 1
                 continue
             tmp = os.path.join(docs_a, ".tmp-" + os.path.basename(rel))
-            err = synth(src, t, tmp)
+            err = synth_timed(src, t, tmp, tmp + ".words")
             if not err:
                 size = os.path.getsize(tmp) if os.path.isfile(tmp) else 0
                 d = duration(tmp) if size else 0
@@ -300,6 +469,19 @@ def voice_all(src, stories, fc_dir):
                 ok = False
                 s["voice_failed"] = True
                 break
+            try:
+                with open(tmp + ".words", encoding="utf-8") as f:
+                    obj = build_timing(tmp, t, json.load(f))
+                write_timing(os.path.splitext(final)[0] + ".json", obj)
+            except ValueError as e:
+                os.remove(tmp)
+                failures.append("%s %s: timings: %s" % (slug, rel, e))
+                ok = False
+                s["voice_failed"] = True
+                break
+            finally:
+                if os.path.exists(tmp + ".words"):
+                    os.remove(tmp + ".words")
             os.replace(tmp, final)
             made += 1
         if ok:
@@ -355,6 +537,8 @@ def main():
     ap.add_argument("--src", default=here, help="site directory (default: this script's directory)")
     ap.add_argument("--factcheck", help="fact-check folder (default: <src>/../factcheck)")
     ap.add_argument("--no-voice", action="store_true", help="skip the voice step, only render pages")
+    ap.add_argument("--timings", action="store_true",
+                    help="write the missing docs/a/*.json for audio already live; replaces no mp3")
     ap.add_argument("--info", metavar="SLUG", help="print text_sha and character counts for one story, then exit")
     args = ap.parse_args()
     src = os.path.abspath(args.src)
@@ -374,6 +558,13 @@ def main():
         sys.exit(1)
 
     os.makedirs(os.path.join(src, "docs", "a"), exist_ok=True)
+    if args.timings:
+        made, problems = backfill_timings(src, stories)
+        print("timing files written %d | mismatches or failures %d" % (made, len(problems)))
+        for p in problems:
+            print("  - " + p, file=sys.stderr)
+        if problems:
+            sys.exit(1)
     made, skipped, failures = (0, 0, []) if args.no_voice else voice_all(src, stories, fc_dir)
 
     docs = os.path.join(src, "docs")
@@ -514,6 +705,17 @@ def main():
             for rel in audio_files(slug):
                 if not lo <= dur(rel) <= hi:
                     failures.append("%s %s: %.1f s, outside %d–%d s" % (slug, rel, dur(rel), lo, hi))
+    # timing check on every build: each voiced audio file has a json whose cues are the spoken text, in time order
+    n_json = 0
+    for slug, s in stories.items():
+        if voiced[slug]:
+            for rel, text in spoken(s):
+                why = timing_problem(os.path.join(docs, os.path.splitext(rel)[0] + ".json"), text)
+                if why:
+                    failures.append("%s %s: %s (run build.py --timings)" % (slug, rel, why))
+                else:
+                    n_json += 1
+    print("timing files checked %d" % n_json)
     st = {k: sum(1 for s in stories.values() if s["status"] == k) for k in STATUSES}
     print("slugs %d (japan %d, city %d, spot %d) | pages written %d | full pages %d | placeholders %d | "
           "audio made %d | audio skipped %d | audio files found %d | stale removed %d | status %s"

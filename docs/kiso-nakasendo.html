@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>木曾路与中山道 · 日本之旅</title>
-<link rel="stylesheet" href="style.css?v=ae007939">
+<link rel="stylesheet" href="style.css?v=d61c1ca0">
 </head>
 <body class="city">
 <main class="wrap">
@@ -25,8 +25,10 @@
 
 <section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/kiso-nakasendo.mp3&quot;, &quot;title&quot;: &quot;木曾路与中山道&quot;, &quot;dur&quot;: 89.9}]" aria-label="播放器">
 <audio preload="metadata" src="a/kiso-nakasendo.mp3"></audio>
-<div class="controls">
-<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="stage" data-stage>
+<canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
+<span class="glow" data-glow aria-hidden="true" hidden></span>
+<button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
 <div class="main">
 <button type="button" class="play" data-play aria-label="播放">
 <svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
@@ -34,8 +36,9 @@
 </button>
 <span class="play-label" data-label>播放</span>
 </div>
-<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+<button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="89.90" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>1:30</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -57,6 +60,6 @@
 
 
 </main>
-<script src="player.js?v=3cb77350" defer></script>
+<script src="player.js?v=7150ad63" defer></script>
 </body>
 </html>
