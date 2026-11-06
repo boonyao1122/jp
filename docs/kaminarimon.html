@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/kaminarimon.mp3&quot;, &quot;title&quot;: &quot;雷门&quot;, &quot;dur&quot;: 63.86}]" aria-label="播放器">
+<audio preload="metadata" src="a/kaminarimon.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="63.86" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:04</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>灯笼底下的龙雕</li><li>门两侧的风神和雷神</li><li>灯笼正面的雷门二字</li></ol>
+</section>
+<article class="story"><p>你一抬头，先看见一只巨大的红灯笼。它将近四米高，重七百公斤。</p><p>灯笼的底下，藏着一条雕出来的龙。你站到正下方，再仰头看。</p><p>这座门正式的名字，叫风雷神门。</p><p>它很古老，一千多年前就有了。最早是武将平公雅建的，那时候就叫风雷神门。</p><p>后来，它被烧了好几次。你眼前这一座，是一九六零年重建的。</p><p>出钱帮忙的人，是松下电器的创办人，松下幸之助。</p><p>再看门的两侧。左右两个神龛里，站着风神和雷神。风雷神门这个名字，就是从这两位神来的。</p><p>每年办三社祭的时候，高高的神轿要过门，灯笼就会被折起来。这只灯笼，过一些年就会换一只新的。</p><p>门的另一面，还站着天龙和金龙，你可以绕过去看一看。</p><p>好了，拍张照，穿过去。里面就是浅草寺。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://en.wikipedia.org/wiki/Sens%C5%8D-ji" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Sens%C5%8D-ji</a></li><li><a href="https://www.mlit.go.jp/tagengo-db/en/R1-01373.html" rel="noopener noreferrer">https://www.mlit.go.jp/tagengo-db/en/R1-01373.html</a></li><li><a href="https://www.senso-ji.jp/english/" rel="noopener noreferrer">https://www.senso-ji.jp/english/</a></li><li><a href="https://ja.wikipedia.org/wiki/雷門" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/雷門</a></li><li><a href="https://matcha-jp.com/jp/997" rel="noopener noreferrer">https://matcha-jp.com/jp/997</a></li><li><a href="https://www.gotokyo.org/jp/spot/14/index.html" rel="noopener noreferrer">https://www.gotokyo.org/jp/spot/14/index.html</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="tokyo.html">听东京的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>

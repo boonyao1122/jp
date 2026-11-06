@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/akihabara.mp3&quot;, &quot;title&quot;: &quot;秋叶原&quot;, &quot;dur&quot;: 66.43}]" aria-label="播放器">
+<audio preload="metadata" src="a/akihabara.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="66.43" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:06</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>不通车的中央大街</li><li>街边发传单的女仆</li><li>电器店门口的招牌</li></ol>
+</section>
+<article class="story"><p>你脚下这片电器街，名字来自一座防火的神社。</p><p>一百五十多年前，这一带起了一场大火。人们清出一片空地当防火带，在上面立起一座镇火的神社，后来叫它秋叶神社。这片空地，就叫秋叶原。</p><p>一八九零年，空地上开了一座货运车站。今天的秋叶原站，就在当年那片防火空地上。</p><p>战后，黑市在这里卖收音机的零件。后来卖家电。到了八十年代，又改卖电脑，引来了一批电脑迷。再后来，动漫，游戏，女仆咖啡店，一家接着一家开了起来。</p><p>请你看一看街上。如果是周日下午，中央大街不通车，人可以走在马路正中间。路边有穿女仆装的人在发传单。电器店的招牌，一家挨着一家。</p><p>要给扮成角色的人拍照，请先问一声。</p><p>这座城市的人怕火。连防火的办法，也留在了这里的地名里。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://en.wikipedia.org/wiki/Akihabara" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Akihabara</a></li><li><a href="https://ja.wikipedia.org/wiki/秋葉原" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/秋葉原</a></li><li><a href="https://www.gotokyo.org/cn/spot/55/index.html" rel="noopener noreferrer">https://www.gotokyo.org/cn/spot/55/index.html</a></li><li><a href="https://www.keishicho.metro.tokyo.lg.jp/kotsu/doro/hoko.html" rel="noopener noreferrer">https://www.keishicho.metro.tokyo.lg.jp/kotsu/doro/hoko.html</a></li><li><a href="https://president.jp/articles/-/115871" rel="noopener noreferrer">https://president.jp/articles/-/115871</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="tokyo.html">听东京的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>
