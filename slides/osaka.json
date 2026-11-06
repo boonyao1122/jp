@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "丰臣秀吉像",
+   "credit": "Kanō Mitsunobu, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Toyotomi_hideyoshi.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "屏风里的大阪城天守",
+   "credit": "Osaka Castle Museum, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Osaka_Castle_Keep_tower_of_%E3%80%8CA_figure_of_camp_screen_of_the_Osaka_summer%E3%80%8D_002.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "大阪城之战，江户时代绘卷",
+   "credit": "anonymous, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:The_Siege_of_Osaka_Castle.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "幕末的大阪城老照片",
+   "credit": "Lt James Henry Butt, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:%27Tycoon%27s_Palace,_Osaka%27_(Japan)_RMG_PT2062.tiff"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "大阪城的巨石",
+   "credit": "Ethan Doyle White, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Large_Stone_at_Kyobashi-Guchi_Entrance_to_Osaka_Castle.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "大阪城的石墙和远处的天守",
+   "credit": "Syced, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Osaka_castle_5.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "夜里的道顿堀",
+   "credit": "Martin Falbisoner, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Dotonbori,_Osaka,_at_night,_November_2016.jpg"
+  }
+ ]
+}

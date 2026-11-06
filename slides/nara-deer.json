@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "老照片里的奈良公园的鹿",
+   "credit": "田山宗尭, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:NDL-DC_762376_0149_0012_Shika_NaraKoen.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "春日大社的石灯笼和鹿",
+   "credit": "Zairon, CC BY 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Nara_Kasuga-taisha_Lanterns_%26_Deer_05.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "春日大社的鹿，神的使者",
+   "credit": "Immanuelle, CC BY 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Deer_worship_at_the_Mikasayama-Ukigumonomine_Yohaijo_of_Kasuga-taisha-09.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "一头雄鹿的脸",
+   "credit": "Jakub Hałun, CC BY 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Sika_Deer,_Nara,_Japan,_20240819_1541_4775.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "鹿饼干",
+   "credit": "TR15336300101, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Shika_senbei_2017.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "红叶下的奈良公园的鹿",
+   "credit": "Marek Ślusarczyk (Tupungato) Photo portfolio, CC BY 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:003_Nara_deer_in_Japan_-_deer_of_Nara_Park_under_autumn_leaves.jpg"
+  }
+ ]
+}

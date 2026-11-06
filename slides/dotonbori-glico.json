@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "道顿堀的跑步人招牌",
+   "credit": "Tokumeigakarinoaoshima, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Glico_sign_at_night,_25th_October_2014.JPG"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "戎桥边的跑步人",
+   "credit": "Schellack, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Glico_Man_sign,_Dotonbori.JPG"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "道顿堀河",
+   "credit": "32linesky, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Osaka_Dotonbori_Canal.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "会动钳子的大螃蟹招牌",
+   "credit": "Tokumeigakarinoaoshima, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Crab_sign_on_Kani_Doraku_Dotombori_honten_on_21st_October_2020.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "道顿堀的街景",
+   "credit": "chee.hong, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Dotonbori_Street,_Osaka_Prefecture;_November_2013_(03).jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "夜里的道顿堀",
+   "credit": "Martin Falbisoner, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Dotonbori,_Osaka,_at_night,_November_2016.jpg"
+  }
+ ]
+}

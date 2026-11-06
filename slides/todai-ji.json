@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "东大寺大佛殿",
+   "credit": "Balon Greyjoy, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:20190121_T%C5%8Ddai-ji_Great_Buddha_Hall-1.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "江户时代运送大佛殿的大梁",
+   "credit": "Artists of the Nara to Edo periods, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hauling_the_rainbow_beams_for_the_Daibutsuden_(Todaiji).jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "东大寺的大佛",
+   "credit": "Balon Greyjoy, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:20190121_T%C5%8Ddai-ji_Great_Buddha-1.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "大佛的脸",
+   "credit": "Balon Greyjoy, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:20190121_T%C5%8Ddai-ji_Great_Buddha-2.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "大佛下面的莲花台座",
+   "credit": "Lumatea, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Label_Lotus_Petals_Buddha%27s_Pedestal,_Todai-ji,_Nara,_2018.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "大佛殿的正面",
+   "credit": "Nekosuki, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Todai-ji_Daibutsu-den_Hall_National_Treasure_%E5%9B%BD%E5%AE%9D%E6%9D%B1%E5%A4%A7%E5%AF%BA%E5%A4%A7%E4%BB%8F%E6%AE%BF10.JPG"
+  }
+ ]
+}

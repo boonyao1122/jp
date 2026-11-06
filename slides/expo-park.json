@@ -1,0 +1,34 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "一九七零年大阪世博会的节日广场",
+   "credit": "takato marui, CC BY-SA 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Osaka_Expo%2770_Festival_Plaza.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "世博会的展馆",
+   "credit": "takato marui, CC BY-SA 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Osaka_Expo%2770_Kodak%2BRicoh_Pavilion.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "公园里的心字池",
+   "credit": "Laitche, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Scenery_of_Shinji_pond_at_Expo%E2%80%9970_Commemorative_Park_in_Osaka.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "公园里的日本庭园",
+   "credit": "Laitche, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Japanese_garden_scenery_at_Expo%E2%80%9970_Commemorative_Park_in_Osaka,_November_2017_-_146.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "公园里的樱花",
+   "credit": "VARDIGA, CC BY-SA 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Sakura_in_Expo_%2770_Commemorative_Park_1.jpg"
+  }
+ ]
+}
