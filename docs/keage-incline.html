@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/keage-incline.mp3&quot;, &quot;title&quot;: &quot;蹴上倾斜铁道&quot;, &quot;dur&quot;: 83.4}]" aria-label="播放器">
+<audio preload="metadata" src="a/keage-incline.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="83.40" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:23</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>铁轨上的老台车</li><li>铺着铁轨的斜坡</li><li>斜坡下面的砖砌隧道</li></ol>
+</section>
+<article class="story"><p>你脚下的铁轨，当年拉的不是火车，是船。</p><p>天皇搬去东京以后，京都不再是首都，人口变少，生意也冷清了。明治时代的人想了个办法，从琵琶湖引水，挖一条运河，想让这座老城活下去。</p><p>负责设计和监工的，是一位刚毕业的年轻工程师，田边朔郎。他在上学的时候，就把这条运河的计划，写成了毕业论文。</p><p>运河到了这里，遇上一道坡，船过不去。人们就把船整个装上台车，用缆绳把台车拉上拉下。这样一直用到二战以后。</p><p>这段斜坡铁道大约有六百米，坡顶比坡底高出大约三十六米。修好的时候，它是世界上最长的斜坡铁道。</p><p>现在，请你看铁轨上的老台车。它是后来复原的。当年，船就坐在这样的台车上。再回头看看，这道坡有多陡。</p><p>运河的水，也用来发电。旁边就是日本第一座商用的水力发电站，拉台车的电，就是它发的。后来，京都的电车也用上了这里的电。现在，这段斜坡铁道和运河的其他设施一起，成了日本的国宝。顺着铁轨，慢慢往上走。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/蹴上インクライン" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/蹴上インクライン</a></li><li><a href="https://ja.wikipedia.org/wiki/琵琶湖疏水" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/琵琶湖疏水</a></li><li><a href="https://ja.wikipedia.org/wiki/田辺朔郎" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/田辺朔郎</a></li><li><a href="https://ja.wikipedia.org/wiki/蹴上発電所" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/蹴上発電所</a></li><li><a href="https://ja.wikipedia.org/wiki/ねじりまんぽ" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/ねじりまんぽ</a></li><li><a href="https://en.wikipedia.org/wiki/Lake_Biwa_Canal" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Lake_Biwa_Canal</a></li><li><a href="https://www.city.kyoto.lg.jp/sogo/cmsfiles/contents/0000341/341520/siryou.pdf" rel="noopener noreferrer">https://www.city.kyoto.lg.jp/sogo/cmsfiles/contents/0000341/341520/siryou.pdf</a></li><li><a href="https://www.mlit.go.jp/sogoseisaku/region/infratourism/assets/pdf/meiji/kinki036.pdf" rel="noopener noreferrer">https://www.mlit.go.jp/sogoseisaku/region/infratourism/assets/pdf/meiji/kinki036.pdf</a></li><li><a href="https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94214501.html" rel="noopener noreferrer">https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/94214501.html</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="kyoto.html">听京都的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>

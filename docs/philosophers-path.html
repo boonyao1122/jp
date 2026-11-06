@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/philosophers-path.mp3&quot;, &quot;title&quot;: &quot;哲学之道&quot;, &quot;dur&quot;: 71.69}]" aria-label="播放器">
+<audio preload="metadata" src="a/philosophers-path.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="71.69" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:12</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>身边那条水渠</li><li>水渠边的樱花树</li><li>路边的枫树</li></ol>
+</section>
+<article class="story"><p>这条路，最早只是一条小路。明治时代，它是给水渠做管理用的。这条水渠，是琵琶湖运河分出来的一段。</p><p>附近住过不少文人，人们叫它文人之路。后来，京都大学的哲学家们，常在这里边走边想。哲学家西田几多郎，就是其中一位。</p><p>再后来，附近的居民为了保护这里，商量以后，给它定了现在的名字，哲学之道。</p><p>现在，请你看水渠边的樱花树。最早的树苗，是画家桥本关雪和妻子送的，有几百棵。所以，人们叫这些樱花关雪樱。现在的树，多是后来换上的。春天，它们会开花。</p><p>再看看身边的水渠。这里的水，是在蹴上分出来的，就是你刚才看过的那条运河。一条水渠，一排树，一条小路。你看到的，就是这些。</p><p>它就在一条水渠旁边，有一两公里。不赶路的话，走完大约半个小时。你不用走完。走到哪里，哪里就是一段。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/哲学の道" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/哲学の道</a></li><li><a href="https://tetsugakunomichi.jp/about_tm.html" rel="noopener noreferrer">https://tetsugakunomichi.jp/about_tm.html</a></li><li><a href="https://en.wikipedia.org/wiki/Philosopher%27s_Walk" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Philosopher%27s_Walk</a></li><li><a href="https://www.japan-guide.com/e/e3906.html" rel="noopener noreferrer">https://www.japan-guide.com/e/e3906.html</a></li><li><a href="https://www.japan.travel/en/spot/1162/" rel="noopener noreferrer">https://www.japan.travel/en/spot/1162/</a></li><li><a href="https://ja.wikipedia.org/wiki/西田幾多郎" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/西田幾多郎</a></li><li><a href="https://ja.wikipedia.org/wiki/橋本関雪" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/橋本関雪</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="kyoto.html">听京都的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>

@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/eikando.mp3&quot;, &quot;title&quot;: &quot;永观堂&quot;, &quot;dur&quot;: 73.01}]" aria-label="播放器">
+<audio preload="metadata" src="a/eikando.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="73.01" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:13</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>阿弥陀堂里回头的佛像</li><li>放生池边的枫树</li><li>天黑后亮灯的红叶</li></ol>
+</section>
+<article class="story"><p>这座寺里，有一尊佛，一直回着头。</p><p>很早以前，空海的弟子真绍，把一座旧宅子改成了寺。后来，这里成了净土宗的寺，那是法然传下来的一派。</p><p>传说，一〇八二年，一个很冷的清晨。寺里有位叫永观的和尚，已经不年轻了。他一边念佛，一边绕阿弥陀佛的像走。走了一会儿，佛像竟然走下来，走在他前面。</p><p>永观愣住了，停下了脚步。佛回过头，对他说，永观，你慢了。从那以后，这尊佛就一直回着头，人们叫它回头阿弥陀。</p><p>夜里开放的时候，阿弥陀堂也开门。请你走进去，找那尊回头的佛。它的头，转向肩膀后面。请先找一找，它在看哪一边。佛像不能拍照，就用眼睛，慢慢看。</p><p>有人说，佛回头，是在等走得慢的人。一句嫌他慢的话，被人们记了九百多年。出了阿弥陀堂，往池边走，看那里亮灯的枫树。走累了，就站一会儿，抬头看树。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://www.eikando.or.jp/mikaeriamida.html" rel="noopener noreferrer">https://www.eikando.or.jp/mikaeriamida.html</a></li><li><a href="https://www.eikando.or.jp/eikando.html" rel="noopener noreferrer">https://www.eikando.or.jp/eikando.html</a></li><li><a href="https://www.eikando.or.jp/nenpyou.html" rel="noopener noreferrer">https://www.eikando.or.jp/nenpyou.html</a></li><li><a href="https://www.eikando.or.jp/haikan.html" rel="noopener noreferrer">https://www.eikando.or.jp/haikan.html</a></li><li><a href="https://www.eikando.or.jp/osirase.html" rel="noopener noreferrer">https://www.eikando.or.jp/osirase.html</a></li><li><a href="https://www.eikando.or.jp/lp/2026/index.html" rel="noopener noreferrer">https://www.eikando.or.jp/lp/2026/index.html</a></li><li><a href="https://www.eikando.or.jp/lp/2026/images/night02.svg" rel="noopener noreferrer">https://www.eikando.or.jp/lp/2026/images/night02.svg</a></li><li><a href="https://www.eikando.or.jp/keidaizu.html" rel="noopener noreferrer">https://www.eikando.or.jp/keidaizu.html</a></li><li><a href="https://ja.wikipedia.org/wiki/禅林寺_(京都市)" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/禅林寺_(京都市)</a></li><li><a href="https://en.wikipedia.org/wiki/Eikan-d%C5%8D_Zenrin-ji" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Eikan-d%C5%8D_Zenrin-ji</a></li><li><a href="https://www.keihan.co.jp/momiji/kyoto/spot/eikandou.html" rel="noopener noreferrer">https://www.keihan.co.jp/momiji/kyoto/spot/eikandou.html</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="kyoto.html">听京都的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>
