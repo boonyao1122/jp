@@ -5,7 +5,7 @@ order: 0
 name_zh: 日本
 name_ja: 日本
 status: voiced
-voice_hash: 67687adf92a5,e1397c91f855,a7f78b226ffc,edc3019517ac
+voice_hash: 67687adf92a5,99918b32ecb5,a7f78b226ffc,edc3019517ac
 look_for: []
 book_refs:
   - 'Handbook 1913, Introduction, Celebrated Personages, Ieyasu, txt line 10177: "he had, in 1590, moved his own headquarters from Shizuoka ... to Yedo, then an unimportant fishing-village"'
@@ -112,7 +112,7 @@ chapters:
 
 将军的政府，叫幕府。你可以这样想。天皇是名义上的老板，将军是真正管事的经理。
 
-书里还写到，一一九二年，源赖朝逼着京都的朝廷，封他做将军。他在镰仓，建起了第一个幕府。你会在镰仓遇到他。
+书里还写到，一一九二年，武士源赖朝，逼着京都的朝廷，封他做将军。他在镰仓，建起了第一个幕府。你会在镰仓遇到他。
 
 一六〇三年，德川家康当上将军，在江户管事。一八六七年，最后一位将军，把权力交回给天皇。第二年，江户改名叫东京，天皇也来到了江户城。
 
