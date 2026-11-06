@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/tower-of-the-sun.mp3&quot;, &quot;title&quot;: &quot;太阳之塔&quot;, &quot;dur&quot;: 75.34}]" aria-label="播放器">
+<audio preload="metadata" src="a/tower-of-the-sun.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="75.34" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:15</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>塔顶金色的面具</li><li>正面的太阳脸</li><li>塔背后的黑太阳</li></ol>
+</section>
+<article class="story"><p>请你先抬头，看塔顶那张金色的脸。</p><p>一九七零年四月，有个男人，爬进了这张脸的眼睛里。他在里面坐了好几天，最后被警察带走。</p><p>做这座塔的人，是艺术家冈本太郎。他给塔装了三张脸。顶上的金色面具，代表未来。正面的太阳，代表现在。</p><p>现在，请你绕到塔的背后。那里有一张黑色的太阳，它代表过去。</p><p>其实，塔有第四张脸，叫地底的太阳。世博会以后，它不见了，到今天也没找到。塔里那一张，是后来复原的。</p><p>世博会早就散了，这座塔留了下来。塔的里面，关了很多年，二零一八年才重新开放。冈本太郎的养女说过，这座塔的真身，是一只乌鸦。</p><p>你现在看到的金色面具，是不锈钢做的复制品。最早的那一张，放在园里的万博展馆里。天黑以后，塔的金色眼睛会亮起来。</p><p>塔的里面有一棵树，叫生命之树，树上挂着生物进化的模型。等一下进去，抬头找那棵树。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/太陽の塔" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/太陽の塔</a></li><li><a href="https://en.wikipedia.org/wiki/Tower_of_the_Sun" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Tower_of_the_Sun</a></li><li><a href="https://ja.wikipedia.org/wiki/アイジャック事件" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/アイジャック事件</a></li><li><a href="https://ja.wikipedia.org/wiki/岡本敏子" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/岡本敏子</a></li><li><a href="https://ja.wikipedia.org/wiki/岡本太郎" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/岡本太郎</a></li><li><a href="https://taiyounotou-expo70.jp/about/" rel="noopener noreferrer">https://taiyounotou-expo70.jp/about/</a></li><li><a href="https://taiyounotou-expo70.jp/about/project/" rel="noopener noreferrer">https://taiyounotou-expo70.jp/about/project/</a></li><li><a href="https://taiyounotou-expo70.jp/guide/hours/" rel="noopener noreferrer">https://taiyounotou-expo70.jp/guide/hours/</a></li><li><a href="https://www.gltjp.com/ja/directory/item/13039/" rel="noopener noreferrer">https://www.gltjp.com/ja/directory/item/13039/</a></li><li><a href="https://ascii.jp/elem/000/004/151/4151387/" rel="noopener noreferrer">https://ascii.jp/elem/000/004/151/4151387/</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="expo-park.html">听万博纪念公园的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>
