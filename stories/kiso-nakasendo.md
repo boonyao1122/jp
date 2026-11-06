@@ -6,7 +6,7 @@ order: 9
 name_zh: 木曾路与中山道
 name_ja: 木曽路・中山道
 status: voiced
-voice_hash: ad6886b13b17
+voice_hash: 14ef5dee5fa0
 look_for: []
 book_refs:
   - 'Handbook 1913, Route 28, Nakasendo, txt line 33205: "so named in contradistinction to the Tokaido"'
@@ -37,16 +37,24 @@ sources:
   - https://tsumago.jp/learn/
   - https://ja.wikipedia.org/wiki/妻籠宿
   - https://ja.wikipedia.org/wiki/馬籠宿
-  - https://ja.wikipedia.org/wiki/恵那峡
+  - https://ja.wikipedia.org/wiki/中山道幹線
+  - https://en.wikipedia.org/wiki/Tōkaidō_Main_Line
+  - https://ja.wikipedia.org/wiki/東海道
+  - https://en.wikipedia.org/wiki/Tōkaidō_(road)
+  - https://www.mlit.go.jp/tagengo-db/common/001554506.pdf
+  - https://matcha-jp.com/jp/place-master/11190
+  - https://tsumago.jp/wordpress/wp-content/uploads/2025/12/R7妻籠宿案内図_merged.pdf
 ---
-一百多年前，一本写给外国旅人的日本指南，《日本旅行手册》，写到了这条路。它叫中山道，意思是，中间的山路。一路上，设了六十九个驿站。
+从江户去京都，有两条大路。一条沿着海，叫东海道。一条钻进山里，叫中山道。山路更远，好在要过的大河少一些。
 
-书里说，木曾的山林，当年归大名管，规矩很严。有几种好树，连一根树枝，也不许折。当年的山里，还有守林人专门看着。谁家有用禁木做的器具，就会被抓起来。
+一百多年前，《日本旅行手册》写到了这条路。书里说，它叫中间的山路，是为了和东海道分开。一路设了六十九个驿站。
 
-书里还写到，木曾川的河床里，有一块平平的岩石。人们叫它醒来之床。传说，浦岛太郎，做了一场很长的梦，就是在这块岩石上醒来的。
+书里说，木曾的山林归大名管，规矩吓人。好树连一根树枝也不许折，谁家有禁木做的器具，就会被抓起来。
 
-再往前，书里提到一条走路年代很有名的栈道。窄窄的小路，紧紧贴着陡岩。书里说，收藏老版画的人，一眼就认得这个地方。一八六一年，和宫公主嫁去江户，走的也是这条山路。后来铁路来了，这里才慢慢冷清。
+书里还写到，木曾川的河床里，有一块平岩，叫醒来之床。传说，浦岛太郎做了一场很久很久的梦，就是在这块石头上醒来的。再往前，有一条老栈道，当年窄路紧贴陡岩。书里说，收藏老版画的人，一眼就认得。
 
-今天你要走的这一段，就在木曾的山谷里。你会遇到妻笼和马笼，都是老驿站小镇。在那之前，先到惠那峡。那里的风景，是山水和一座水坝一起造出来的。
+一八六一年，和宫公主嫁去江户，走的也是这条山路。明治政府还一度选中它修铁路，最后又改了主意。后来铁路和新路修起来，这条路才慢慢冷清。
 
-带着这个念头走，这条路，是被人放下，才被留住的。
+今天你先到惠那峡，再遇到妻笼和马笼，这两个都是这条路上的老驿站。这趟旅行，大致是从江户走回奈良。这一段，就是当年真正的路。
+
+它没有被修成大路，反而被留成了老路。有时候，被人冷落，是最好的保护。

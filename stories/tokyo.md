@@ -6,7 +6,7 @@ order: 1
 name_zh: 东京
 name_ja: 東京
 status: voiced
-voice_hash: b1bc4893ab45
+voice_hash: a97f05d25b5f
 look_for: []
 ja_names:
   - 大冈忠相
@@ -16,6 +16,7 @@ book_refs:
   - "Things Japanese 1905, Fires, txt line 7588: 'To Ooka, the Japanese Solomon, who was mayor and judge of Yedo ... belongs the credit of having organised the fire-brigades'"
 sources:
   - https://en.wikipedia.org/wiki/Tokyo
+  - https://en.wikipedia.org/wiki/Edo
   - https://en.wikipedia.org/wiki/Edo_Castle
   - https://ja.wikipedia.org/wiki/東京
   - https://ja.wikipedia.org/wiki/東京奠都
@@ -25,22 +26,19 @@ sources:
   - https://ja.wikipedia.org/wiki/町火消
   - https://www.senso-ji.jp/english/
   - https://en.wikipedia.org/wiki/Sens%C5%8D-ji
-  - https://en.wikipedia.org/wiki/Z%C5%8Dj%C5%8D-ji
-  - https://en.wikipedia.org/wiki/Meiji_Shrine
-  - https://en.wikipedia.org/wiki/Tokyo_Tower
+  - https://ja.wikipedia.org/wiki/江戸
+  - https://en.wikipedia.org/wiki/Sankin-k%C5%8Dtai
 ---
-你刚到东京。这趟旅行，大致是从江户走回奈良，而第一站，就是江户。
+大约三百年前，世界上最大的城市，可能就是东京。那时候，它还叫江户。
 
-四百多年前，德川家康来到这里，把江户城当成了大本营。一六零三年，他当上将军。
+四百多年前，德川家康来到这里，一六零三年当上将军。后来，各地的大名要隔年来江户住，家人也留在这里。到十八世纪初，江户大约有一百万人。
 
-一百多年前，英国学者张伯伦写给外国旅人的《日本旅行手册》里说，从那时起，日本实际上有了两个都城。西边的京都，住着天皇。东边的江户，坐着将军。
+一百多年前，英国学者张伯伦写给外国旅人的《日本旅行手册》里说，从德川家康当上将军起，日本实际上有了两个都城。西边的京都，住着天皇。东边的江户，坐着将军。
 
-一八六八年，江户改名叫东京，意思是东边的都城。不久，明治天皇搬进了江户城，如今那里就是皇居。
+一八六八年，江户改名叫东京，意思是东边的都城。
 
-可是这座城市里，老房子很少，因为火一直是它的大敌。《日本事物志》说，江户人把冬天的大火，叫作江户之花。十八世纪初，江户的市长兼法官大冈忠相，还组织起了老百姓的消防队。
+可是这么大的城，是木头盖的。老话说，火灾和吵架，是江户的花。《日本事物志》说，江户人把冬天的大火，叫作江户之花。市长兼法官大冈忠相，还组织起了老百姓的消防队。
 
-战争里最惨的一夜，是一九四五年三月的大轰炸。浅草寺的大殿，就在那夜烧毁。所以你看到的许多古寺，都是战后重建的。
+战争里最惨的一夜，是一九四五年三月的大轰炸。浅草寺的大殿，就在那夜烧毁。
 
-接下来几天，你会遇见旧江户的浅草，也会遇见新日本的明治神宫和东京铁塔。
-
-请你慢慢走，把它当成一座烧过、又重新长好的老城。
+所以请你慢慢走，看看脚下。江户人管大火叫花，是苦中作乐。东京人从苦里练出了一样本事，烧了，就再盖起来。

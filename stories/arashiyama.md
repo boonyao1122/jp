@@ -6,7 +6,7 @@ order: 13
 name_zh: 岚山
 name_ja: 嵐山
 status: voiced
-voice_hash: 972af285edb7
+voice_hash: c385e4db2bd5
 look_for: []
 ja_names:
   - 道昌
@@ -14,6 +14,9 @@ ja_names:
   - 角仓
   - 丹波
   - 吉野
+  - 大堰川
+  - 保津川
+  - 桂川
 book_refs:
   - 'Handbook 1913, Route 37, Arashi-yama, txt line 42155: "plantations of cherry-trees, brought from Yoshino in the 13th century by the Emperor Kameyama"'
   - 'Handbook 1913, Route 37, Arashi-yama, txt line 42164: "The rafts seen on the river bring down timber from the province of Tamba."'
@@ -30,6 +33,7 @@ sources:
   - https://www.pref.kyoto.jp/nantan/do-kikaku/1292380262988.html
   - https://ja.wikipedia.org/wiki/保津川下り
   - https://ja.wikipedia.org/wiki/吉野山
+  - https://ja.wikipedia.org/wiki/桂川_(淀川水系)
 ---
 你先看一眼脚下的桥。它看上去像一座木桥，其实不是。这座渡月桥，是一九三四年造的，里面是钢筋混凝土。
 
@@ -41,8 +45,8 @@ sources:
 
 桥烧过，被大水冲走过。一六零六年，江户初年，一位姓角仓的商人，把桥重新造在今天的位置。
 
-你踩的是新桥，看到的，却是老风景。书里写的那座山，今天还在你对面。
+再看桥下的水。这一条河，其实有三个名字。在上游的峡谷里，它叫保津川。出了峡谷，一直到这座桥，叫大堰川。过了桥，往下游去，叫桂川。
 
-这一带，还有天龙寺，还有一列走老铁轨的小火车。它们的故事，你会一站一站听到。
+你踩的是新桥，看到的却是老风景。一条河，换了三个名字，月亮还是照旧，从桥上走过去。
 
 现在，先走到桥中间，看看水，再转身看看山。

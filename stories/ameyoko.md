@@ -6,7 +6,7 @@ order: 14
 name_zh: 阿美横丁
 name_ja: アメ横
 status: voiced
-voice_hash: 35fe3241f9ca
+voice_hash: c63fe9e8a2b5
 look_for:
   - 头顶开过的电车
   - 卖鲜鱼干货的摊位
@@ -17,10 +17,11 @@ sources:
   - https://ja.wikipedia.org/wiki/アメ横
   - https://en.wikipedia.org/wiki/Ameya-Yokoch%C5%8D
   - https://www.mlit.go.jp/tagengo-db/common/001553127.pdf
-  - https://www.mlit.go.jp/tagengo-db/R1-00100.html
   - https://www.japan-guide.com/e/e3012.html
   - https://rurubu.jp/andmore/spot/80011458
-  - https://en.wikipedia.org/wiki/Akihabara
+  - https://www.athome.co.jp/vox/curation/town/58260/
+  - https://www.enjoytokyo.jp/article/105623/
+  - https://president.jp/articles/-/103292
 ---
 你头顶有电车开过。轰的一声，脚下的小店一点都不慌。
 
@@ -30,12 +31,10 @@ sources:
 
 这条街，就这样站了起来。
 
-它为什么叫阿美横丁？有人说，因为当时糖稀缺，这里卖糖果。也有人说，因为摊上卖美军剩下的货，是美国横丁。两种说法，都有人信。
+它为什么叫阿美横丁？有人说，当时糖稀缺，这里到处卖糖果。也有人说，摊上卖美军剩下的货，是美国横丁。两个答案，都有人信。
 
-这段街沿着铁轨，从上野延伸到御徒町，全长五六百米，有几百家店。
+现在，请你听。鱼店的大叔，嗓门不输头顶的电车，一千日元一份的鲑鱼和金枪鱼，喊了一整年。平时这条街一天约十万人，到了年底，一天大约五十万人挤进来。
 
-现在，请你看鲜鱼、干货和各种小吃的摊位。再找上野站那头的老招牌。
+再找上野站那头的老招牌。
 
-秋叶原也一样，是从战后的黑市热闹起来的。
-
-东京很多热闹的街，都是从最难的那几年开始的。
+这条街，是从最难的那几年喊出来的。你听，它现在还在喊。

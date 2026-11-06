@@ -6,7 +6,7 @@ order: 15
 name_zh: 宇治
 name_ja: 宇治
 status: voiced
-voice_hash: 89640779b389
+voice_hash: d0c7ac0953aa
 look_for: []
 ja_names:
   - 道登
@@ -25,6 +25,8 @@ sources:
   - https://en.wikipedia.org/wiki/Gyokuro
   - https://kotobank.jp/word/宇治川-34473
   - https://archive.org/details/handbookfortrave01john
+  - https://www.pref.kyoto.jp/co-kyoto/special/230208.html
+  - https://ja.wikipedia.org/wiki/宇治駅_(JR西日本)
 book_refs:
   - "Handbook 1913, Route 39, Uji, txt line 45891: 'The Uji plantations, which date from the close of the 12th century, have always been considered the best in the empire'"
   - "Handbook 1913, Route 39, Uji, txt line 45901: 'The finest kinds, such as Gyoku-ro (Jewelled Dew), are sold at very high prices'"
@@ -43,6 +45,8 @@ book_refs:
 
 书里还说，夏天，京都人会特意来宇治，看萤火虫，也看河上的风景。
 
-宇治也打过仗。平安末年，就是平安时代快结束的时候，源平合战开打，宇治桥边打了一仗。
+这里的茶味，连街上的邮筒也知道。西日本旅客铁道宇治站的南口，有一个邮筒，做成了茶罐的样子。你路过时，可以找找看。
 
-等一下，你会走到平等院，硬币上的那座殿，就在那里。走过去的路上，慢一点。一枚硬币，一部小说，一杯茶，宇治装得下这么多。
+宇治也打过仗。平安末年，源平合战开打，宇治桥边打了一仗。
+
+一枚硬币，一部小说，一杯茶，一个茶罐邮筒。宇治不大，装得下这么多。你回家以后，看到十日元，会想起这里。

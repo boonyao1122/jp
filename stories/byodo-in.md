@@ -6,7 +6,7 @@ order: 1
 name_zh: 平等院凤凰堂
 name_ja: 平等院鳳凰堂
 status: voiced
-voice_hash: c64b70de62ad
+voice_hash: 1faa5efe9e38
 look_for:
   - 池水里凤凰堂的倒影
   - 屋顶上的凤凰
@@ -30,6 +30,7 @@ sources:
   - https://www.byodoin.or.jp/news/cat1/2024/
   - https://www.byodoin.or.jp/learn/history/
   - https://archive.org/details/handbookfortrave01john
+  - https://en.wikipedia.org/wiki/10_yen_coin
 book_refs:
   - "Handbook 1913, Route 39, Byodo-in, txt line 45969: 'intended to represent a phoenix, the two-storied central part being the body'"
   - "Handbook 1913, Route 39, Byodo-in, txt line 45972: 'the wings, while the corridor behind forms the tail'"
@@ -45,10 +46,8 @@ book_refs:
 
 那本书还说，当年这座殿，已经很破旧了。后来重新修整过，今天你看到的，是修好的样子。
 
-现在，请你站到池水这一边，隔着水，找一找翅膀。屋顶上，也有凤凰。整座殿，还映在水里。
-
-殿内参观是分批进去的，人多要等，先在池边看一眼也好。
-
 建寺一百多年后，源平合战开打。武将源赖政打了败仗，退到这里自尽。再后来，一场战火，烧掉了寺里几乎所有的建筑，凤凰堂留了下来。
 
-你手里的十日元硬币，有房子的那一面，就是它。
+现在，请你站到池水这一边，隔着水，找一找翅膀。屋顶上，也有凤凰。整座殿，还映在水里。殿内参观是分批进去的，人多要等，先在池边看一眼也好。
+
+一场战火都没烧掉它。九百多年后的今天，它就在你口袋的硬币上。你手里的十日元，有房子的那一面，就是它。
