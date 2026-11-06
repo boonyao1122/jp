@@ -6,12 +6,12 @@ order: 13
 name_zh: 岚山
 name_ja: 嵐山
 status: voiced
-voice_hash: 8a616b4a8fd2
+voice_hash: 2fbf91c9585d
 look_for: []
 ja_names:
   - 道昌
   - 龟山上皇
-  - 角仓了以
+  - 角仓
 sources:
   - https://ja.wikipedia.org/wiki/渡月橋
   - https://en.wikipedia.org/wiki/Arashiyama
@@ -19,6 +19,8 @@ sources:
   - https://www.mlit.go.jp/tagengo-db/common/001557566.pdf
   - https://www.gltjp.com/ja/article/item/20457/
   - https://rurubu.jp/andmore/spot/80027212
+  - https://en.wikipedia.org/wiki/Suminokura_Ryōi
+  - https://ja.wikipedia.org/wiki/角倉了以
 ---
 你先看一眼脚下的桥。它看上去像一座木桥，其实不是。
 
@@ -28,7 +30,7 @@ sources:
 
 相传到了镰仓时代，龟山上皇看见月亮，从桥的上空移过去。他说，这像明月在过桥。渡月这个名字，就是这么来的。
 
-后来，应仁之乱的战火，烧掉了这座桥。一六零六年，江户初年的商人角仓了以，把桥重新造在今天的位置。
+后来，应仁之乱的战火，烧掉了这座桥。一六零六年，江户初年，一位姓角仓的商人，把桥重新造在今天的位置。
 
 前些年，一场台风，吹坏了桥边的栏杆。没过多久，又修好了。
 
