@@ -172,7 +172,7 @@ def fmt(sec):
 
 # ---------- voice (spec Section 5 step 3) ----------
 VOICE = "zh-CN-XiaoxiaoNeural"
-SECONDS = {"spot": (60, 90), "city": (75, 105), "japan": (60, 90)}  # per audio file; Section 4
+SECONDS = {"spot": (60, 120), "city": (75, 120), "japan": (60, 120)}  # per audio file; operator 7 Nov: stories 1–2 minutes
 CHARS_PER_MIN = 235  # estimate; measured 243/min (test) and 228/min (Japan chapters) on 6 Nov
 RATE_FAST, RATE_SLOW = 243, 228  # safe band: lo at the fast rate, hi at the slow rate
 HANZI = re.compile(r"[㐀-鿿豈-﫿]")
