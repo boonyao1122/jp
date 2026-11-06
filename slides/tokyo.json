@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "德川家康像,江户的开创者",
+   "credit": "Traditionally attributed to Kano Tan'yu. Owned by the 7th Owari Tokugawa Munehar, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyasu.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "广重画的江户日本桥雪晴",
+   "credit": "Andō, Hiroshige, 1797-1858, artist, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Nihonbashi_yukibare_LCCN2008660972.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "后世画的一八六八江户开城",
+   "credit": "Yūki Somei 結城素明 (1875–1957), Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Surrender_of_Edo_Castle_(Meiji_Memorial_Picture_Gallery).jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "明治末年银座街头的电车",
+   "credit": "東京都交通局, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokyo_electric_railway_running_at_Ginza_street_in_Meiji_Era_in_1912.png"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "战火中被炸毁的东京",
+   "credit": "US Army Signal Corps, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Bomb_damage_in_Tokyo.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "今天的新宿高楼群",
+   "credit": "Ajay Suresh from New York, NY, USA, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Shinjuku_Skyline_(40791984045).jpg"
+  }
+ ]
+}

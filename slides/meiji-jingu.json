@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "明治神宫的人造森林",
+   "credit": "Syced, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Meiji_shrine_in_August_2007.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "明治天皇,一九零二年前",
+   "credit": "Unknown (illegibly), Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Emperor_Meiji._Before_1902.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "明治神宫的大鸟居",
+   "credit": "Asanagi, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:First_torii_gate_of_Meiji_Shrine_2022-05-04.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "路边的勃艮第葡萄酒桶",
+   "credit": "Daderot, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Burgundy_wines_-_Meiji_Shrine_-_Tokyo,_Japan_-_DSC05514.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "明治神宫的神殿",
+   "credit": "Hyppolyte de Saint-Rambert, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Meiji-jing%C5%AB_main_hall.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "神宫里的参道与树林",
+   "credit": "Syced, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Norteast_side_of_Meiji_shrine_2.jpg"
+  }
+ ]
+}

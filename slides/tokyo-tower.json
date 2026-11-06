@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "白天橙白相间的东京铁塔",
+   "credit": "Laitr Keiows, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Tower_during_daytime.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "夜里亮灯的东京铁塔",
+   "credit": "kakidai, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Tower_at_night_2.JPG"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "增上寺后升起的铁塔",
+   "credit": "KimonBerlin, CC BY-SA 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Tower_and_Zojoji_temple_(7475558188).jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "冬天暖橙色的灯光",
+   "credit": "Syced, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Tower_Christmas_illumination.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "铁塔与六本木新城",
+   "credit": "Syced, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Tower_and_Roppongi_Hills_Mori_Tower_seen_from_Hamamatsucho.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "三百三十三米高的铁塔",
+   "credit": "Ermell, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Japan-Tokyo-tower-1024.jpg"
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "立川飞机场的空中照片",
+   "credit": "国土交通省, CC BY 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tachikawa_airfield_aerial_photograph.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "二零二三年的立川飞行场",
+   "credit": "ブルーノ・プラス, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Aerial_view_Tachikawa_airfield.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "昭和天皇,一九五六年",
+   "credit": "投稿者が編集, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Emperor_Showa_1956.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "昭和纪念公园的银杏大道",
+   "credit": "Kakidai, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:2018_Showa_Memorial_Park_01.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "金黄的银杏树",
+   "credit": "Kakidai, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:2018_Showa_Memorial_Park_02.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "公园里的日本庭园",
+   "credit": "kanegen, CC BY 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Japanese_garden_in_Showa_Memorial_Park.jpg"
+  }
+ ]
+}

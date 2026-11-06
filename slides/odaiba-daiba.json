@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "日本画卷里的美国使团人物",
+   "credit": "Painted by: Hibata Ōsuke 樋畑翁輔 (prepatory sketches, and possibly the scroll)\n\nCal, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:The_Mission_of_Commodore_Perry_to_Japan_in_1854_(BM_2013,3002.1_4).jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "画卷里美国使团的乐队",
+   "credit": "Painted by: Hibata Ōsuke 樋畑翁輔 (prepatory sketches, and possibly the scroll)\n\nCal, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:The_Mission_of_Commodore_Perry_to_Japan_in_1854_(BM_2013,3002.1_70).jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "第六台场的遗址",
+   "credit": "MachineCitizen, CC BY 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:DaiRokuDaiba.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "炮台留下的石头基座",
+   "credit": "KimonBerlin, CC BY-SA 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Daiba_-_cannon_support_(8732587211).jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "旧炮台与富士电视台大楼",
+   "credit": "KimonBerlin, CC BY-SA 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Old_Fort_and_Fuji_TV_Building_(8733710250).jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "台场海边的彩虹桥",
+   "credit": "Balon Greyjoy, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:20190322_Odaiba_Rainbow_Bridge.jpg"
+  }
+ ]
+}

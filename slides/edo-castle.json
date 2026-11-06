@@ -1,0 +1,52 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "德川家康像",
+   "credit": "Traditionally attributed to Kano Tan'yu. Owned by the 7th Owari Tokugawa Munehar, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyasu.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "广重画的日比谷与樱田门",
+   "credit": "Andō, Hiroshige, 1797-1858, artist, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Yamashita_ch%C5%8D_hibiya_Soto_sakurada_LCCN2009631902.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "后世画的一八六八江户开城",
+   "credit": "Yūki Somei 結城素明 (1875–1957), Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Surrender_of_Edo_Castle_(Meiji_Memorial_Picture_Gallery).jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "江户城西丸御殿平面图",
+   "credit": "unknown, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Edo_Castle_Nishinomaru_Palace_pic_08.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "明治时代的一桥门",
+   "credit": "Unknown authorUnknown author, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hitotsubashi-mon.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "皇居的二重桥",
+   "credit": "Chris 73, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Imperial_Palace_Tokyo_Nijubashi_Bridge.JPG"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "楠木正成骑马铜像",
+   "credit": "Yutaichaguan, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kusunoki_Masashige.JPG"
+  },
+  {
+   "file": "08.jpg",
+   "caption": "和田仓喷水公园",
+   "credit": "Kakidai, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Wadakura_Fountain_Park.jpg"
+  }
+ ]
+}

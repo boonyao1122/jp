@@ -1,0 +1,52 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "广重画的浅草金龙山",
+   "credit": "Utagawa Hiroshige, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:100_views_edo_099.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "宝藏门与五重塔",
+   "credit": "Daderot, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hozomon_and_pagoda,_Sensoji_Temple,_Asakusa,_Tokyo.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "宝藏门",
+   "credit": "そらみみ (Soramimi), CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hozomon_Gate_of_Sensoji_Temple.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "浅草寺的五重塔",
+   "credit": "平摊蛋卷, CC BY 2.5, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Five-storied_Pagoda,_Sensoji_2019.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "大香炉冒出的烟",
+   "credit": "Dick Thomas Johnson, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Sensoji-_Bathing_Smoke.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "一九一零年的浅草寺",
+   "credit": "Unknown authorUnknown author, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Sensoji_temple_meiji_era_monochrome1910.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "浅草的凌云阁,十二层",
+   "credit": "unknown 不明, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ryounkaku.jpg"
+  },
+  {
+   "file": "08.jpg",
+   "caption": "清亲画的浅草夜摊,一八八一年",
+   "credit": "Kobayashi Kiyochika, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Night_Stalls_at_Asakusa_by_Kobayashi_Kiyochika,_1881,_woodblock_print,_Honolulu_Museum_of_Art.jpg"
+  }
+ ]
+}

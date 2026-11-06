@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "二十世纪初东京的菊花展",
+   "credit": "The National Archives UK, Public domain (no restrictions, per The National Archives UK), Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:The_chysanthemum_show_in_Tokyo,_Japan_by_Herbert_Ponting.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "十六瓣菊花的皇室家徽",
+   "credit": "Ueno, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kikunogomonshou.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "新宿御苑的菊花",
+   "credit": "Guilhem Vellut from Annecy, France, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Chrysanthemum_@_Shinjuku_Gyoen_National_Garden_(10959786685).jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "一株开出许多朵的大菊",
+   "credit": "Guilhem Vellut from Annecy, France, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Chrysanthemum_@_Shinjuku_Gyoen_National_Garden_(10959812905).jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "躲过战火的台湾阁",
+   "credit": "Kakidai, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Shinjuku_Gyoen_-_Taiwan_Pavilion_1.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "新宿御苑的日式庭园",
+   "credit": "MaedaAkihiko, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Shinjuku-Gyoen_Japan-garden.jpg"
+  }
+ ]
+}

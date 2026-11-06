@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "国芳画的赤穗浪士",
+   "credit": "Utagawa Kuniyoshi, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:NDL-DC_1307834_01-Utagawa_Kuniyoshi-%E7%BE%A9%E5%A3%AB%E8%A9%95%E5%AE%9A%E4%B9%8B%E5%9B%B3-crd.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "泉岳寺的四十七士墓",
+   "credit": "Adriano at Italian Wikipedia, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Graves_of_the_47_R%C5%8Dnin_at_Sengaku-ji_S%C5%8Dt%C5%8D_Zen_Buddhist_temple,_Tokyo,_Japan.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "毛利庭园的池塘",
+   "credit": "Syced, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Mohri_Garden.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "毛利庭园的夜景灯光",
+   "credit": "Syced, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Mohri_Teien_at_night_with_illuminations.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "池边的朝日电视台",
+   "credit": "Syced, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Mohri_Garden_and_TV_Asahi.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "夜里的森大厦",
+   "credit": "掬茶, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Roppongi_Hills_Mori_Tower_at_night_20131225b.jpg"
+  }
+ ]
+}

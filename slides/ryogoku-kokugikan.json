@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "江户绘卷里的明历大火",
+   "credit": "田代幸春, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Meireki_fire.JPG"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "一八四二年的回向院",
+   "credit": "Utagawa Hiroshige, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ry%C5%8Dgoku_Ekoin_Temple_1842.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "广重画的回向院一带",
+   "credit": "Utagawa Hiroshige, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303209-Utagawa_Hiroshige-%E5%90%8D%E6%89%80%E6%B1%9F%E6%88%B8%E7%99%BE%E6%99%AF_%E4%B8%A1%E3%81%94%E3%81%8F%E5%9B%9E%E5%90%91%E9%99%A2%E5%85%83%E6%9F%B3%E6%A9%8B-crd.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "回向院里的相扑纪念碑",
+   "credit": "Morio, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Sumo_monuments_in_Ekoin_2008_August.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "两国国技馆外观",
+   "credit": "江戸村のとくぞう, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ryogoku_Kokugikan-1a.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "国技馆里的相扑大赛",
+   "credit": "Gregg Tavares, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Inside_the_Ryogoku_Kokugikan_at_the_2014_January_Sumo_Tournament.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "广重画的两国桥与河岸",
+   "credit": "Utagawa Hiroshige, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Utagawa_Hiroshige_-_Ryogoku_Bridge_and_the_Great_Riverbank.jpg"
+  }
+ ]
+}

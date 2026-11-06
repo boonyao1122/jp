@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "阿美横丁入口",
+   "credit": "Syced, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ameyoko_June_2022.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "高架铁路旁的阿美横丁",
+   "credit": "Dick Thomas Johnson from Tokyo, Japan, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ameya_Yokocho_Shopping_Street_(52481502810).jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "阿美横丁中心大楼",
+   "credit": "Christophe95, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ameyoko_Center_Building.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "路边的海鲜小店",
+   "credit": "Stephen Kelly from San Francisco, CA, USA, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Seafood_Restaurant,_Ameyoko_Shopping_Street,_Ueno_(53416671901).jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "年末大促的阿美横丁",
+   "credit": "Dick Thomas Johnson, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Year_End_Sale_in_Ameya_Yokocho_Shopping_Street_(16118652595).jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "摊位挨着摊位",
+   "credit": "Stephen Kelly from San Francisco, CA, USA, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ameyoko_Shopping_Streets,_Ueno_(53416667926).jpg"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "广重画的芝与增上寺",
+   "credit": "Utagawa Hiroshige, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303285-Utagawa_Hiroshige-%E5%90%8D%E6%89%80%E6%B1%9F%E6%88%B8%E7%99%BE%E6%99%AF_%E8%8A%9D%E7%A5%9E%E6%98%8E%E5%A2%97%E4%B8%8A%E5%AF%BA-crd.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "增上寺旧照",
+   "credit": "田山宗尭, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:NDL-DC_762376_0046_0012crd-Zojoji.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "二代将军秀忠的陵庙",
+   "credit": "Unknown authorUnknown author, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Mausoleum_of_Taitokuin.JPG"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "秀忠夫人崇源院的陵庙",
+   "credit": "Unknown authorUnknown author, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Mausoleum_of_Sugenin.JPG"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "三解脱门,一九二六年",
+   "credit": "Dumas Roger, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Shiba-koen_(parc_de_Shiba)_-_la_porte_Sanmon_du_temple_Zojoji_-_A70904XS.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "增上寺旁夜里的东京铁塔",
+   "credit": "Guilhem Vellut from Annecy, France, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Zojoji_Temple_(11697220753).jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "增上寺与东京铁塔",
+   "credit": "KimonBerlin, CC BY-SA 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Tower_and_Zojoji_temple_(7475558188).jpg"
+  }
+ ]
+}

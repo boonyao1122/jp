@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "忠犬八公的照片",
+   "credit": "Unknown, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Faithful_Dog_Hachiko_Photo.png"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "约一九三三年等在涩谷站的八公",
+   "credit": "Unknown authorUnknown author, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Chuken_Hachiko_at_Shibuya_Station_c1933.png"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "八公与人们的旧合影",
+   "credit": "Unknown, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Chuken_Hachiko_with_Hamano_Family.png"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "一九三四年的八公铜像",
+   "credit": "Unknown photographer, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Statue_of_Hachik%C5%8D_by_And%C5%8D_Teru_(1934).jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "八公像揭幕那天的人群",
+   "credit": "Teru Andō, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hachik%C5%8D_Statue_with_a_Crowd.webp"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "上野博物馆里的八公标本",
+   "credit": "Momotarou2012, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hachiko_Stuffed_specimen.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "今天涩谷站前的八公像",
+   "credit": "Asanagi, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hachiko_square_2020-04-19.jpg"
+  }
+ ]
+}

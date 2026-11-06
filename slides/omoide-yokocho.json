@@ -1,0 +1,34 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "思出横丁的入口",
+   "credit": "Grendelkhan, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Entrance_to_Omoide_Yokocho.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "红灯笼挂满小巷",
+   "credit": "Dick Thomas Johnson from Tokyo, Japan, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Omoide_Yokocho_(53136554958).jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "烤串店的灯笼",
+   "credit": "Yiannis Theologos Michellis, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Yakitori_shop_lanterns_in_Omoide-Yokoch%C5%8D,_Shinjuku,_Tokyo,_Japan_2011_2_(7024865381).jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "小店挨着小店",
+   "credit": "MaedaAkihiko, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Shinjuku-West_Omoide-Yokocho.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "只有一排柜台的小店",
+   "credit": "Nesnad, CC BY 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Omoide_yokocho_2024_various_05.jpg"
+  }
+ ]
+}

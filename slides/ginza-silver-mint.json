@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "一八八零年代的银座砖街",
+   "credit": "Kimbei Kusakabe, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ginza_in_1880s.JPG"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "明治时代的服部钟楼",
+   "credit": "Unknown authorUnknown author, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:K_Hattori_building_in_Meiji_era.JPG"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "一九一二年银座的电车",
+   "credit": "東京都交通局, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokyo_electric_railway_running_at_Ginza_street_in_Meiji_Era_in_1912.png"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "约一九二二年的银座",
+   "credit": "Unknown authorUnknown author, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ginza_circa_1922.JPG"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "周日的银座步行街",
+   "credit": "Groink, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ginza-Sundays.JPG"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "今天的银座街角",
+   "credit": "Kakidai, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Matsuya_Ginza_2012.jpg"
+  }
+ ]
+}

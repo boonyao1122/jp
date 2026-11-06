@@ -1,0 +1,34 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "歌舞伎座,一九二五年",
+   "credit": "Unknown authorUnknown author, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kabuki-za_Theatre_1925.JPG"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "歌舞伎町一番街的大门",
+   "credit": "Ray Tsang from Irvine, USA, CC BY-SA 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Shinjuku_Kabukicho_Entrance.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "红色大门与霓虹招牌",
+   "credit": "ノボホショコロトソ, CC BY 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kabukicho_red_gate_and_colorful_neon_street_signs_at_night_01.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "霓虹灯下的歌舞伎町",
+   "credit": "Basile Morin, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Colorful_neon_street_signs_in_Kabukich%C5%8D,_Shinjuku,_Tokyo.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "夜晚的霓虹街道",
+   "credit": "Harry Vale from Birmingham, England, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Neon_at_Kabukicho.jpg"
+  }
+ ]
+}

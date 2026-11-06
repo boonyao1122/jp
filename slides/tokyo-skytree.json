@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "建造中的晴空塔",
+   "credit": "Namazu-tron, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Sky_Tree_under_construction_20091222-2.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "从塔下往上看",
+   "credit": "Ruthsic, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Skytree_from_base.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "三角形的塔底结构",
+   "credit": "Ravi Mundkur, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokyo07_skytree_base_structure800.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "六百三十四米高的晴空塔",
+   "credit": "Akonnchiroll, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Skytree_2023.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "隅田川边的晴空塔",
+   "credit": "Guilhem Vellut from Annecy, France, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Sumida_River_%2B_Tokyo_Skytree_@_Asakusa_(13824463095).jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "晴空塔全景",
+   "credit": "Manishprabhune, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Skytree_Panorama.jpg"
+  }
+ ]
+}
