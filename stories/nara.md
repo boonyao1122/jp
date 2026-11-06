@@ -6,12 +6,16 @@ order: 16
 name_zh: 奈良
 name_ja: 奈良
 status: voiced
-voice_hash: 4318f67c583b
+voice_hash: 7906efa67031
 look_for: []
 ja_names:
   - 平城京
   - 圣武天皇
   - 飞驒国分寺
+  - 桓武天皇
+book_refs:
+  - Handbook 1913, Route 39, The City of Nara, txt line 46034: "This step was dictated by the desire to escape from the overshadowing power of the great Buddhist monasteries."
+  - Handbook 1913, Route 39, Shoso-in (quoting Brinkley), txt line 46376: "played the game of go on boards of rich lacquer"
 sources:
   - https://en.wikipedia.org/wiki/Nara_(city)
   - https://en.wikipedia.org/wiki/Nara_period
@@ -23,19 +27,25 @@ sources:
   - https://www.todaiji.or.jp/information/daibutsuden/
   - https://ja.wikipedia.org/wiki/平安京
   - https://en.wikipedia.org/wiki/Historic_Monuments_of_Ancient_Nara
+  - https://en.wikipedia.org/wiki/Emperor_Kanmu
+  - https://ja.wikipedia.org/wiki/桓武天皇
+  - https://en.wikipedia.org/wiki/Heian_period
+  - https://en.wikipedia.org/wiki/Shōsōin
+  - https://www.museum.or.jp/report/1241
+  - https://intojapanwaraku.com/culture/48276/
 ---
 你现在站着的这座城，七一零年，就是日本的首都。
 
-那时，它叫平城京。奈良时代，就是以它命名的。这个时代很短。可是它留下的东西，今天还在。
+那时，它叫平城京。奈良时代，就是以它命名的。城是照着唐朝首都长安画的，像一块棋盘，一格一格。
 
-这片土地上，曾经铺开过一座棋盘一样的城，一格一格。样子是照着唐朝首都长安画的。那时的日本，把唐朝当作老师。
+在这里，佛教变成了国家的大工程。圣武天皇下令，每个国都要建一座国分寺。你在高山见过的飞驒国分寺，就是其中一座。七五二年，大佛举行了开眼仪式。
 
-在这座城里，佛教变成了国家的大工程。圣武天皇下令，每个国都要建一座国分寺。你在高山见过的飞驒国分寺，就是其中一座。他还下令，造一尊巨大的佛像。七五二年，大佛举行了开眼仪式。
+一百多年前，一本写给外国旅人的日本指南里，说到朝廷为什么离开。桓武天皇搬走了都城，书里给的理由是，想躲开大寺庙的势力。
 
-朝廷在这里办公，中间曾经离开几年，最后还是搬走了。后来，京都建成，用的也是长安的样子。
+同一本书，还写了东大寺仓库里的宫廷旧物。当年宫里的人，也下围棋。仓库里留下的棋子，有的是象牙做的，染成红色和深蓝色，还刻着小鸟。
 
-今天的奈良，还留着一批古迹，被联合国教科文组织列为世界遗产。寺和神社，都在里面。东大寺、兴福寺、春日大社，都是。
+今天的奈良，还留着一批古迹，被联合国教科文组织列为世界遗产。东大寺、兴福寺、春日大社，都在里面。
 
 这趟旅行，是从江户一路往回走的。走到奈良，你差不多走到了起点。
 
-等一下，你会先去东大寺，再去奈良公园。慢慢走，一千三百多年前的都城，现在你可以走进去。
+等一下，你会先去东大寺，再去奈良公园。一千三百多年前的都城，现在你可以走进去。

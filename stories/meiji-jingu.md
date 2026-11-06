@@ -6,7 +6,7 @@ order: 8
 name_zh: 明治神宫
 name_ja: 明治神宮
 status: voiced
-voice_hash: a2ffa6716158
+voice_hash: 040a04f36c25
 look_for:
   - 大鸟居的粗柱子
   - 参道旁的酒桶
@@ -29,6 +29,10 @@ sources:
   - https://bunshun.jp/articles/-/7290?page=2
   - https://ja.wikipedia.org/wiki/東京奠都
   - https://en.wikipedia.org/wiki/Emperor_Meiji
+  - https://history.state.gov/historicaldocuments/frus1912/d799
+  - https://archive.org/details/handbookfortrave01john
+book_refs:
+  - 'Handbook 1913, Introduction, Sect. 25 Celebrated Personages, entry Meiji Tenno, txt line 10529: "amidst universal mourning in which distinguished envoys from all the great powers took part"'
 ---
 你正走在一片森林里。可是它不是天然的森林，是人种出来的。
 
@@ -37,6 +41,8 @@ sources:
 人们从日本各地，捐来大约十万棵树，种下去，计划一百年后，长成天然的森林。今天的这片森林，大约有七十公顷。
 
 一八六八年，明治天皇把江户改名叫东京，又从京都来到这里，住进了江户城。
+
+明治天皇一九一二年去世。一百多年前的《日本旅行手册》写道，全国哀悼，各大国都派使节送行。那时，这座神宫还没有。
 
 走到大鸟居前，抬头看。这座鸟居用的是台湾的桧木，树龄一千五百多年，高十二米左右。树林里有两百多种树，高高低低，一起长。
 

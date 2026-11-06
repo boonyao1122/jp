@@ -6,7 +6,7 @@ order: 12
 name_zh: 台场
 name_ja: お台場
 status: voiced
-voice_hash: dfcf77197bda
+voice_hash: cd33faa10cdc
 look_for:
   - 彩虹桥的桥身
   - 台场公园的石头围墙
@@ -22,6 +22,10 @@ sources:
   - https://www.gltjp.com/zh-hant/directory/item/14511/
   - https://en.wikipedia.org/wiki/Rainbow_Bridge_(Tokyo)
   - https://ja.wikipedia.org/wiki/レインボーブリッジ
+  - https://ja.wikipedia.org/wiki/高輪築堤
+  - https://archive.org/details/handbookfortrave01john
+book_refs:
+  - 'Handbook 1913, Route 3 Yokohama to Tokyo by rail, txt line 13995: "Approaching Shinagawa, we see the forts built in Tokyo Bay during the latter days of the Shogunate"'
 ---
 台场这两个字，意思是炮台。这里的名字，来自海上人造的炮台小岛。
 
@@ -30,6 +34,8 @@ sources:
 原计划建十一座左右，在海上动工的，只有七座。今天只剩第三台场和第六台场，都是国家史迹。第三台场，一九二八年改成了公园。
 
 请你走到海边，看石头围起来的台场公园，那就是当年炮台的墙。
+
+一百多年前，一本写给外国旅人的《日本旅行手册》里，写到火车快进品川时，窗外能看见海湾里幕府末年建的炮台。书里说，它们已经没用了。
 
 再抬头看彩虹桥。它一九九三年通车，全长七百九十八米。上层是高速公路，下层也有电车和人行道。从台场公园望出去，正好能看见它。
 

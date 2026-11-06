@@ -6,7 +6,7 @@ order: 4
 name_zh: 新宿御苑菊花坛展
 name_ja: 新宿御苑 菊花壇展
 status: voiced
-voice_hash: a07a9e96ada2
+voice_hash: 003719e92644
 look_for:
   - 日式庭园里的菊花棚
   - 一株开出几百朵花的大菊
@@ -23,8 +23,14 @@ sources:
   - https://www.ktr.mlit.go.jp/eizen/shihon/eizen_shihon00000193.html
   - https://en.wikipedia.org/wiki/Imperial_Seal_of_Japan
   - https://www.enjoytokyo.jp/article/110887/
+  - https://ja.wikipedia.org/wiki/桐紋
+  - https://archive.org/details/thingsjapanesebe00chamuoft
+book_refs:
+  - 'Things Japanese 1905, entry Heraldry (index "Crests, 222"), txt line 10042: "The Imperial family has two crests, the sixteen-petalled chrysanthemum ... and the leaves and flowers of the paulownia"'
 ---
 你眼前的菊花，是日本皇室的家徽。
+
+一百多年前，《日本事物志》里说，日本皇室有两个家徽，一个是十六瓣的菊花，另一个是桐花。
 
 菊花一千多年前传到日本。一八七八年，皇室在赤坂的宫殿，办了第一次菊花展。
 
