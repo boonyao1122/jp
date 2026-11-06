@@ -6,7 +6,7 @@ order: 3
 name_zh: 北口本宫浅间神社
 name_ja: 北口本宮冨士浅間神社
 status: voiced
-voice_hash: 98e7a7358923
+voice_hash: ee85380e4f1f
 look_for:
   - 拜殿前的富士太郎杉
   - 根部连在一起的两棵柏树
@@ -22,6 +22,8 @@ ja_names:
   - 吉田口
   - 富士讲
   - 吉田火祭
+book_refs:
+  - Handbook 1913, Introduction, Gods and Goddesses, "Sengen", txt lines 6892-6894: "Sengen, the Goddess of Mount Fuji ... the Princess who makes the Flowers of the Trees to Blossom."
 sources:
   - https://ja.wikipedia.org/wiki/北口本宮冨士浅間神社
   - https://ja.wikipedia.org/wiki/鳥居成次
@@ -42,10 +44,13 @@ sources:
   - https://www.japan.travel/en/spot/1326/
   - https://www.mapple.net/article/78557/
   - https://scrapbox.io/masuimap-2023-05-26/2023-05-26_14:43:49
+  - https://en.wikipedia.org/wiki/Konohanasakuya-hime
+  - https://ja.wikipedia.org/wiki/コノハナノサクヤビメ
+  - https://d-museum.kokugakuin.ac.jp/eos/detail/?id=9024
 ---
 这座神社的拜殿旁边，有一棵杉树，大约一千岁了。
 
-这里拜的，是富士山，和山上的女神。吉田口登山路，就从这里开始。当年的信徒，先来这里参拜，再往山上走。
+这里拜的，是富士山，和山上的女神。一百多年前，《日本旅行手册》这样介绍她：她是让树上开花的公主。吉田口登山路，就从这里开始。当年的信徒，先来这里参拜，再往山上走。
 
 传说，很早以前，一位王子，叫日本武尊，东征路过这一带。他在附近的山丘上，向富士山行礼。神社的故事，就从这里开始。
 
