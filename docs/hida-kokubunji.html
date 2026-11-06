@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/hida-kokubunji.mp3&quot;, &quot;title&quot;: &quot;飞驒国分寺大银杏&quot;, &quot;dur&quot;: 73.94}]" aria-label="播放器">
+<audio preload="metadata" src="a/hida-kokubunji.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="73.94" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:14</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>粗大的银杏树干</li><li>树干上垂下的气根</li><li>三层的塔</li></ol>
+</section>
+<article class="story"><p>天快黑了，光线在变弱。这时候，抬头看这棵银杏。人们推测，它已经超过一千二百岁了。</p><p>它的树干，绕一圈大约十米，是国家指定的天然纪念物。高山城建起来的时候，它已经站在这里很久了。后来城被拆了，它还在。</p><p>奈良时代，圣武天皇下令，每个国，都要建一座国分寺。这里这一座，传说是和尚行基开的。寺里还说，这棵银杏，就是行基亲手种的。</p><p>旅行快结束时，你会去奈良的东大寺。那里的大佛，是这位天皇下令造的，行基也出了大力。</p><p>绕着树走半圈。树干上垂下来一些气根，像乳房，所以人们也叫它乳银杏。</p><p>再看寺里那座三层的塔。原来的塔没了，现在这座，是江户时代，一位飞驒的匠人重建的。正殿是室町时代重建的，是国家重要文化财。</p><p>老话说，这棵树的叶子落光了，飞驒就要下初雪。</p><p>光线越来越暗，可是银杏的叶子，看上去，还像亮着。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://hidakokubunji.jp/" rel="noopener noreferrer">https://hidakokubunji.jp/</a></li><li><a href="https://hidakokubunji.jp/html/ginkgo.html" rel="noopener noreferrer">https://hidakokubunji.jp/html/ginkgo.html</a></li><li><a href="https://ja.wikipedia.org/wiki/飛騨国分寺" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/飛騨国分寺</a></li><li><a href="https://ja.wikipedia.org/wiki/飛騨国分寺の大イチョウ" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/飛騨国分寺の大イチョウ</a></li><li><a href="https://en.wikipedia.org/wiki/Hida_Kokubun-ji" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Hida_Kokubun-ji</a></li><li><a href="https://www.kankou-gifu.jp/spot/detail_1039.html" rel="noopener noreferrer">https://www.kankou-gifu.jp/spot/detail_1039.html</a></li><li><a href="https://ja.wikipedia.org/wiki/高山城_(飛騨国)" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/高山城_(飛騨国)</a></li><li><a href="https://ja.wikipedia.org/wiki/行基" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/行基</a></li><li><a href="https://www.todaiji.or.jp/history/narajidai/" rel="noopener noreferrer">https://www.todaiji.or.jp/history/narajidai/</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="takayama.html">听高山的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>
