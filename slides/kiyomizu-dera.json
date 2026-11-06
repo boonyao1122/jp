@@ -1,0 +1,34 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "广重画的清水寺，约一八三四年",
+   "credit": "Utagawa Hiroshige, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:%E4%BA%AC%E9%83%BD%E5%90%8D%E6%89%80%E4%B9%8B%E5%86%85_%E6%B8%85%E6%B0%B4-Kiyomizu_MET_DP120469.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "二代广重画的清水寺，一八六三年",
+   "credit": "Utagawa Hiroshige II, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:NDL-DC_1309564-Utagawa_Hiroshige_II-%E6%9D%B1%E6%B5%B7%E9%81%93%E5%90%8D%E6%89%80%E4%B9%8B%E5%86%85_%E4%BA%AC%E6%B8%85%E6%B0%B4%E5%AF%BA-%E6%96%87%E4%B9%853-crd.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "清水寺悬空的舞台",
+   "credit": "Houjyou-Minori, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Stage_of_Kiyomizu_dera_01.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "舞台下纵横的木柱",
+   "credit": "Martin Falbisoner, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-01.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "明治时代的清水寺旧照",
+   "credit": "New York Public Library, No restrictions, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kiyomidzu_Temple_at_Kioto_(3110693406).jpg"
+  }
+ ]
+}

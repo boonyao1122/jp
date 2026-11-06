@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "传为源赖朝像，镰仓幕府的创立者",
+   "credit": "Fujiwara no Takanobu, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Minamoto_no_Yoritomo.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "新田义贞向海神献剑的传说",
+   "credit": "Utagawa Hiroshige, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Nitta_Yoshisada_at_Inamuragasaki.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "广重画的由比滨，江户时代",
+   "credit": "Utagawa Hiroshige, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hiroshige,_Yuigahama.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "广重画的七里滨，江户时代",
+   "credit": "Utagawa Hiroshige, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hiroshige_A_great_wave_by_the_coast.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "镰仓的中心，鹤冈八幡宫",
+   "credit": "Ocdp, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tsurugaoka_Hachimangu_001.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "贝阿托拍的镰仓大佛，约一八六五",
+   "credit": "Felice Beato, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Felice_Beato_-_Daiboots,_Kamakura.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "从长谷寺望出去的镰仓和海",
+   "credit": "sailko, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hasedera_kannon,_veduta_su_kamakura_01.JPG"
+  }
+ ]
+}
