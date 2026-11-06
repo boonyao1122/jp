@@ -6,7 +6,11 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>道顿堀 · 日本之旅</title>
-<link rel="stylesheet" href="style.css?v=d61c1ca0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;display=swap&amp;text=0123456789%C2%B7%E4%B8%80%E4%B8%89%E4%BA%8B%E4%BA%8C%E5%9F%8E%E5%A0%80%E5%B8%82%E6%84%8F%E6%95%85%E6%99%AF%E6%A0%B7%E7%82%B9%E7%95%99%E7%AB%A0%E8%8A%82%E8%BF%99%E9%81%93%E9%A1%BF">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&amp;display=swap&amp;text=%E5%A0%80%E9%81%93%E9%A0%93">
+<link rel="stylesheet" href="style.css?v=3959907f">
 </head>
 <body class="spot">
 <main class="wrap">
@@ -23,9 +27,13 @@
 
 
 
-<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/dotonbori-glico.mp3&quot;, &quot;title&quot;: &quot;道顿堀&quot;, &quot;dur&quot;: 86.9}]" aria-label="播放器">
+<section class="player no-slides" data-player data-tracks="[{&quot;src&quot;: &quot;a/dotonbori-glico.mp3&quot;, &quot;title&quot;: &quot;道顿堀&quot;, &quot;dur&quot;: 86.9}]" data-slides="" aria-label="播放器">
 <audio preload="metadata" src="a/dotonbori-glico.mp3"></audio>
-<div class="stage" data-stage>
+<div class="screen no-slides" data-screen>
+
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
+</div>
+<div class="deck" data-stage>
 <canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
 <span class="glow" data-glow aria-hidden="true" hidden></span>
 <button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
@@ -38,7 +46,6 @@
 </div>
 <button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
-<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="86.90" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>1:27</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -47,11 +54,12 @@
 
 
 <section class="card" aria-labelledby="look-h">
-<h2 id="look-h">留意这 3 样</h2>
+<h2 id="look-h">留意这三样</h2>
 <ol class="look"><li>戎桥边双臂高举的跑步人</li><li>钳子会动的大螃蟹招牌</li><li>河面上驶过的游船</li></ol>
 </section>
 <article class="story"><p>一颗糖，能让你跑三百米。这句广告词，以前就写在这块招牌上，而且它比招牌还老。一九三五年，第一代招牌，立在了这座桥边。</p><p>你看桥边那个跑步人，双臂高举，正冲过终点线，身后是一片蓝色。现在这一代，是用大约十四万颗小灯拼出来的。招牌二零二六年十一月底就要拆下来翻新，二零二七年春天换上第七代。你看到的，是它最后几个星期的样子。</p><p>再看这条河。江户时代初年，有人带头挖了它，一般认为是道顿。河没挖完，仗就打起来了。他站在秀吉的儿子秀赖那一边，死在了大阪城的战事里。别人接着挖完，河就用了他的名字。后来河边开满了戏院，有歌舞伎，也有木偶戏。</p><p>一百多年前，《日本旅行手册》也写过这里。它说，这是一条主要由戏院、杂耍场和饭馆组成的街，夜里特别热闹。下了桥，找找那只巨大的螃蟹，它不光钳子会动，腿也会动。</p><p>一百多年过去，这里依然是夜里最热闹。那个跑步人，九十多年里换了六代，那双手，从来没放下过。你不用跑，先停下来，吃点东西。</p></article>
 <details class="sources"><summary>资料来源</summary><ul><li><a href="https://www.glico.com/jp/newscenter/pressrelease/47938/" rel="noopener noreferrer">https://www.glico.com/jp/newscenter/pressrelease/47938/</a></li><li><a href="https://www.walkerplus.com/article/1449264/" rel="noopener noreferrer">https://www.walkerplus.com/article/1449264/</a></li><li><a href="https://en.wikipedia.org/wiki/Glico_Man" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Glico_Man</a></li><li><a href="https://ja.wikipedia.org/wiki/グリコサイン" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/グリコサイン</a></li><li><a href="https://en.wikipedia.org/wiki/D%C5%8Dtonbori" rel="noopener noreferrer">https://en.wikipedia.org/wiki/D%C5%8Dtonbori</a></li><li><a href="https://ja.wikipedia.org/wiki/道頓堀" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/道頓堀</a></li><li><a href="https://www.mlit.go.jp/tagengo-db/common/001653838.pdf" rel="noopener noreferrer">https://www.mlit.go.jp/tagengo-db/common/001653838.pdf</a></li><li><a href="https://www.gltjp.com/ja/directory/item/14563/" rel="noopener noreferrer">https://www.gltjp.com/ja/directory/item/14563/</a></li><li><a href="https://osaka-info.jp/spot/tombori-river-cruise/" rel="noopener noreferrer">https://osaka-info.jp/spot/tombori-river-cruise/</a></li><li><a href="https://www.nta.co.jp/activity/vehicle/cruise/kansai/osaka/264/" rel="noopener noreferrer">https://www.nta.co.jp/activity/vehicle/cruise/kansai/osaka/264/</a></li><li><a href="https://en.japantravel.com/osaka/tombori-river-cruise-in-osaka/7140" rel="noopener noreferrer">https://en.japantravel.com/osaka/tombori-river-cruise-in-osaka/7140</a></li><li><a href="https://archive.org/details/handbookfortrave01john" rel="noopener noreferrer">https://archive.org/details/handbookfortrave01john</a></li><li><a href="https://ja.wikipedia.org/wiki/道頓堀グリコサイン" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/道頓堀グリコサイン</a></li><li><a href="https://www.glico.com/jp/100th_history_contents/highlight/product/001.html" rel="noopener noreferrer">https://www.glico.com/jp/100th_history_contents/highlight/product/001.html</a></li><li><a href="https://www.glico.com/jp/customer/qa/2681/" rel="noopener noreferrer">https://www.glico.com/jp/customer/qa/2681/</a></li><li><a href="https://www.lmaga.jp/news/2020/10/172501/" rel="noopener noreferrer">https://www.lmaga.jp/news/2020/10/172501/</a></li><li><a href="https://www.daily.co.jp/leisure/kansai/2020/10/20/0013798468.shtml" rel="noopener noreferrer">https://www.daily.co.jp/leisure/kansai/2020/10/20/0013798468.shtml</a></li></ul></details>
+
 
 <p class="more-link"><a class="linkrow" href="osaka.html">听大阪的故事</a></p>
 
@@ -60,6 +68,6 @@
 
 
 </main>
-<script src="player.js?v=7150ad63" defer></script>
+<script src="player.js?v=1e025ca2" defer></script>
 </body>
 </html>

@@ -6,7 +6,11 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>东京 · 日本之旅</title>
-<link rel="stylesheet" href="style.css?v=d61c1ca0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;display=swap&amp;text=0123456789%C2%B7%E4%B8%80%E4%B8%89%E4%B8%9C%E4%BA%8B%E4%BA%8C%E4%BA%AC%E5%9F%8E%E5%B8%82%E6%84%8F%E6%95%85%E6%99%AF%E6%A0%B7%E7%82%B9%E7%95%99%E7%AB%A0%E8%8A%82%E8%BF%99">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&amp;display=swap&amp;text=%20%E3%81%84%E3%81%8A%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%AB%E3%82%AF%E3%82%B4%E3%82%B9%E3%82%BF%E3%83%81%E3%83%84%E3%83%87%E3%83%8F%E3%83%96%E3%83%A1%E3%83%A9%E3%83%AA%E3%83%AB%E3%83%AF%E3%83%B3%E3%83%BB%E3%83%BC%E4%B8%81%E4%B8%8A%E4%B8%A1%E4%B8%B8%E4%BA%A4%E4%BA%AC%E5%85%AC%E5%86%85%E5%87%BA%E5%88%A9%E5%8E%9F%E5%8F%B0%E5%92%8C%E5%96%B6%E5%9B%BD%E5%9C%92%E5%9F%8E%E5%A0%B4%E5%A2%97%E5%A3%87%E5%AE%AE%E5%AE%BF%E5%AF%BA%E5%B1%85%E5%B1%95%E5%B7%AE%E5%BA%A7%E5%BA%AD%E5%BE%A1%E5%BF%B5%E6%80%9D%E6%88%B8%E6%8A%80%E6%96%B0%E6%98%8E%E6%98%AD%E6%9D%B1%E6%A8%AA%E6%AF%9B%E6%B1%9F%E6%B2%BB%E6%B8%8B%E7%82%B9%E7%9A%87%E7%A5%9E%E7%A7%8B%E8%88%8E%E8%8A%B1%E8%8B%91%E8%8F%8A%E8%91%89%E8%A1%97%E8%A8%98%E8%B0%B7%E8%B7%A1%E9%8A%80%E9%96%80%E9%9B%B7%E9%A4%A8%E9%A7%85">
+<link rel="stylesheet" href="style.css?v=3959907f">
 </head>
 <body class="city">
 <main class="wrap">
@@ -23,9 +27,13 @@
 
 
 
-<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/tokyo.mp3&quot;, &quot;title&quot;: &quot;东京&quot;, &quot;dur&quot;: 80.3}]" aria-label="播放器">
+<section class="player no-slides" data-player data-tracks="[{&quot;src&quot;: &quot;a/tokyo.mp3&quot;, &quot;title&quot;: &quot;东京&quot;, &quot;dur&quot;: 80.3}]" data-slides="" aria-label="播放器">
 <audio preload="metadata" src="a/tokyo.mp3"></audio>
-<div class="stage" data-stage>
+<div class="screen no-slides" data-screen>
+
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
+</div>
+<div class="deck" data-stage>
 <canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
 <span class="glow" data-glow aria-hidden="true" hidden></span>
 <button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
@@ -38,7 +46,6 @@
 </div>
 <button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
-<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="80.30" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>1:20</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -53,6 +60,7 @@
 <details class="sources"><summary>资料来源</summary><ul><li><a href="https://en.wikipedia.org/wiki/Tokyo" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Tokyo</a></li><li><a href="https://en.wikipedia.org/wiki/Edo" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Edo</a></li><li><a href="https://en.wikipedia.org/wiki/Edo_Castle" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Edo_Castle</a></li><li><a href="https://ja.wikipedia.org/wiki/東京" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/東京</a></li><li><a href="https://ja.wikipedia.org/wiki/東京奠都" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/東京奠都</a></li><li><a href="https://en.wikipedia.org/wiki/Basil_Hall_Chamberlain" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Basil_Hall_Chamberlain</a></li><li><a href="https://ja.wikipedia.org/wiki/江戸の火事" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/江戸の火事</a></li><li><a href="https://en.wikipedia.org/wiki/%C5%8Coka_Tadasuke" rel="noopener noreferrer">https://en.wikipedia.org/wiki/%C5%8Coka_Tadasuke</a></li><li><a href="https://ja.wikipedia.org/wiki/町火消" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/町火消</a></li><li><a href="https://www.senso-ji.jp/english/" rel="noopener noreferrer">https://www.senso-ji.jp/english/</a></li><li><a href="https://en.wikipedia.org/wiki/Sens%C5%8D-ji" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Sens%C5%8D-ji</a></li><li><a href="https://ja.wikipedia.org/wiki/江戸" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/江戸</a></li><li><a href="https://en.wikipedia.org/wiki/Sankin-k%C5%8Dtai" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Sankin-k%C5%8Dtai</a></li></ul></details>
 
 
+
 <h2 class="sec">景点故事 · 20</h2>
 <ul class="rows"><li><a class="row" href="kaminarimon.html"><span class="names"><span class="zh">雷门</span><span class="jp" lang="ja">雷門</span></span><span class="len">1:21</span></a></li><li><a class="row" href="sensoji.html"><span class="names"><span class="zh">浅草寺</span></span><span class="len">1:15</span></a></li><li><a class="row" href="akihabara.html"><span class="names"><span class="zh">秋叶原</span><span class="jp" lang="ja">秋葉原</span></span><span class="len">1:14</span></a></li><li><a class="row" href="shinjukugyoen-kiku.html"><span class="names"><span class="zh">新宿御苑菊花坛展</span><span class="jp" lang="ja">新宿御苑 菊花壇展</span></span><span class="len">1:17</span></a></li><li><a class="row" href="kabukicho.html"><span class="names"><span class="zh">歌舞伎町</span></span><span class="len">1:29</span></a></li><li><a class="row" href="golden-gai.html"><span class="names"><span class="zh">新宿黄金街</span><span class="jp" lang="ja">新宿ゴールデン街</span></span><span class="len">1:18</span></a></li><li><a class="row" href="omoide-yokocho.html"><span class="names"><span class="zh">思出横丁</span><span class="jp" lang="ja">思い出横丁</span></span><span class="len">1:25</span></a></li><li><a class="row" href="meiji-jingu.html"><span class="names"><span class="zh">明治神宫</span><span class="jp" lang="ja">明治神宮</span></span><span class="len">1:22</span></a></li><li><a class="row" href="zojoji.html"><span class="names"><span class="zh">增上寺</span><span class="jp" lang="ja">増上寺</span></span><span class="len">1:20</span></a></li><li><a class="row" href="tokyo-tower.html"><span class="names"><span class="zh">东京铁塔</span><span class="jp" lang="ja">東京タワー</span></span><span class="len">1:26</span></a></li><li><a class="row" href="roppongi-mohri-garden.html"><span class="names"><span class="zh">毛利庭园</span><span class="jp" lang="ja">毛利庭園</span></span><span class="len">1:22</span></a></li><li><a class="row" href="odaiba-daiba.html"><span class="names"><span class="zh">台场</span><span class="jp" lang="ja">お台場</span></span><span class="len">1:15</span></a></li><li><a class="row" href="ginza-silver-mint.html"><span class="names"><span class="zh">银座</span><span class="jp" lang="ja">銀座</span></span><span class="len">1:19</span></a></li><li><a class="row" href="ameyoko.html"><span class="names"><span class="zh">阿美横丁</span><span class="jp" lang="ja">アメ横</span></span><span class="len">1:10</span></a></li><li><a class="row" href="shibuya-hachiko.html"><span class="names"><span class="zh">八公与涩谷路口</span><span class="jp" lang="ja">ハチ公・渋谷スクランブル交差点</span></span><span class="len">1:24</span></a></li><li><a class="row" href="tokyo-station.html"><span class="names"><span class="zh">东京站</span><span class="jp" lang="ja">東京駅丸の内駅舎</span></span><span class="len">1:20</span></a></li><li><a class="row" href="edo-castle.html"><span class="names"><span class="zh">皇居与江户城</span><span class="jp" lang="ja">皇居・江戸城跡</span></span><span class="len">1:19</span></a></li><li><a class="row" href="tokyo-skytree.html"><span class="names"><span class="zh">晴空塔</span><span class="jp" lang="ja">東京スカイツリー</span></span><span class="len">1:15</span></a></li><li><a class="row" href="ryogoku-kokugikan.html"><span class="names"><span class="zh">两国国技馆</span><span class="jp" lang="ja">両国国技館</span></span><span class="len">1:16</span></a></li><li><a class="row" href="showa-kinen-park.html"><span class="names"><span class="zh">昭和纪念公园</span><span class="jp" lang="ja">国営昭和記念公園</span></span><span class="len">1:05</span></a></li></ul>
 
@@ -60,6 +68,6 @@
 
 
 </main>
-<script src="player.js?v=7150ad63" defer></script>
+<script src="player.js?v=1e025ca2" defer></script>
 </body>
 </html>

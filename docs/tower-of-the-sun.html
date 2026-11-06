@@ -6,7 +6,11 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>太阳之塔 · 日本之旅</title>
-<link rel="stylesheet" href="style.css?v=d61c1ca0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;display=swap&amp;text=0123456789%C2%B7%E4%B8%80%E4%B8%89%E4%B9%8B%E4%BA%8B%E4%BA%8C%E5%9F%8E%E5%A1%94%E5%A4%AA%E5%B8%82%E6%84%8F%E6%95%85%E6%99%AF%E6%A0%B7%E7%82%B9%E7%95%99%E7%AB%A0%E8%8A%82%E8%BF%99%E9%98%B3">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&amp;display=swap&amp;text=%E3%81%AE%E5%A1%94%E5%A4%AA%E9%99%BD">
+<link rel="stylesheet" href="style.css?v=3959907f">
 </head>
 <body class="spot">
 <main class="wrap">
@@ -23,9 +27,13 @@
 
 
 
-<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/tower-of-the-sun.mp3&quot;, &quot;title&quot;: &quot;太阳之塔&quot;, &quot;dur&quot;: 103.39}]" aria-label="播放器">
+<section class="player no-slides" data-player data-tracks="[{&quot;src&quot;: &quot;a/tower-of-the-sun.mp3&quot;, &quot;title&quot;: &quot;太阳之塔&quot;, &quot;dur&quot;: 103.39}]" data-slides="" aria-label="播放器">
 <audio preload="metadata" src="a/tower-of-the-sun.mp3"></audio>
-<div class="stage" data-stage>
+<div class="screen no-slides" data-screen>
+
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
+</div>
+<div class="deck" data-stage>
 <canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
 <span class="glow" data-glow aria-hidden="true" hidden></span>
 <button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
@@ -38,7 +46,6 @@
 </div>
 <button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
-<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="103.39" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>1:43</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -47,11 +54,12 @@
 
 
 <section class="card" aria-labelledby="look-h">
-<h2 id="look-h">留意这 3 样</h2>
+<h2 id="look-h">留意这三样</h2>
 <ol class="look"><li>塔顶金色的面具</li><li>正面的太阳脸</li><li>塔背后的黑太阳</li></ol>
 </section>
 <article class="story"><p>请你先抬头，看塔顶那张金色的脸。</p><p>一九七零年四月，有个男人，爬进了这张脸的眼睛里。他是来抗议世博会的，在里面坐了好几天，最后被警察带走。第二天，塔的作者冈本太郎跑来看。据说他看得挺开心，说，这人该在里面跳个舞。</p><p>冈本是个艺术家。他看了大屋顶的模型，据说只嘟囔了一句，七十米吧，就设计出这座捅穿屋顶的塔。世博会的主题是进步与和谐，他偏偏不服气。塔顶穿出了屋顶，下雨怎么办？听说他笑着回答，摆一排鼓风机，把雨吹走。</p><p>塔有三张脸。顶上的金色面具，代表未来。正面的太阳，代表现在。现在请你绕到背后，那里有一张黑色的太阳，代表过去。其实塔还有第四张脸，叫地底的太阳。世博会以后，它不见了，到今天没找到。塔里那一张，是后来复原的。</p><p>背后那张黑太阳，直径大约八米，是用黑色陶板贴成的。塔的肚子里，有一棵大约四十一米高的生命之树，挂满了生物进化的模型。二零二五年，这座塔被定为国家的重要文化财。天黑以后，金色的眼睛会亮起来。</p><p>过去，现在，未来，三张脸，都在这一座塔上。当年有人爬进它的眼睛，冈本只说，该跳个舞。这座塔教你的，大概就是这个，别太正经，偶尔，大胆一回。</p></article>
 <details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/太陽の塔" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/太陽の塔</a></li><li><a href="https://en.wikipedia.org/wiki/Tower_of_the_Sun" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Tower_of_the_Sun</a></li><li><a href="https://ja.wikipedia.org/wiki/アイジャック事件" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/アイジャック事件</a></li><li><a href="https://ja.wikipedia.org/wiki/岡本太郎" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/岡本太郎</a></li><li><a href="https://taiyounotou-expo70.jp/about/" rel="noopener noreferrer">https://taiyounotou-expo70.jp/about/</a></li><li><a href="https://taiyounotou-expo70.jp/about/project/" rel="noopener noreferrer">https://taiyounotou-expo70.jp/about/project/</a></li><li><a href="https://taiyounotou-expo70.jp/guide/hours/" rel="noopener noreferrer">https://taiyounotou-expo70.jp/guide/hours/</a></li><li><a href="https://www.gltjp.com/ja/directory/item/13039/" rel="noopener noreferrer">https://www.gltjp.com/ja/directory/item/13039/</a></li><li><a href="https://www.expo70-park.jp/info/72409/" rel="noopener noreferrer">https://www.expo70-park.jp/info/72409/</a></li><li><a href="https://bunshun.jp/articles/-/6610" rel="noopener noreferrer">https://bunshun.jp/articles/-/6610</a></li></ul></details>
+
 
 <p class="more-link"><a class="linkrow" href="expo-park.html">听万博纪念公园的故事</a></p>
 
@@ -60,6 +68,6 @@
 
 
 </main>
-<script src="player.js?v=7150ad63" defer></script>
+<script src="player.js?v=1e025ca2" defer></script>
 </body>
 </html>

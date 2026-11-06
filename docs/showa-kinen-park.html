@@ -6,7 +6,11 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>昭和纪念公园 · 日本之旅</title>
-<link rel="stylesheet" href="style.css?v=d61c1ca0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;display=swap&amp;text=0123456789%C2%B7%E4%B8%80%E4%B8%89%E4%BA%8B%E4%BA%8C%E5%85%AC%E5%92%8C%E5%9B%AD%E5%9F%8E%E5%B8%82%E5%BF%B5%E6%84%8F%E6%95%85%E6%98%AD%E6%99%AF%E6%A0%B7%E7%82%B9%E7%95%99%E7%AB%A0%E7%BA%AA%E8%8A%82%E8%BF%99">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&amp;display=swap&amp;text=%E5%85%AC%E5%92%8C%E5%96%B6%E5%9B%BD%E5%9C%92%E5%BF%B5%E6%98%AD%E8%A8%98">
+<link rel="stylesheet" href="style.css?v=3959907f">
 </head>
 <body class="spot">
 <main class="wrap">
@@ -23,9 +27,13 @@
 
 
 
-<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/showa-kinen-park.mp3&quot;, &quot;title&quot;: &quot;昭和纪念公园&quot;, &quot;dur&quot;: 65.33}]" aria-label="播放器">
+<section class="player no-slides" data-player data-tracks="[{&quot;src&quot;: &quot;a/showa-kinen-park.mp3&quot;, &quot;title&quot;: &quot;昭和纪念公园&quot;, &quot;dur&quot;: 65.33}]" data-slides="" aria-label="播放器">
 <audio preload="metadata" src="a/showa-kinen-park.mp3"></audio>
-<div class="stage" data-stage>
+<div class="screen no-slides" data-screen>
+
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
+</div>
+<div class="deck" data-stage>
 <canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
 <span class="glow" data-glow aria-hidden="true" hidden></span>
 <button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
@@ -38,7 +46,6 @@
 </div>
 <button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
-<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="65.33" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>1:05</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -47,11 +54,12 @@
 
 
 <section class="card" aria-labelledby="look-h">
-<h2 id="look-h">留意这 3 样</h2>
+<h2 id="look-h">留意这三样</h2>
 <ol class="look"><li>银杏大道的树</li><li>日本庭园</li><li>运河水道和喷泉</li></ol>
 </section>
 <article class="story"><p>你现在走的这座公园，有好几排银杏。可它以前，是一座飞机场。</p><p>战后，美军接管了这里，叫立川基地。一九七七年，这片土地才完整地交回日本。</p><p>后来，日本要纪念昭和天皇在位五十年。这片空出来的大地，就成了一座公园。一九八三年的秋天，第一期开放，昭和天皇亲自来参加了开园仪式。那时开放了七十公顷，现在已经有一百六十多公顷，大了一倍多。</p><p>请你先走到银杏大道。树叶如果已经变黄，地上就像铺了一层金毯。就算没有全黄，灯光一照，也会变成金色。再去看看运河水道，两排银杏中间，有一条很长的水道和喷泉。</p><p>这里原来是飞机降落的地方，现在，只许落下银杏叶。</p><p>从前的军用机场，现在成了大家散步的公园。你脚下的每一片金叶，都落在当年的飞机场上。</p></article>
 <details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/国営昭和記念公園" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/国営昭和記念公園</a></li><li><a href="https://www.ktr.mlit.go.jp/showa/showa_00012.html" rel="noopener noreferrer">https://www.ktr.mlit.go.jp/showa/showa_00012.html</a></li><li><a href="https://www.ktr.mlit.go.jp/showa/showa_00011.html" rel="noopener noreferrer">https://www.ktr.mlit.go.jp/showa/showa_00011.html</a></li><li><a href="https://www.showakinen-koen.jp/autumn-night-walk/" rel="noopener noreferrer">https://www.showakinen-koen.jp/autumn-night-walk/</a></li><li><a href="https://www.showakinen-koen.jp/" rel="noopener noreferrer">https://www.showakinen-koen.jp/</a></li><li><a href="https://sp.jorudan.co.jp/leaf/news/jrd_261022_1.html" rel="noopener noreferrer">https://sp.jorudan.co.jp/leaf/news/jrd_261022_1.html</a></li><li><a href="https://kaibutsu-blog.com/showakinen-autumn-nightwalk-guide/" rel="noopener noreferrer">https://kaibutsu-blog.com/showakinen-autumn-nightwalk-guide/</a></li></ul></details>
+
 
 <p class="more-link"><a class="linkrow" href="tokyo.html">听东京的故事</a></p>
 
@@ -60,6 +68,6 @@
 
 
 </main>
-<script src="player.js?v=7150ad63" defer></script>
+<script src="player.js?v=1e025ca2" defer></script>
 </body>
 </html>

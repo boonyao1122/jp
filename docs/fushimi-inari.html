@@ -6,7 +6,11 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>伏见稻荷大社 · 日本之旅</title>
-<link rel="stylesheet" href="style.css?v=d61c1ca0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;display=swap&amp;text=0123456789%C2%B7%E4%B8%80%E4%B8%89%E4%BA%8B%E4%BA%8C%E4%BC%8F%E5%9F%8E%E5%A4%A7%E5%B8%82%E6%84%8F%E6%95%85%E6%99%AF%E6%A0%B7%E7%82%B9%E7%95%99%E7%A4%BE%E7%A8%BB%E7%AB%A0%E8%8A%82%E8%8D%B7%E8%A7%81%E8%BF%99">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&amp;display=swap&amp;text=%E4%BC%8F%E5%A4%A7%E7%A4%BE%E7%A8%B2%E8%8D%B7%E8%A6%8B">
+<link rel="stylesheet" href="style.css?v=3959907f">
 </head>
 <body class="spot">
 <main class="wrap">
@@ -23,9 +27,13 @@
 
 
 
-<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/fushimi-inari.mp3&quot;, &quot;title&quot;: &quot;伏见稻荷大社&quot;, &quot;dur&quot;: 91.39}]" aria-label="播放器">
+<section class="player no-slides" data-player data-tracks="[{&quot;src&quot;: &quot;a/fushimi-inari.mp3&quot;, &quot;title&quot;: &quot;伏见稻荷大社&quot;, &quot;dur&quot;: 91.39}]" data-slides="" aria-label="播放器">
 <audio preload="metadata" src="a/fushimi-inari.mp3"></audio>
-<div class="stage" data-stage>
+<div class="screen no-slides" data-screen>
+
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
+</div>
+<div class="deck" data-stage>
 <canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
 <span class="glow" data-glow aria-hidden="true" hidden></span>
 <button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
@@ -38,7 +46,6 @@
 </div>
 <button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
-<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="91.39" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>1:31</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -47,11 +54,12 @@
 
 
 <section class="card" aria-labelledby="look-h">
-<h2 id="look-h">留意这 3 样</h2>
+<h2 id="look-h">留意这三样</h2>
 <ol class="look"><li>嘴里叼钥匙的石狐狸</li><li>千本鸟居的双排红门</li><li>半山腰的四辻路口</li></ol>
 </section>
 <article class="story"><p>传说很久以前，有人拿一块年糕当箭靶。年糕忽然变成一只白鸟，飞走了。白鸟落下的地方，长出了稻子。</p><p>据说一千三百多年前，秦氏家族在这座山上，供奉起稻米之神，稻荷。日本各地的稻荷神社，这里是总本宫。</p><p>一百多年前，一本写给外国旅人的日本指南里，记下了另一个传说。弘法大师在东寺附近，遇见一位老人，肩上扛一捆稻子。大师认出，他就是这座神社的神。</p><p>现在，请你找一找这里的石狐狸。它们不是神，是神的使者。有的嘴里叼着一把钥匙，那是稻谷仓库的钥匙。</p><p>再抬头看这些红色鸟居。整座山上，大约有一万座。江户时代起，愿望成真了，就捐一座，当作答谢。神社说，这朱红的原料是水银，自古就用来给木头防腐。</p><p>最密的一段，叫千本鸟居，两排红门紧挨着。当年的书里说，这一段有四百多座，一排上山，一排下山。每一座门的背面，都写着捐门人的名字和日期。顺着红门往上爬，到半山腰的四辻，就能望见京都。</p><p>所以，这一万座红门，每一座，都是有人在说谢谢。哪天你的愿望成真了，记得回来，也捐一座。</p></article>
 <details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/伏見稲荷大社" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/伏見稲荷大社</a></li><li><a href="https://en.wikipedia.org/wiki/Fushimi_Inari-taisha" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Fushimi_Inari-taisha</a></li><li><a href="https://www.japan-guide.com/e/e3915.html" rel="noopener noreferrer">https://www.japan-guide.com/e/e3915.html</a></li><li><a href="https://inari.jp/about/faq/" rel="noopener noreferrer">https://inari.jp/about/faq/</a></li><li><a href="https://inari.jp/about/history/num10/" rel="noopener noreferrer">https://inari.jp/about/history/num10/</a></li><li><a href="https://inari.jp/gotinza1300/index.html" rel="noopener noreferrer">https://inari.jp/gotinza1300/index.html</a></li><li><a href="https://ja.wikipedia.org/wiki/稲荷神社" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/稲荷神社</a></li></ul></details>
+
 
 <p class="more-link"><a class="linkrow" href="kyoto.html">听京都的故事</a></p>
 
@@ -60,6 +68,6 @@
 
 
 </main>
-<script src="player.js?v=7150ad63" defer></script>
+<script src="player.js?v=1e025ca2" defer></script>
 </body>
 </html>

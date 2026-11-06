@@ -6,7 +6,11 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>东京站 · 日本之旅</title>
-<link rel="stylesheet" href="style.css?v=d61c1ca0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;display=swap&amp;text=0123456789%C2%B7%E4%B8%80%E4%B8%89%E4%B8%9C%E4%BA%8B%E4%BA%8C%E4%BA%AC%E5%9F%8E%E5%B8%82%E6%84%8F%E6%95%85%E6%99%AF%E6%A0%B7%E7%82%B9%E7%95%99%E7%AB%99%E7%AB%A0%E8%8A%82%E8%BF%99">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&amp;display=swap&amp;text=%E3%81%AE%E4%B8%B8%E4%BA%AC%E5%86%85%E6%9D%B1%E8%88%8E%E9%A7%85">
+<link rel="stylesheet" href="style.css?v=3959907f">
 </head>
 <body class="spot">
 <main class="wrap">
@@ -23,9 +27,13 @@
 
 
 
-<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/tokyo-station.mp3&quot;, &quot;title&quot;: &quot;东京站&quot;, &quot;dur&quot;: 80.28}]" aria-label="播放器">
+<section class="player no-slides" data-player data-tracks="[{&quot;src&quot;: &quot;a/tokyo-station.mp3&quot;, &quot;title&quot;: &quot;东京站&quot;, &quot;dur&quot;: 80.28}]" data-slides="" aria-label="播放器">
 <audio preload="metadata" src="a/tokyo-station.mp3"></audio>
-<div class="stage" data-stage>
+<div class="screen no-slides" data-screen>
+
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
+</div>
+<div class="deck" data-stage>
 <canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
 <span class="glow" data-glow aria-hidden="true" hidden></span>
 <button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
@@ -38,7 +46,6 @@
 </div>
 <button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
-<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="80.28" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>1:20</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -47,11 +54,12 @@
 
 
 <section class="card" aria-labelledby="look-h">
-<h2 id="look-h">留意这 3 样</h2>
+<h2 id="look-h">留意这三样</h2>
 <ol class="look"><li>南北两个圆顶</li><li>皇室专用的中央入口</li><li>一整排红砖外墙</li></ol>
 </section>
 <article class="story"><p>你回头看，这座红砖车站，差点没能活到今天。</p><p>它由建筑师辰野金吾设计，一百多年前开通。前一年的《日本旅行手册》里写道，靠近皇居的地方，一座新的中央车站，正在修建。整座楼长三百多米。关东大地震，它几乎没有受伤，还有很多人躲进车站避难。正中间那个入口，只留给皇室用。</p><p>一九四五年五月，燃烧弹落了下来。屋顶和两个圆顶烧没了，里面也毁了大半。可是红砖墙，撑住了。</p><p>战后，人们匆匆把它修成两层楼的样子。这一凑合，就是六十多年。直到二零一二年，第三层和两个圆顶，才回到原位。</p><p>请你退后几步，找那两个圆顶，一南一北。据说圆顶下面，有八只展开翅膀的鹰，每只两米多宽。再看正中间的入口。</p><p>从这个入口往前，有一条大路，通向皇居。以前天皇出行，就走这条路。等一下，你也沿着它走过去。</p><p>一座车站，被烧过，被凑合过，最后还是长回了原来的样子。差一点就没有了的它，现在就站在你面前。</p></article>
 <details class="sources"><summary>资料来源</summary><ul><li><a href="https://en.wikipedia.org/wiki/Tokyo_Station" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Tokyo_Station</a></li><li><a href="https://ja.wikipedia.org/wiki/東京駅" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/東京駅</a></li><li><a href="https://www.gltjp.com/ja/directory/item/12405/" rel="noopener noreferrer">https://www.gltjp.com/ja/directory/item/12405/</a></li><li><a href="https://ja.wikipedia.org/wiki/行幸通り" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/行幸通り</a></li><li><a href="https://archive.org/details/handbookfortrave01john" rel="noopener noreferrer">https://archive.org/details/handbookfortrave01john</a></li><li><a href="https://www.mapple.net/article/66742/" rel="noopener noreferrer">https://www.mapple.net/article/66742/</a></li><li><a href="https://imidas.jp/hotkeyword/detail/L-00-210-12-10-H016.html" rel="noopener noreferrer">https://imidas.jp/hotkeyword/detail/L-00-210-12-10-H016.html</a></li><li><a href="https://online.bunka.go.jp/heritages/detail/584567" rel="noopener noreferrer">https://online.bunka.go.jp/heritages/detail/584567</a></li></ul></details>
+
 
 <p class="more-link"><a class="linkrow" href="tokyo.html">听东京的故事</a></p>
 
@@ -60,6 +68,6 @@
 
 
 </main>
-<script src="player.js?v=7150ad63" defer></script>
+<script src="player.js?v=1e025ca2" defer></script>
 </body>
 </html>

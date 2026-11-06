@@ -6,7 +6,11 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>三町老街 · 日本之旅</title>
-<link rel="stylesheet" href="style.css?v=d61c1ca0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;display=swap&amp;text=0123456789%C2%B7%E4%B8%80%E4%B8%89%E4%BA%8B%E4%BA%8C%E5%9F%8E%E5%B8%82%E6%84%8F%E6%95%85%E6%99%AF%E6%A0%B7%E7%82%B9%E7%94%BA%E7%95%99%E7%AB%A0%E8%80%81%E8%8A%82%E8%A1%97%E8%BF%99">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&amp;display=swap&amp;text=%E4%B8%89%E7%94%BA">
+<link rel="stylesheet" href="style.css?v=3959907f">
 </head>
 <body class="spot">
 <main class="wrap">
@@ -23,9 +27,13 @@
 
 
 
-<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/sanmachi-suji.mp3&quot;, &quot;title&quot;: &quot;三町老街&quot;, &quot;dur&quot;: 78.72}]" aria-label="播放器">
+<section class="player no-slides" data-player data-tracks="[{&quot;src&quot;: &quot;a/sanmachi-suji.mp3&quot;, &quot;title&quot;: &quot;三町老街&quot;, &quot;dur&quot;: 78.72}]" data-slides="" aria-label="播放器">
 <audio preload="metadata" src="a/sanmachi-suji.mp3"></audio>
-<div class="stage" data-stage>
+<div class="screen no-slides" data-screen>
+
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
+</div>
+<div class="deck" data-stage>
 <canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
 <span class="glow" data-glow aria-hidden="true" hidden></span>
 <button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
@@ -38,7 +46,6 @@
 </div>
 <button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
-<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="78.72" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>1:19</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -47,11 +54,12 @@
 
 
 <section class="card" aria-labelledby="look-h">
-<h2 id="look-h">留意这 3 样</h2>
+<h2 id="look-h">留意这三样</h2>
 <ol class="look"><li>酒铺门口的杉玉</li><li>低低的屋檐和屋檐下的水沟</li><li>宫川上的红色中桥</li></ol>
 </section>
 <article class="story"><p>先抬头，看酒铺门口那个圆圆的大球。它是杉树叶扎的，叫杉玉。你以为它是招牌？其实，它最早是献给酒神的。</p><p>这个习俗，据说来自奈良的大神神社，那里的神山，叫三轮山。后来，各地的酒铺也学着挂，慢慢就成了一句话：新酒酿好了。刚挂上是绿的，时间久了变成褐色。看看你面前这个，是什么颜色。这一带有七家酒坊，门口挂着杉玉的，就是。</p><p>这三条街，是大名金森长近造城的时候修的，给商人住。一百多年前，《日本旅行手册》也写到，高山分三个区，叫一之町、二之町、三之町。</p><p>再抬头，没有电线杆，电线早就藏到了屋檐底下，只剩一条窄窄的天空。屋檐下的小水沟，万一起火，水就能用上。去阵屋的路上，会过宫川上那座红色的中桥。</p><p>你这一路，是从江户走回奈良。可是这个杉树球，早就从奈良走到了高山。它挂在门口，对每个路过的人，说同一句话：新酒好了，进来坐坐。</p></article>
 <details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/杉玉" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/杉玉</a></li><li><a href="https://www.sawanotsuru.co.jp/site/nihonshu-columm/knowledge/sugi-dama/" rel="noopener noreferrer">https://www.sawanotsuru.co.jp/site/nihonshu-columm/knowledge/sugi-dama/</a></li><li><a href="https://rurubu.jp/andmore/article/9689" rel="noopener noreferrer">https://rurubu.jp/andmore/article/9689</a></li><li><a href="https://www.gltjp.com/ja/directory/item/11615/" rel="noopener noreferrer">https://www.gltjp.com/ja/directory/item/11615/</a></li><li><a href="https://www.hidatakayama.or.jp/spot/detail_1101.html" rel="noopener noreferrer">https://www.hidatakayama.or.jp/spot/detail_1101.html</a></li><li><a href="https://matcha-jp.com/jp/place-master/11082" rel="noopener noreferrer">https://matcha-jp.com/jp/place-master/11082</a></li><li><a href="https://ja.wikipedia.org/wiki/三町_(高山市)" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/三町_(高山市)</a></li><li><a href="https://ja.wikipedia.org/wiki/高山城_(飛騨国)" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/高山城_(飛騨国)</a></li><li><a href="https://en.wikipedia.org/wiki/Takayama_Castle" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Takayama_Castle</a></li><li><a href="https://www.bunka.go.jp/seisaku/bunkazai/shokai/hozonchiku/pdf/94428201_45.pdf" rel="noopener noreferrer">https://www.bunka.go.jp/seisaku/bunkazai/shokai/hozonchiku/pdf/94428201_45.pdf</a></li><li><a href="https://www.city.takayama.lg.jp/_res/projects/default_project/_page_/001/001/904/r7_02_keikan.pdf" rel="noopener noreferrer">https://www.city.takayama.lg.jp/_res/projects/default_project/_page_/001/001/904/r7_02_keikan.pdf</a></li><li><a href="https://www.city.takayama.lg.jp/_res/projects/default_project/_page_/001/023/241/sanmachi_hozonkeikaku.pdf" rel="noopener noreferrer">https://www.city.takayama.lg.jp/_res/projects/default_project/_page_/001/023/241/sanmachi_hozonkeikaku.pdf</a></li><li><a href="https://www.kankou-gifu.jp/article/detail_277.html" rel="noopener noreferrer">https://www.kankou-gifu.jp/article/detail_277.html</a></li><li><a href="https://www.kankou-gifu.jp/spot/detail_3381.html" rel="noopener noreferrer">https://www.kankou-gifu.jp/spot/detail_3381.html</a></li><li><a href="https://hoshinoresorts.com/jp/guide/area/chubu/gifu/hida/sake-brewery/" rel="noopener noreferrer">https://hoshinoresorts.com/jp/guide/area/chubu/gifu/hida/sake-brewery/</a></li><li><a href="https://ja.wikipedia.org/wiki/高山町_(岐阜県)" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/高山町_(岐阜県)</a></li><li><a href="https://www.city.takayama.lg.jp/_res/projects/default_project/_page_/001/002/176/3ki_03.pdf" rel="noopener noreferrer">https://www.city.takayama.lg.jp/_res/projects/default_project/_page_/001/002/176/3ki_03.pdf</a></li><li><a href="https://ja.wikipedia.org/wiki/大神神社" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/大神神社</a></li></ul></details>
+
 
 <p class="more-link"><a class="linkrow" href="takayama.html">听高山的故事</a></p>
 
@@ -60,6 +68,6 @@
 
 
 </main>
-<script src="player.js?v=7150ad63" defer></script>
+<script src="player.js?v=1e025ca2" defer></script>
 </body>
 </html>

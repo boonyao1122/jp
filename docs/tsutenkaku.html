@@ -6,7 +6,11 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>通天阁 · 日本之旅</title>
-<link rel="stylesheet" href="style.css?v=d61c1ca0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;display=swap&amp;text=0123456789%C2%B7%E4%B8%80%E4%B8%89%E4%BA%8B%E4%BA%8C%E5%9F%8E%E5%A4%A9%E5%B8%82%E6%84%8F%E6%95%85%E6%99%AF%E6%A0%B7%E7%82%B9%E7%95%99%E7%AB%A0%E8%8A%82%E8%BF%99%E9%80%9A%E9%98%81">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&amp;display=swap&amp;text=%E5%A4%A9%E9%80%9A%E9%96%A3">
+<link rel="stylesheet" href="style.css?v=3959907f">
 </head>
 <body class="spot">
 <main class="wrap">
@@ -23,9 +27,13 @@
 
 
 
-<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/tsutenkaku.mp3&quot;, &quot;title&quot;: &quot;通天阁&quot;, &quot;dur&quot;: 89.52}]" aria-label="播放器">
+<section class="player no-slides" data-player data-tracks="[{&quot;src&quot;: &quot;a/tsutenkaku.mp3&quot;, &quot;title&quot;: &quot;通天阁&quot;, &quot;dur&quot;: 89.52}]" data-slides="" aria-label="播放器">
 <audio preload="metadata" src="a/tsutenkaku.mp3"></audio>
-<div class="stage" data-stage>
+<div class="screen no-slides" data-screen>
+
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
+</div>
+<div class="deck" data-stage>
 <canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
 <span class="glow" data-glow aria-hidden="true" hidden></span>
 <button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
@@ -38,7 +46,6 @@
 </div>
 <button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
-<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="89.52" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>1:30</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -47,11 +54,12 @@
 
 
 <section class="card" aria-labelledby="look-h">
-<h2 id="look-h">留意这 3 样</h2>
+<h2 id="look-h">留意这三样</h2>
 <ol class="look"><li>亮成圣诞树的塔身</li><li>塔身上日立的发光广告</li><li>塔上部南面的大钟</li></ol>
 </section>
 <article class="story"><p>请你抬头。这座塔的名字，据说是一位老学者起的，意思是，直通天上。</p><p>一九一二年，第一代通天阁建成，样子很怪。下面像巴黎的凯旋门，上面架了半截埃菲尔铁塔。后来它被火烧坏，拆掉，钢材拿去用在战争上。战后，附近的居民想把它找回来，一开始，街坊们听了，只觉得好笑。设计这一座的，是内藤多仲，就是东京铁塔的那位。塔连避雷针，一共一百零八米高。</p><p>塔里有一尊比利肯像，是从美国传来的幸运神。老像在游乐园关门以后不见了。上一代的比利肯，脚底被人摸了三十多年，都摸凹了下去。现在这一尊，已经是第三代。要是你上去了，摸一摸他的脚底，据说会带来好运。</p><p>日立从一九五七年起，就是这座塔的赞助商。现在站远一点，找找塔身上日立的发光广告，和上部南面的大钟。以前，塔顶的灯会报天气，白色是晴，橙色是阴，蓝色是雨。这项服务，二零二二年结束了。</p><p>这些天的晚上，塔被打扮成一棵大圣诞树。一座被拆掉的塔，被邻居们找了回来。天气不用它报了，运气，就交给比利肯的脚底吧。</p></article>
 <details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/通天閣" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/通天閣</a></li><li><a href="https://en.wikipedia.org/wiki/Tsutenkaku" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Tsutenkaku</a></li><li><a href="https://tsutenkaku.co.jp/pdf/Tsutenkaku-companyprofile.pdf" rel="noopener noreferrer">https://tsutenkaku.co.jp/pdf/Tsutenkaku-companyprofile.pdf</a></li><li><a href="https://osaka-info.jp/spot/tsutenkaku/" rel="noopener noreferrer">https://osaka-info.jp/spot/tsutenkaku/</a></li><li><a href="https://ja.wikipedia.org/wiki/ルナパーク_(大阪)" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/ルナパーク_(大阪)</a></li><li><a href="https://ja.wikipedia.org/wiki/新世界_(大阪)" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/新世界_(大阪)</a></li><li><a href="https://www.tsutenkaku.co.jp/pdf/Tsutenkaku_Neon-Renewal20230228.pdf" rel="noopener noreferrer">https://www.tsutenkaku.co.jp/pdf/Tsutenkaku_Neon-Renewal20230228.pdf</a></li><li><a href="https://bestcalendar.jp/press/162503" rel="noopener noreferrer">https://bestcalendar.jp/press/162503</a></li><li><a href="https://www.haveagood-holiday.com/zh-CN/articles/namba-hikari-tabi-2026" rel="noopener noreferrer">https://www.haveagood-holiday.com/zh-CN/articles/namba-hikari-tabi-2026</a></li><li><a href="https://www.tsutenkaku.co.jp/annai/index.html" rel="noopener noreferrer">https://www.tsutenkaku.co.jp/annai/index.html</a></li><li><a href="https://www.tsutenkaku.co.jp/other/shiryo.html" rel="noopener noreferrer">https://www.tsutenkaku.co.jp/other/shiryo.html</a></li><li><a href="https://ja.wikipedia.org/wiki/藤沢南岳" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/藤沢南岳</a></li><li><a href="https://ja.wikipedia.org/wiki/ビリケン" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/ビリケン</a></li><li><a href="https://en.wikipedia.org/wiki/Billiken" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Billiken</a></li><li><a href="https://news.yahoo.co.jp/articles/4b2a06948245bbfe9f66f5c54c249f8f685f6c78" rel="noopener noreferrer">https://news.yahoo.co.jp/articles/4b2a06948245bbfe9f66f5c54c249f8f685f6c78</a></li></ul></details>
+
 
 <p class="more-link"><a class="linkrow" href="osaka.html">听大阪的故事</a></p>
 
@@ -60,6 +68,6 @@
 
 
 </main>
-<script src="player.js?v=7150ad63" defer></script>
+<script src="player.js?v=1e025ca2" defer></script>
 </body>
 </html>

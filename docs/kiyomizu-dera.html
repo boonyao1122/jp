@@ -6,7 +6,11 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>清水寺 · 日本之旅</title>
-<link rel="stylesheet" href="style.css?v=d61c1ca0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;display=swap&amp;text=0123456789%C2%B7%E4%B8%80%E4%B8%89%E4%BA%8B%E4%BA%8C%E5%9F%8E%E5%AF%BA%E5%B8%82%E6%84%8F%E6%95%85%E6%99%AF%E6%A0%B7%E6%B0%B4%E6%B8%85%E7%82%B9%E7%95%99%E7%AB%A0%E8%8A%82%E8%BF%99">
+
+<link rel="stylesheet" href="style.css?v=3959907f">
 </head>
 <body class="spot">
 <main class="wrap">
@@ -23,9 +27,13 @@
 
 
 
-<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/kiyomizu-dera.mp3&quot;, &quot;title&quot;: &quot;清水寺&quot;, &quot;dur&quot;: 88.94}]" aria-label="播放器">
+<section class="player no-slides" data-player data-tracks="[{&quot;src&quot;: &quot;a/kiyomizu-dera.mp3&quot;, &quot;title&quot;: &quot;清水寺&quot;, &quot;dur&quot;: 88.94}]" data-slides="" aria-label="播放器">
 <audio preload="metadata" src="a/kiyomizu-dera.mp3"></audio>
-<div class="stage" data-stage>
+<div class="screen no-slides" data-screen>
+
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
+</div>
+<div class="deck" data-stage>
 <canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
 <span class="glow" data-glow aria-hidden="true" hidden></span>
 <button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
@@ -38,7 +46,6 @@
 </div>
 <button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
-<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="88.94" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>1:29</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -47,11 +54,12 @@
 
 
 <section class="card" aria-labelledby="look-h">
-<h2 id="look-h">留意这 3 样</h2>
+<h2 id="look-h">留意这三样</h2>
 <ol class="look"><li>舞台下纵横的木柱</li><li>音羽瀑布分三股的水</li><li>舞台边望出去的京都</li></ol>
 </section>
 <article class="story"><p>你脚下这座舞台，离山坡十三米，差不多四层楼高。江户时代的记录里，从这里跳下去的，有二百多次。他们是为了许愿。跳下去的人，十个里有八个多活了下来。后来，官府禁止了这件事。</p><p>这座寺，比平安京还要早。传说，是一位叫延镇的和尚开创的。有一回，一位叫田村麻吕的武将，进山猎鹿，想给生病的妻子做药。延镇劝他不要杀生。他信了观音，把自己的房子捐出来，当作大殿。</p><p>一百多年前，一本写给外国旅人的日本指南里，也记下了这件事。书里说，这位大将军，把自己的家拆了，在这里重新盖起来。书里还说，大殿深处的千手观音，三十三年才开一次门。</p><p>现在，请你先站在舞台边，往下看，再往远看。然后往前走到奥之院，回头看大殿。一根根粗木柱，纵横交错，撑着整座舞台，一根钉子也没用。</p><p>清水，就是干净的水。大殿下面的音羽瀑布，分三股流下来。人们说，一股管活得久，一股管读书，一股管爱情。可是三股都喝，会被看成太贪心。所以在这里，连喝口水，都要先想清楚，你最想要什么。</p></article>
 <details class="sources"><summary>资料来源</summary><ul><li><a href="https://en.wikipedia.org/wiki/Kiyomizu-dera" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Kiyomizu-dera</a></li><li><a href="https://ja.wikipedia.org/wiki/清水寺" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/清水寺</a></li><li><a href="https://www.japan-guide.com/e/e3901.html" rel="noopener noreferrer">https://www.japan-guide.com/e/e3901.html</a></li><li><a href="https://www.kiyomizudera.or.jp/news/open-hour.php" rel="noopener noreferrer">https://www.kiyomizudera.or.jp/news/open-hour.php</a></li><li><a href="https://www.kiyomizudera.or.jp/news/yakan-haikanautumn.php" rel="noopener noreferrer">https://www.kiyomizudera.or.jp/news/yakan-haikanautumn.php</a></li><li><a href="https://en.wikipedia.org/wiki/Sakanoue_no_Tamuramaro" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Sakanoue_no_Tamuramaro</a></li><li><a href="https://ja.wikipedia.org/wiki/坂上田村麻呂" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/坂上田村麻呂</a></li><li><a href="https://serai.jp/tour/1201836" rel="noopener noreferrer">https://serai.jp/tour/1201836</a></li><li><a href="https://hugkum.sho.jp/332003" rel="noopener noreferrer">https://hugkum.sho.jp/332003</a></li></ul></details>
+
 
 <p class="more-link"><a class="linkrow" href="kyoto.html">听京都的故事</a></p>
 
@@ -60,6 +68,6 @@
 
 
 </main>
-<script src="player.js?v=7150ad63" defer></script>
+<script src="player.js?v=1e025ca2" defer></script>
 </body>
 </html>

@@ -6,7 +6,11 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>岚山 · 日本之旅</title>
-<link rel="stylesheet" href="style.css?v=d61c1ca0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;display=swap&amp;text=0123456789%C2%B7%E4%B8%80%E4%B8%89%E4%BA%8B%E4%BA%8C%E5%9F%8E%E5%B1%B1%E5%B2%9A%E5%B8%82%E6%84%8F%E6%95%85%E6%99%AF%E6%A0%B7%E7%82%B9%E7%95%99%E7%AB%A0%E8%8A%82%E8%BF%99">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&amp;display=swap&amp;text=%E3%82%B3%E3%83%83%E3%83%88%E3%83%AD%E5%88%97%E5%A4%A9%E5%AF%BA%E5%B1%B1%E5%B3%A8%E5%B5%90%E5%B5%AF%E8%BB%8A%E9%87%8E%E9%BE%8D">
+<link rel="stylesheet" href="style.css?v=3959907f">
 </head>
 <body class="city">
 <main class="wrap">
@@ -23,9 +27,13 @@
 
 
 
-<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/arashiyama.mp3&quot;, &quot;title&quot;: &quot;岚山&quot;, &quot;dur&quot;: 93.67}]" aria-label="播放器">
+<section class="player no-slides" data-player data-tracks="[{&quot;src&quot;: &quot;a/arashiyama.mp3&quot;, &quot;title&quot;: &quot;岚山&quot;, &quot;dur&quot;: 93.67}]" data-slides="" aria-label="播放器">
 <audio preload="metadata" src="a/arashiyama.mp3"></audio>
-<div class="stage" data-stage>
+<div class="screen no-slides" data-screen>
+
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
+</div>
+<div class="deck" data-stage>
 <canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
 <span class="glow" data-glow aria-hidden="true" hidden></span>
 <button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
@@ -38,7 +46,6 @@
 </div>
 <button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
-<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="93.67" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>1:34</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -53,6 +60,7 @@
 <details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/渡月橋" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/渡月橋</a></li><li><a href="https://en.wikipedia.org/wiki/Arashiyama" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Arashiyama</a></li><li><a href="https://www.soumu.go.jp/main_content/000653676.pdf" rel="noopener noreferrer">https://www.soumu.go.jp/main_content/000653676.pdf</a></li><li><a href="https://www.gltjp.com/ja/article/item/20457/" rel="noopener noreferrer">https://www.gltjp.com/ja/article/item/20457/</a></li><li><a href="https://rurubu.jp/andmore/spot/80027212" rel="noopener noreferrer">https://rurubu.jp/andmore/spot/80027212</a></li><li><a href="https://en.wikipedia.org/wiki/Suminokura_Ryōi" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Suminokura_Ryōi</a></li><li><a href="https://ja.wikipedia.org/wiki/角倉了以" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/角倉了以</a></li><li><a href="https://ja.wikipedia.org/wiki/嵐山" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/嵐山</a></li><li><a href="https://www.pref.kyoto.jp/nantan/do-kikaku/1292380262988.html" rel="noopener noreferrer">https://www.pref.kyoto.jp/nantan/do-kikaku/1292380262988.html</a></li><li><a href="https://ja.wikipedia.org/wiki/保津川下り" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/保津川下り</a></li><li><a href="https://ja.wikipedia.org/wiki/吉野山" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/吉野山</a></li><li><a href="https://ja.wikipedia.org/wiki/桂川_(淀川水系)" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/桂川_(淀川水系)</a></li></ul></details>
 
 
+
 <h2 class="sec">景点故事 · 2</h2>
 <ul class="rows"><li><a class="row" href="tenryu-ji.html"><span class="names"><span class="zh">天龙寺</span><span class="jp" lang="ja">天龍寺</span></span><span class="len">1:27</span></a></li><li><a class="row" href="sagano-train.html"><span class="names"><span class="zh">嵯峨野小火车</span><span class="jp" lang="ja">嵯峨野トロッコ列車</span></span><span class="len">1:17</span></a></li></ul>
 
@@ -60,6 +68,6 @@
 
 
 </main>
-<script src="player.js?v=7150ad63" defer></script>
+<script src="player.js?v=1e025ca2" defer></script>
 </body>
 </html>

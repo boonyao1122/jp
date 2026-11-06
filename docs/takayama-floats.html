@@ -6,7 +6,11 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>高山祭屋台会馆 · 日本之旅</title>
-<link rel="stylesheet" href="style.css?v=d61c1ca0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;display=swap&amp;text=0123456789%C2%B7%E4%B8%80%E4%B8%89%E4%BA%8B%E4%BA%8C%E4%BC%9A%E5%8F%B0%E5%9F%8E%E5%B1%8B%E5%B1%B1%E5%B8%82%E6%84%8F%E6%95%85%E6%99%AF%E6%A0%B7%E7%82%B9%E7%95%99%E7%A5%AD%E7%AB%A0%E8%8A%82%E8%BF%99%E9%A6%86%E9%AB%98">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&amp;display=swap&amp;text=%E3%83%BB%E4%BC%9A%E5%85%AB%E5%8F%B0%E5%AE%AE%E5%B1%8B%E5%B1%B1%E5%B9%A1%E6%AB%BB%E7%A5%AD%E9%A4%A8%E9%AB%98">
+<link rel="stylesheet" href="style.css?v=3959907f">
 </head>
 <body class="spot">
 <main class="wrap">
@@ -23,9 +27,13 @@
 
 
 
-<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/takayama-floats.mp3&quot;, &quot;title&quot;: &quot;高山祭屋台会馆&quot;, &quot;dur&quot;: 73.42}]" aria-label="播放器">
+<section class="player no-slides" data-player data-tracks="[{&quot;src&quot;: &quot;a/takayama-floats.mp3&quot;, &quot;title&quot;: &quot;高山祭屋台会馆&quot;, &quot;dur&quot;: 73.42}]" data-slides="" aria-label="播放器">
 <audio preload="metadata" src="a/takayama-floats.mp3"></audio>
-<div class="stage" data-stage>
+<div class="screen no-slides" data-screen>
+
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
+</div>
+<div class="deck" data-stage>
 <canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
 <span class="glow" data-glow aria-hidden="true" hidden></span>
 <button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
@@ -38,7 +46,6 @@
 </div>
 <button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
-<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="73.42" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>1:13</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -47,11 +54,12 @@
 
 
 <section class="card" aria-labelledby="look-h">
-<h2 id="look-h">留意这 3 样</h2>
+<h2 id="look-h">留意这三样</h2>
 <ol class="look"><li>会馆里的秋祭屋台</li><li>宝珠台屋顶上的一对大乌龟</li><li>日光馆里的东照宫模型</li></ol>
 </section>
 <article class="story"><p>有人把这里的屋台，叫做会移动的阳明门。阳明门，是日光东照宫那座满身彩色雕刻的大门。东照宫供的，是德川家康。屋台，就是节日里拉着走的花车。</p><p>高山一年有两个祭。春祭属于日枝神社，秋祭属于这座樱山八幡宫。秋祭有十一台屋台，会馆轮流摆出其中四台，一年换三次。</p><p>走近了看。屋顶能升高，也能放低。转弯的时候，它能把两个轮子抬起来。再找宝珠台，屋顶上有一对大乌龟，为了让屋顶轻一点，是用和纸涂漆做的。</p><p>屋台娇气得很。人们说，它的寿命只有一百天。它一年只出门两天，一百天，就是五十年。所以大约每五十年，就要拆开大修，修三年，花几亿日元。</p><p>会馆旁边的日光馆里，有一座十分之一大小的东照宫模型。</p><p>平时，这些屋台就轮流来这里休息。你今天，正好撞见它们在偷懒。等到十月，它们才会醒过来，再上街。</p></article>
 <details class="sources"><summary>资料来源</summary><ul><li><a href="https://japan-heritage.bunka.go.jp/ja/special/137/" rel="noopener noreferrer">https://japan-heritage.bunka.go.jp/ja/special/137/</a></li><li><a href="https://ja.wikipedia.org/wiki/高山祭" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/高山祭</a></li><li><a href="https://en.wikipedia.org/wiki/Takayama_Festival" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Takayama_Festival</a></li><li><a href="https://ja.wikipedia.org/wiki/高山祭屋台会館" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/高山祭屋台会館</a></li><li><a href="https://ja.wikipedia.org/wiki/桜山八幡宮" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/桜山八幡宮</a></li><li><a href="https://ja.wikipedia.org/wiki/日光東照宮" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/日光東照宮</a></li><li><a href="http://www.hidahachimangu.jp/yataikaikan/welcome.html" rel="noopener noreferrer">http://www.hidahachimangu.jp/yataikaikan/welcome.html</a></li><li><a href="http://www.hidahachimangu.jp/yataikaikan/yatai.html" rel="noopener noreferrer">http://www.hidahachimangu.jp/yataikaikan/yatai.html</a></li><li><a href="http://www.hidahachimangu.jp/yataikaikan/nikkoukan.html" rel="noopener noreferrer">http://www.hidahachimangu.jp/yataikaikan/nikkoukan.html</a></li><li><a href="http://www.hidahachimangu.jp/yataikaikan/takumi.html" rel="noopener noreferrer">http://www.hidahachimangu.jp/yataikaikan/takumi.html</a></li><li><a href="http://www.hidahachimangu.jp/news/index.html" rel="noopener noreferrer">http://www.hidahachimangu.jp/news/index.html</a></li><li><a href="https://www.kankou-gifu.jp/article/detail_277.html" rel="noopener noreferrer">https://www.kankou-gifu.jp/article/detail_277.html</a></li><li><a href="https://www.kankou-gifu.jp/spot/detail_1244.html" rel="noopener noreferrer">https://www.kankou-gifu.jp/spot/detail_1244.html</a></li></ul></details>
+
 
 <p class="more-link"><a class="linkrow" href="takayama.html">听高山的故事</a></p>
 
@@ -60,6 +68,6 @@
 
 
 </main>
-<script src="player.js?v=7150ad63" defer></script>
+<script src="player.js?v=1e025ca2" defer></script>
 </body>
 </html>

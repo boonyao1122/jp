@@ -6,7 +6,11 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>明治神宫 · 日本之旅</title>
-<link rel="stylesheet" href="style.css?v=d61c1ca0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;display=swap&amp;text=0123456789%C2%B7%E4%B8%80%E4%B8%89%E4%BA%8B%E4%BA%8C%E5%9F%8E%E5%AE%AB%E5%B8%82%E6%84%8F%E6%95%85%E6%98%8E%E6%99%AF%E6%A0%B7%E6%B2%BB%E7%82%B9%E7%95%99%E7%A5%9E%E7%AB%A0%E8%8A%82%E8%BF%99">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&amp;display=swap&amp;text=%E5%AE%AE%E6%98%8E%E6%B2%BB%E7%A5%9E">
+<link rel="stylesheet" href="style.css?v=3959907f">
 </head>
 <body class="spot">
 <main class="wrap">
@@ -23,9 +27,13 @@
 
 
 
-<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/meiji-jingu.mp3&quot;, &quot;title&quot;: &quot;明治神宫&quot;, &quot;dur&quot;: 81.98}]" aria-label="播放器">
+<section class="player no-slides" data-player data-tracks="[{&quot;src&quot;: &quot;a/meiji-jingu.mp3&quot;, &quot;title&quot;: &quot;明治神宫&quot;, &quot;dur&quot;: 81.98}]" data-slides="" aria-label="播放器">
 <audio preload="metadata" src="a/meiji-jingu.mp3"></audio>
-<div class="stage" data-stage>
+<div class="screen no-slides" data-screen>
+
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
+</div>
+<div class="deck" data-stage>
 <canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
 <span class="glow" data-glow aria-hidden="true" hidden></span>
 <button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
@@ -38,7 +46,6 @@
 </div>
 <button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
-<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="81.98" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>1:22</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -47,11 +54,12 @@
 
 
 <section class="card" aria-labelledby="look-h">
-<h2 id="look-h">留意这 3 样</h2>
+<h2 id="look-h">留意这三样</h2>
 <ol class="look"><li>大鸟居的粗柱子</li><li>参道旁的酒桶</li><li>高高低低的各种树</li></ol>
 </section>
 <article class="story"><p>你正走在一片森林里。可是你看，它不是天生的，是人种出来的。</p><p>这块地，原来是彦根井伊家的宅邸。一九二零年，为了纪念明治天皇和他的皇后，这里建起了神宫。</p><p>当年的人从日本各地，捐来大约十万棵树。林业专家的算盘打得很远，他们要看一百年以后，让这片林子自己长，自己落叶，自己再生出新树。</p><p>明治天皇一九一二年去世。一百多年前的《日本旅行手册》写道，全国哀悼，各大国都派使节送行。那时，这座神宫还没有。</p><p>走到大鸟居前，抬头看。这座鸟居用的是台湾的桧木，树龄一千五百多年，高十二米左右。再看路边的酒桶，一边是勃艮第的葡萄酒桶，一边是清酒桶。明治天皇爱喝葡萄酒，据说是为了身体好。</p><p>一九四五年，神殿被空袭烧掉了，可是这片森林活了下来。现在的神殿，是一九五八年，靠民间捐款重建的。</p><p>所以，种树的人，是替一百年以后的人种的。现在你替他们看到了。这座森林，最大的本事，就是装得像从来就在这里。</p></article>
 <details class="sources"><summary>资料来源</summary><ul><li><a href="https://en.wikipedia.org/wiki/Meiji_Shrine" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Meiji_Shrine</a></li><li><a href="https://ja.wikipedia.org/wiki/明治神宮" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/明治神宮</a></li><li><a href="https://www.meijijingu.or.jp/en/about/" rel="noopener noreferrer">https://www.meijijingu.or.jp/en/about/</a></li><li><a href="https://www.meijijingu.or.jp/en/about/establishment/" rel="noopener noreferrer">https://www.meijijingu.or.jp/en/about/establishment/</a></li><li><a href="https://www.meijijingu.or.jp/en/whattosee/forest/" rel="noopener noreferrer">https://www.meijijingu.or.jp/en/whattosee/forest/</a></li><li><a href="https://www.meijijingu.or.jp/" rel="noopener noreferrer">https://www.meijijingu.or.jp/</a></li><li><a href="https://www.japan-guide.com/e/e3002.html" rel="noopener noreferrer">https://www.japan-guide.com/e/e3002.html</a></li><li><a href="https://smtrc.jp/town-archives/city/shibuya/p05.html?id=a01" rel="noopener noreferrer">https://smtrc.jp/town-archives/city/shibuya/p05.html?id=a01</a></li><li><a href="https://www.mlit.go.jp/tagengo-db/en/H30-00516.html" rel="noopener noreferrer">https://www.mlit.go.jp/tagengo-db/en/H30-00516.html</a></li><li><a href="https://www.mlit.go.jp/tagengo-db/en/H30-00514.html" rel="noopener noreferrer">https://www.mlit.go.jp/tagengo-db/en/H30-00514.html</a></li><li><a href="https://www.greenshinto.com/?p=15885" rel="noopener noreferrer">https://www.greenshinto.com/?p=15885</a></li><li><a href="https://bunshun.jp/articles/-/7290?page=2" rel="noopener noreferrer">https://bunshun.jp/articles/-/7290?page=2</a></li><li><a href="https://ja.wikipedia.org/wiki/東京奠都" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/東京奠都</a></li><li><a href="https://en.wikipedia.org/wiki/Emperor_Meiji" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Emperor_Meiji</a></li><li><a href="https://history.state.gov/historicaldocuments/frus1912/d799" rel="noopener noreferrer">https://history.state.gov/historicaldocuments/frus1912/d799</a></li><li><a href="https://archive.org/details/handbookfortrave01john" rel="noopener noreferrer">https://archive.org/details/handbookfortrave01john</a></li><li><a href="https://san-tatsu.jp/articles/66169/" rel="noopener noreferrer">https://san-tatsu.jp/articles/66169/</a></li><li><a href="https://www.nippon.com/ja/japan-topics/g00866/" rel="noopener noreferrer">https://www.nippon.com/ja/japan-topics/g00866/</a></li></ul></details>
+
 
 <p class="more-link"><a class="linkrow" href="tokyo.html">听东京的故事</a></p>
 
@@ -60,6 +68,6 @@
 
 
 </main>
-<script src="player.js?v=7150ad63" defer></script>
+<script src="player.js?v=1e025ca2" defer></script>
 </body>
 </html>

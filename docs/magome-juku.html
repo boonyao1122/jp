@@ -6,7 +6,11 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>马笼宿 · 日本之旅</title>
-<link rel="stylesheet" href="style.css?v=d61c1ca0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;display=swap&amp;text=0123456789%C2%B7%E4%B8%80%E4%B8%89%E4%BA%8B%E4%BA%8C%E5%9F%8E%E5%AE%BF%E5%B8%82%E6%84%8F%E6%95%85%E6%99%AF%E6%A0%B7%E7%82%B9%E7%95%99%E7%AB%A0%E7%AC%BC%E8%8A%82%E8%BF%99%E9%A9%AC">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&amp;display=swap&amp;text=%E5%AE%BF%E7%B1%A0%E9%A6%AC">
+<link rel="stylesheet" href="style.css?v=3959907f">
 </head>
 <body class="spot">
 <main class="wrap">
@@ -23,9 +27,13 @@
 
 
 
-<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/magome-juku.mp3&quot;, &quot;title&quot;: &quot;马笼宿&quot;, &quot;dur&quot;: 80.9}]" aria-label="播放器">
+<section class="player no-slides" data-player data-tracks="[{&quot;src&quot;: &quot;a/magome-juku.mp3&quot;, &quot;title&quot;: &quot;马笼宿&quot;, &quot;dur&quot;: 80.9}]" data-slides="" aria-label="播放器">
 <audio preload="metadata" src="a/magome-juku.mp3"></audio>
-<div class="stage" data-stage>
+<div class="screen no-slides" data-screen>
+
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
+</div>
+<div class="deck" data-stage>
 <canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
 <span class="glow" data-glow aria-hidden="true" hidden></span>
 <button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
@@ -38,7 +46,6 @@
 </div>
 <button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
-<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="80.90" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>1:21</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -47,11 +54,12 @@
 
 
 <section class="card" aria-labelledby="look-h">
-<h2 id="look-h">留意这 3 样</h2>
+<h2 id="look-h">留意这三样</h2>
 <ol class="look"><li>铺着石板的坡路</li><li>路边的水车小屋</li><li>路上折了几下的拐角</li></ol>
 </section>
 <article class="story"><p>木曾路，全都在山里。这是日本一部名著的第一句话，写的就是这附近。</p><p>作者叫岛崎藤村，一八七二年，生在马笼。他家世代管着本阵和村里的事。后来他写了一部很厚的小说，叫黎明之前，主人公的原型，就是他的父亲。坡路中段的藤村纪念馆，就在他家的旧址上。</p><p>这里是中山道的第四十三站，木曾十一个驿站里最靠南的一个。这条六百米左右的坡路，铺着石板。</p><p>可是马笼的老房子，没有留下来。明治和大正年间，两场大火，几乎烧光了整个驿站，只剩下石板路，和路上的拐角。今天的街，大多是照老样子重新盖起来的。</p><p>还有个小笑话。马笼原来属于长野县，二零零五年，才划进岐阜县。山还是那座山，路还是那条路，只有地址换了。</p><p>现在请你顺着坡走，找石板路拐弯处的水车小屋。这架水车，今天还在发电。</p><p>妻笼是居民决定留下的，马笼是烧了又重来的。大火烧掉了房子，烧不掉这条路。你脚下的石板，比所有的房子都老。</p></article>
 <details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/馬籠宿" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/馬籠宿</a></li><li><a href="https://zh.wikipedia.org/wiki/馬籠宿" rel="noopener noreferrer">https://zh.wikipedia.org/wiki/馬籠宿</a></li><li><a href="https://ja.wikipedia.org/wiki/山口村_(長野県)" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/山口村_(長野県)</a></li><li><a href="https://ja.wikipedia.org/wiki/島崎藤村" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/島崎藤村</a></li><li><a href="https://kiso-magome.com/about" rel="noopener noreferrer">https://kiso-magome.com/about</a></li><li><a href="https://kiso-magome.com/photo_spot" rel="noopener noreferrer">https://kiso-magome.com/photo_spot</a></li><li><a href="https://www.kankou-gifu.jp/blog/detail_114.html" rel="noopener noreferrer">https://www.kankou-gifu.jp/blog/detail_114.html</a></li><li><a href="http://www.kankou-gifu.jp/spot/detail_1363.html" rel="noopener noreferrer">http://www.kankou-gifu.jp/spot/detail_1363.html</a></li><li><a href="https://www.walkerplus.com/spot/ar0621s202040/" rel="noopener noreferrer">https://www.walkerplus.com/spot/ar0621s202040/</a></li><li><a href="https://kotobank.jp/word/夜明け前-145516" rel="noopener noreferrer">https://kotobank.jp/word/夜明け前-145516</a></li><li><a href="https://book.douban.com/subject/34908212/" rel="noopener noreferrer">https://book.douban.com/subject/34908212/</a></li><li><a href="https://ja.wikipedia.org/wiki/夜明け前" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/夜明け前</a></li><li><a href="https://www.mlit.go.jp/tagengo-db/common/001554506.pdf" rel="noopener noreferrer">https://www.mlit.go.jp/tagengo-db/common/001554506.pdf</a></li><li><a href="https://tsumago.jp/learn/" rel="noopener noreferrer">https://tsumago.jp/learn/</a></li></ul></details>
+
 
 <p class="more-link"><a class="linkrow" href="kiso-nakasendo.html">听木曾路与中山道的故事</a></p>
 
@@ -60,6 +68,6 @@
 
 
 </main>
-<script src="player.js?v=7150ad63" defer></script>
+<script src="player.js?v=1e025ca2" defer></script>
 </body>
 </html>

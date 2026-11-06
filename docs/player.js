@@ -265,7 +265,7 @@
       for (var i = 0; i < all.length; i++) all[i].open = true;
     }
 
-    function select(i, autoplay) {
+    function select(i, autoplay, natural) {
       idx = i;
       ended = false;
       if (stage) loadTiming(i);
@@ -276,6 +276,7 @@
       meta();
       setState();
       paint();
+      syncSlides(!!natural);
       if (autoplay) play();
     }
 
@@ -304,6 +305,7 @@
       ended = false;
       audio.currentTime = t;
       paint();
+      syncSlides(false);
     }
 
 
@@ -312,6 +314,7 @@
       timing = null;
       stage.classList.add('no-aura');
       sub.classList.add('no-sub');
+      if (screenEl && screenEl.classList.contains('no-slides')) screenEl.hidden = true;
     }
 
     function setCue(i, animate) {
@@ -363,7 +366,7 @@
         lastT = now; lastDraw = now;
         aura.frame(dt, talking, talking ? loudAt(audio.currentTime || 0) : 0, false);
         drawGlow();
-        if (talking) syncSub(true);
+        if (talking) { syncSub(true); syncSlides(true); }
       }
       schedule();
     }
@@ -428,6 +431,297 @@
       stage = null;
     }
 
+
+    // ---- Slides: a projector screen above the deck (all optional: no manifest = today's layout) ----
+    // Time-based: N slides share the page's whole timeline equally. Ken Burns uses the Web Animations API
+    // (transform only, compositor), driven by the same audio clock. Never any Web Audio.
+    var screenEl = root.querySelector('[data-screen]');
+    var frame = root.querySelector('[data-frame]');
+    var slides = null;
+    try { slides = JSON.parse(root.getAttribute('data-slides') || ''); } catch (e) { slides = null; }
+    var S = { index: 0, shown: 0, flashes: 0, failed: [] };
+    root.__slides = S;
+    var syncSlides = function () {};
+    var kbRun = function () {};
+    var nSlides = slides && slides.length ? slides.length : 0;
+
+    if (screenEl && frame && nSlides) {
+      var layers = frame.querySelectorAll('[data-layer]');
+      var flashEl = frame.querySelector('[data-flash]');
+      var capText = root.querySelector('[data-cap-text]');
+      var capCredit = root.querySelector('[data-cap-credit]');
+      var count = root.querySelector('[data-count]');
+      var offsets = [], total = 0;
+      for (var q = 0; q < tracks.length; q++) { offsets.push(total); total += tracks[q].dur || 0; }
+      var vis = 0;                              // which of the two layers is on screen
+      var failedAt = [];                        // slide index -> true
+      var pending = null;                       // {s, natural}: a slide being decoded for the hidden layer
+      var lastFlash = -1e9;
+      var kb = null;                            // {anim, slide, slot} on the visible layer
+      var slotMs = 0;
+      var allFailed = false;
+
+      function cssNum(name, fallback) {
+        var v = parseFloat(getComputedStyle(document.documentElement).getPropertyValue(name));
+        return isFinite(v) ? v : fallback;
+      }
+
+      function totalTime() {
+        var t = total;
+        if (!(t > 0)) t = audio.duration;
+        return isFinite(t) && t > 0 ? t : 0;
+      }
+
+      function nowT() {
+        if (ended) return totalTime();
+        return (offsets[idx] || 0) + (audio.currentTime || 0);
+      }
+
+      // the slide to show for slot k: latest non-failed <= k, else the first non-failed after
+      function pick(k) {
+        for (var a = k; a >= 0; a--) if (!failedAt[a]) return a;
+        for (var b = k + 1; b < nSlides; b++) if (!failedAt[b]) return b;
+        return -1;
+      }
+
+      function nextGood(from) {
+        for (var a = from + 1; a < nSlides; a++) if (!failedAt[a]) return a;
+        return -1;
+      }
+
+      function markFailed(i) {
+        if (failedAt[i]) return;
+        failedAt[i] = true;
+        S.failed.push(i);
+        S.failed.sort(function (a, b) { return a - b; });
+        if (pick(0) < 0 && !allFailed) {
+          allFailed = true;
+          screenEl.classList.add('no-slides');
+          root.classList.add('no-slides');
+          var plaque = frame.querySelector('.plaque');
+          var head = document.querySelector('.head');
+          if (plaque && head && !head.querySelector('.ja')) {
+            var p = document.createElement('p');
+            p.className = 'ja';
+            p.setAttribute('lang', 'ja');
+            p.textContent = plaque.textContent;
+            head.appendChild(p);
+          }
+          if (kb && kb.anim) kb.anim.cancel();
+        }
+      }
+
+      function loadInto(layer, i) {
+        // load slide i into a layer; resolves true when decoded, false on error
+        layer.__slide = i;
+        layer.__ok = false;
+        layer.alt = '';
+        layer.setAttribute('aria-hidden', 'true');
+        layer.src = slides[i].src;
+        var token = (layer.__tok = (layer.__tok || 0) + 1);
+        return new Promise(function (res) {
+          var done = function (ok) { if (layer.__tok === token) { layer.__ok = ok; res(ok); } else res(null); };
+          if (layer.decode) {
+            layer.decode().then(function () { done(true); }, function () { done(false); });
+          } else {
+            layer.onload = function () { done(true); };
+            layer.onerror = function () { done(false); };
+          }
+        });
+      }
+
+      function preloadNext() {
+        var hid = layers[1 - vis];
+        var n = nextGood(S.shown);
+        if (n < 0 || hid.__slide === n || (pending && pending.s === n)) return;
+        loadInto(hid, n).then(function (ok) {
+          if (ok === false) { markFailed(n); preloadNext(); syncSlides(false); }
+        });
+      }
+
+      function fitOf(layer) {
+        var w = layer.naturalWidth, h = layer.naturalHeight;
+        if (!w || !h) return 'near';
+        var r = w / h;
+        return r < 1.35 ? 'tall' : r > 1.65 ? 'wide' : 'near';
+      }
+
+      function kbStop() {
+        if (kb && kb.anim) { try { kb.anim.cancel(); } catch (e) { /* gone */ } }
+        kb = null;
+      }
+
+      // (re)build the Ken Burns of the visible layer for slide i, at audio time t
+      function kbBuild(i, t, slot) {
+        var layer = layers[vis];
+        kbStop();
+        layer.classList.remove('tall', 'wide', 'near');
+        slotMs = slot * 1000;
+        if (rmq.matches || !layer.animate || !(slot > 0) || !layer.naturalWidth) return;
+        var fit = fitOf(layer);
+        layer.classList.add(fit);
+        var fw = frame.clientWidth, fh = frame.clientHeight, kf;
+        if (fit === 'tall') {
+          var ih = fw * layer.naturalHeight / layer.naturalWidth;
+          var d = Math.max(0, (1 - fh / ih) * 100);
+          kf = [{ transform: 'translateY(0%) scale(1)' }, { transform: 'translateY(-' + d.toFixed(2) + '%) scale(1.04)' }];
+        } else if (fit === 'wide') {
+          var iw = fh * layer.naturalWidth / layer.naturalHeight;
+          var dx = Math.max(0, (1 - fw / iw) * 100).toFixed(2);
+          var a = { transform: 'translateX(0%) scale(1.02)' }, b = { transform: 'translateX(-' + dx + '%) scale(1.06)' };
+          kf = i % 2 === 0 ? [a, b] : [b, a];
+        } else {
+          var c = { transform: 'scale(1) translate(0%,0%)' }, e = { transform: 'scale(1.12) translate(-2%,-1.5%)' };
+          var c2 = { transform: 'scale(1.12) translate(2%,1%)' };
+          kf = i % 2 === 0 ? [c, e] : [c2, c];
+        }
+        var anim = layer.animate(kf, { duration: slotMs, easing: 'linear', fill: 'both' });
+        kb = { anim: anim, slide: i, slot: slot };
+        anim.pause();
+        kbAt(t, true);
+      }
+
+      function kbAt(t, force) {
+        if (!kb || !kb.anim) return;
+        var want = Math.max(0, Math.min(slotMs, (t - kb.slide * kb.slot) * 1000));
+        var cur = kb.anim.currentTime || 0;
+        if (force || Math.abs(cur - want) > slotMs * 0.03) kb.anim.currentTime = want;
+      }
+
+      kbRun = function () {
+        if (!kb || !kb.anim) return;
+        var go = !audio.paused && !loading && !audio.ended;
+        try { if (go) kb.anim.play(); else kb.anim.pause(); } catch (e) { /* gone */ }
+      };
+
+      function setCaption(i, animate) {
+        var sl = slides[i];
+        count.textContent = (i + 1) + '/' + nSlides;
+        capText.textContent = sl.cap;
+        capCredit.textContent = sl.credit;
+        capCredit.setAttribute('href', sl.href);
+        layers[vis].alt = sl.cap;
+        layers[vis].removeAttribute('aria-hidden');
+        if (animate && capText.animate && !rmq.matches) {
+          capText.animate([{ opacity: 0 }, { opacity: 1 }], { duration: cssMs('--dur-ui', 200), easing: 'ease-out' });
+        }
+      }
+
+      function cssMs(name, fallback) {
+        var v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+        var m = v.match(/^([\d.]+)ms$/);
+        return m ? parseFloat(m[1]) : fallback;
+      }
+
+      function doFlash() {
+        var now = performance.now();
+        if (rmq.matches || !flashEl.animate || now - lastFlash < 2000) return;
+        lastFlash = now;
+        S.flashes++;
+        flashEl.animate([{ opacity: cssNum('--flash-peak', 0.6) }, { opacity: 0 }],
+          { duration: cssMs('--flash-dur', 110), easing: 'ease-out' });
+      }
+
+      function swapTo(i, natural, t, slot) {
+        var old = layers[vis];
+        vis = 1 - vis;
+        var nw = layers[vis];
+        kbStop();
+        nw.classList.add('is-on');
+        old.classList.remove('is-on');
+        old.alt = '';
+        old.setAttribute('aria-hidden', 'true');
+        old.getAnimations && old.getAnimations().forEach(function (a) { a.cancel(); });
+        S.shown = i;
+        kbBuild(i, t, slot);
+        setCaption(i, true);
+        if (natural) doFlash();
+        kbRun();
+        preloadNext();
+      }
+
+      syncSlides = function (natural) {
+        if (allFailed) return;
+        var tot = totalTime();
+        if (!(tot > 0)) return;
+        var t = nowT();
+        var slot = tot / nSlides;
+        var k = Math.min(nSlides - 1, Math.max(0, Math.floor(t / slot)));
+        S.index = k;
+        var want = pick(k);
+        if (want < 0) return;
+        var clock = Math.min(tot, t);
+        if (want === S.shown) {
+          // same slide: keep the animation on the audio clock
+          pending = null;
+          if (kb && kb.slot === slot) kbAt(clock, false);
+          else if (layers[vis].naturalWidth) { kbBuild(want, clock, slot); kbRun(); }
+          return;
+        }
+        if (pending && pending.s === want) return;
+        var isNext = want === S.shown + 1 || (want > S.shown && nextGood(S.shown) === want);
+        var req = { s: want, natural: !!natural && isNext && !audio.seeking && !audio.paused };
+        pending = req;
+        var hid = layers[1 - vis];
+        var ready = hid.__slide === want && hid.__ok && hid.naturalWidth > 0;
+        var go = function (ok) {
+          if (pending !== req) return;
+          pending = null;
+          if (ok === false) { markFailed(want); syncSlides(false); return; }
+          if (ok === null) return;
+          var tot2 = totalTime(), slot2 = tot2 / nSlides, t2 = Math.min(tot2, nowT());
+          // the audio may have moved on while decoding: show what is right now
+          var k2 = Math.min(nSlides - 1, Math.max(0, Math.floor(t2 / slot2)));
+          var w2 = pick(k2);
+          S.index = k2;
+          if (w2 !== want) { syncSlides(false); return; }
+          swapTo(want, req.natural, t2, slot2);
+        };
+        if (ready) go(true);
+        else loadInto(hid, want).then(go);
+      };
+
+      // slide 1 is in the HTML
+      var first = layers[0];
+      S.shown = 0;
+      var settle = function () {
+        frame.classList.remove('is-loading');
+        setTimeout(function () { frame.classList.remove('fade'); }, 400);
+        if (!first.naturalWidth) { markFailed(0); syncSlides(false); return; }
+        var tot = totalTime();
+        kbBuild(0, 0, (tot || 0) / nSlides);
+        kbRun();
+        syncSlides(false);
+        preloadNext();
+      };
+      if (first.complete && first.naturalWidth) {
+        settle();
+      } else if (first.complete) {
+        markFailed(0);
+        syncSlides(false);
+      } else {
+        frame.classList.add('is-loading');
+        frame.classList.add('fade');
+        first.addEventListener('load', settle, { once: true });
+        first.addEventListener('error', function () { frame.classList.remove('is-loading'); markFailed(0); syncSlides(false); }, { once: true });
+      }
+      if (audio.duration || total) syncSlides(false);
+
+      var rz = 0;
+      var syncSlidesRebuild = function () {
+        var tot = totalTime();
+        if (!(tot > 0)) return;
+        var slot = tot / nSlides;
+        kbBuild(S.shown, Math.min(tot, nowT()), slot);
+        kbRun();
+        syncSlides(false);
+      };
+      var resync = function () { if (!allFailed) syncSlidesRebuild(); };
+      window.addEventListener('resize', function () { clearTimeout(rz); rz = setTimeout(resync, 150); });
+      document.addEventListener('visibilitychange', function () { if (!document.hidden) { syncSlides(false); kbRun(); } });
+      if (rmq.addEventListener) rmq.addEventListener('change', function () { resync(); });
+    }
+
     playBtn.addEventListener('click', toggle);
     var skips = root.querySelectorAll('[data-skip]');
     for (var s = 0; s < skips.length; s++) {
@@ -439,6 +733,7 @@
       ended = false;
       audio.currentTime = parseFloat(scrub.value) || 0;
       paint();
+      syncSlides(false);
     });
     for (var r = 0; r < rows.length; r++) {
       (function (row, i) {
@@ -449,20 +744,22 @@
     }
 
     audio.addEventListener('canplay', function () { if (loading) setLoading(false); setState(); });
-    audio.addEventListener('playing', function () { setLoading(false); setState(); });
-    audio.addEventListener('waiting', function () { if (!audio.paused) setLoading(true); });
-    audio.addEventListener('pause', function () { setLoading(false); setState(); });
-    audio.addEventListener('timeupdate', paint);
+    audio.addEventListener('playing', function () { setLoading(false); setState(); syncSlides(false); kbRun(); });
+    audio.addEventListener('waiting', function () { if (!audio.paused) setLoading(true); kbRun(); });
+    audio.addEventListener('pause', function () { setLoading(false); setState(); kbRun(); });
+    audio.addEventListener('seeked', function () { syncSlides(false); });
+    audio.addEventListener('timeupdate', function () { paint(); syncSlides(true); });
     audio.addEventListener('loadedmetadata', paint);
     audio.addEventListener('durationchange', paint);
     audio.addEventListener('error', fail);
     audio.addEventListener('ended', function () {
       if (idx + 1 < tracks.length) {
-        select(idx + 1, true);
+        select(idx + 1, true, true);
       } else {
         audio.currentTime = 0;
         setState();
         paint();
+        syncSlides(false);
       }
     });
 
