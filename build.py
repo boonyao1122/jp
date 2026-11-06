@@ -171,7 +171,8 @@ def fmt(sec):
 # ---------- voice (spec Section 5 step 3) ----------
 VOICE = "zh-CN-XiaoxiaoNeural"
 SECONDS = {"spot": (60, 90), "city": (75, 105), "japan": (60, 90)}  # per audio file; Section 4
-CHARS_PER_MIN = 237  # measured 6 Nov
+CHARS_PER_MIN = 235  # estimate; measured 243/min (test) and 228/min (Japan chapters) on 6 Nov
+RATE_FAST, RATE_SLOW = 243, 228  # safe band: lo at the fast rate, hi at the slow rate
 HANZI = re.compile(r"[㐀-鿿豈-﫿]")
 BAD_FOR_TTS = re.compile(r"[0-9()（）\[\]【】/⚠<>]")
 
@@ -307,8 +308,8 @@ def info(stories, slug):
     lo, hi = SECONDS[s["level"]]
     for rel, t in spoken(s):
         n = len(HANZI.findall(t))
-        print("  %s: %d characters, about %.0f s (range %d–%d s = about %d–%d characters)%s" % (
-            rel, n, n * 60.0 / CHARS_PER_MIN, lo, hi, lo * CHARS_PER_MIN // 60, hi * CHARS_PER_MIN // 60,
+        print("  %s: %d characters, about %.0f s (range %d–%d s; safe band %d–%d characters)%s" % (
+            rel, n, n * 60.0 / CHARS_PER_MIN, lo, hi, -(-lo * RATE_FAST // 60), hi * RATE_SLOW // 60,
             "" if not BAD_FOR_TTS.search(t) else " | BAD for TTS: %r" % sorted(set(BAD_FOR_TTS.findall(t)))))
 
 
