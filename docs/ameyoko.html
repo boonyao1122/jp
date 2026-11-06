@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/ameyoko.mp3&quot;, &quot;title&quot;: &quot;阿美横丁&quot;, &quot;dur&quot;: 69.55}]" aria-label="播放器">
+<audio preload="metadata" src="a/ameyoko.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="69.55" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:10</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>头顶开过的电车</li><li>卖鲜鱼干货的摊位</li><li>上野站那头的老招牌</li></ol>
+</section>
+<article class="story"><p>你头顶有电车开过。轰的一声，脚下的小店一点都不慌。</p><p>大约八十年前，这一带被空袭烧成了废墟。战争刚结束，小贩就在上野站旁边摆摊，人们叫它黑市。</p><p>战后不久，警察出动，要清理黑市。可黑市怎么也管不住。于是警察和区里，去请商人近藤广吉帮忙。他盖了一座市场，能容下大约八十家店。</p><p>这条街，就这样站了起来。</p><p>它为什么叫阿美横丁？有人说，因为当时糖稀缺，这里卖糖果。也有人说，因为摊上卖美军剩下的货，是美国横丁。两种说法，都有人信。</p><p>这段街沿着铁轨，从上野延伸到御徒町，全长五六百米，有几百家店。</p><p>现在，请你看鲜鱼、干货和各种小吃的摊位。再找上野站那头的老招牌。</p><p>秋叶原也一样，是从战后的黑市热闹起来的。</p><p>东京很多热闹的街，都是从最难的那几年开始的。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/アメ横" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/アメ横</a></li><li><a href="https://en.wikipedia.org/wiki/Ameya-Yokoch%C5%8D" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Ameya-Yokoch%C5%8D</a></li><li><a href="https://www.mlit.go.jp/tagengo-db/common/001553127.pdf" rel="noopener noreferrer">https://www.mlit.go.jp/tagengo-db/common/001553127.pdf</a></li><li><a href="https://www.mlit.go.jp/tagengo-db/R1-00100.html" rel="noopener noreferrer">https://www.mlit.go.jp/tagengo-db/R1-00100.html</a></li><li><a href="https://www.japan-guide.com/e/e3012.html" rel="noopener noreferrer">https://www.japan-guide.com/e/e3012.html</a></li><li><a href="https://rurubu.jp/andmore/spot/80011458" rel="noopener noreferrer">https://rurubu.jp/andmore/spot/80011458</a></li><li><a href="https://en.wikipedia.org/wiki/Akihabara" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Akihabara</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="tokyo.html">听东京的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>

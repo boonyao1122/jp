@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/roppongi-mohri-garden.mp3&quot;, &quot;title&quot;: &quot;毛利庭园&quot;, &quot;dur&quot;: 68.04}]" aria-label="播放器">
+<audio preload="metadata" src="a/roppongi-mohri-garden.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="68.04" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:08</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>池边旧宅的标识</li><li>名叫葫芦池的池塘</li><li>榉树坂路上的灯饰</li></ol>
+</section>
+<article class="story"><p>你现在站的这座池塘花园，三百多年前是大名毛利家的宅子。</p><p>一六五零年前后，毛利秀元在这里建起江户的住所。</p><p>一七零三年，有名的赤穗浪士，一共四十七人，替主君报了仇。幕府把浪士们分给四家大名看管，其中十人，送到了毛利家。</p><p>他们奉命切腹，就在这座宅子里。据说，毛利家待他们很冷淡。今天这里，也没有立纪念碑。</p><p>请你看池边，找那块旧宅留下的标识。这个池子，名字叫葫芦池。</p><p>再抬头，旁边那座森大厦，高二百三十八米。一座大名的宅子，变成了高楼脚下的花园。</p><p>到了明治时代，园子换了主人，又有了新名字。二零零三年，六本木之丘开张，今天的毛利庭园也跟着诞生。园名里的毛利，正是这家人的姓。</p><p>园里的灯，亮着也好，没亮也好。今晚，就把它当成三百年前的夜。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/毛利庭園" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/毛利庭園</a></li><li><a href="https://en.wikipedia.org/wiki/Forty-seven_r%C5%8Dnin" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Forty-seven_r%C5%8Dnin</a></li><li><a href="https://en.wikipedia.org/wiki/Roppongi_Hills" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Roppongi_Hills</a></li><li><a href="https://ja.wikipedia.org/wiki/六本木ヒルズ森タワー" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/六本木ヒルズ森タワー</a></li><li><a href="https://www.city.minato.tokyo.jp/documents/56376/bukeyashiki.pdf" rel="noopener noreferrer">https://www.city.minato.tokyo.jp/documents/56376/bukeyashiki.pdf</a></li><li><a href="https://www.enjoytokyo.jp/article/108679/" rel="noopener noreferrer">https://www.enjoytokyo.jp/article/108679/</a></li><li><a href="https://san-tatsu.jp/articles/513532/" rel="noopener noreferrer">https://san-tatsu.jp/articles/513532/</a></li><li><a href="https://san-tatsu.jp/pressrelease/558251/" rel="noopener noreferrer">https://san-tatsu.jp/pressrelease/558251/</a></li><li><a href="https://www.gltjp.com/zh-hans/directory/item/10109/" rel="noopener noreferrer">https://www.gltjp.com/zh-hans/directory/item/10109/</a></li><li><a href="https://www.gotokyo.org/jp/spot/396/index.html" rel="noopener noreferrer">https://www.gotokyo.org/jp/spot/396/index.html</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="tokyo.html">听东京的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>
