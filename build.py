@@ -16,6 +16,7 @@ import re
 import shutil
 import subprocess
 import sys
+import urllib.parse
 
 EXPECTED_SLUGS = 77
 EXPECTED_COUNTS = {"japan": 1, "city": 16, "spot": 60}
@@ -503,6 +504,76 @@ def info(stories, slug):
             "" if not BAD_FOR_TTS.search(t) else " | BAD for TTS: %r" % sorted(set(BAD_FOR_TTS.findall(t)))))
 
 
+# ---------- slides (design spec 7 Nov): slides/<slug>.json + slides/<slug>/NN.jpg -> docs/img/<slug>/ ----------
+COMMONS = "https://commons.wikimedia.org/"
+PRIVATE_NO_LATIN = re.compile(PRIVATE.pattern.replace("|[A-Za-z]", ""))  # credits carry author names in Latin letters
+CREDIT_TAIL = re.compile(r"[,，、\s]*Wikimedia Commons\s*$")
+
+
+def load_slides(src, slug):
+    """([slide dict], [problem]) for one story. No manifest = ([], []): the page shows the no-slides layout.
+    A slide dict: file, caption, credit, source. Problems make the whole story render with no slides."""
+    path = os.path.join(src, "slides", slug + ".json")
+    if not os.path.isfile(path):
+        return [], []
+    try:
+        with open(path, encoding="utf-8") as f:
+            items = json.load(f)["slides"]
+        assert isinstance(items, list)
+    except (OSError, ValueError, KeyError, AssertionError, TypeError) as e:
+        return [], ["%s: slides manifest does not parse: %s" % (slug, e)]
+    out, probs = [], []
+    for n, it in enumerate(items, 1):
+        where = "%s slide %d" % (slug, n)
+        if not isinstance(it, dict):
+            probs.append("%s: not an object" % where)
+            continue
+        fn = str(it.get("file") or "")
+        if not re.match(r"^[0-9]{2}\.jpg$", fn):
+            probs.append("%s: file %r must look like 01.jpg" % (where, fn))
+        elif not os.path.isfile(os.path.join(src, "slides", slug, fn)) or not os.path.getsize(os.path.join(src, "slides", slug, fn)):
+            probs.append("%s: image file slides/%s/%s is missing or empty" % (where, slug, fn))
+        cap, credit, source = (str(it.get(k) or "").strip() for k in ("caption", "credit", "source"))
+        if not cap:
+            probs.append("%s: no caption" % where)
+        elif PRIVATE.search(cap):
+            probs.append("%s: caption breaks the public-site rule: %r" % (where, sorted(set(PRIVATE.findall(cap)))))
+        if not credit:
+            probs.append("%s: no credit" % where)
+        elif PRIVATE_NO_LATIN.search(credit):
+            probs.append("%s: credit breaks the public-site rule: %r" % (where, sorted(set(PRIVATE_NO_LATIN.findall(credit)))))
+        if not source.startswith(COMMONS):
+            probs.append("%s: source must be a %s file page, got %r" % (where, COMMONS, source))
+        out.append({"file": fn, "caption": cap, "credit": credit, "source": source})
+    if not out and not probs:
+        probs.append("%s: slides manifest lists no slides" % slug)
+    return out, probs
+
+
+def font_chars(*texts):
+    return urllib.parse.quote("".join(sorted(set("".join(texts)))), safe="")
+
+
+def copy_slides(src, docs, wanted):
+    """Copy slides/<slug>/* to docs/img/<slug>/ for each slug in `wanted`; drop everything else under docs/img."""
+    img = os.path.join(docs, "img")
+    for slug in wanted:
+        srcdir, dst = os.path.join(src, "slides", slug), os.path.join(img, slug)
+        os.makedirs(dst, exist_ok=True)
+        names = sorted(n for n in os.listdir(srcdir) if os.path.isfile(os.path.join(srcdir, n)))
+        for n in names:
+            a, b = os.path.join(srcdir, n), os.path.join(dst, n)
+            if not os.path.isfile(b) or os.path.getsize(a) != os.path.getsize(b) or open(a, "rb").read() != open(b, "rb").read():
+                shutil.copyfile(a, b)
+        for n in os.listdir(dst):
+            if n not in names:
+                os.remove(os.path.join(dst, n))
+    if os.path.isdir(img):
+        for n in os.listdir(img):
+            if n not in wanted:
+                shutil.rmtree(os.path.join(img, n), ignore_errors=True)
+
+
 # ---------- rendering ----------
 E = html.escape
 BLOCK = re.compile(r"\{\{#(\w+)\}\}(.*?)\{\{/\1\}\}", re.S)
@@ -612,6 +683,18 @@ def main():
 
     voiced = {slug: is_voiced(slug) for slug in stories}
 
+    # slides: only voiced pages show a player; a story with a bad manifest renders with no slides and fails the build
+    slides, slide_problems = {}, []
+    for slug in stories:
+        sl, probs = load_slides(src, slug)
+        slide_problems += probs
+        if voiced[slug] and sl and not probs:
+            slides[slug] = sl
+    for n in sorted(glob.glob(os.path.join(src, "slides", "*.json"))):
+        if os.path.basename(n)[:-5] not in stories:
+            slide_problems.append("slides/%s: no story with that slug" % os.path.basename(n))
+    copy_slides(src, docs, set(slides))
+
     def total_len(slug):
         return sum(dur(r) for r in audio_files(slug))
 
@@ -632,8 +715,16 @@ def main():
             "css_v": css_v, "js_v": js_v, "variant": level,
             "name_zh": E(s["name_zh"]), "name_ja": E(s["name_ja"]),
         }
-        if s["name_ja"] != s["name_zh"]:
+        has_ja = s["name_ja"] != s["name_zh"]
+        sl = slides.get(slug, [])
+        if has_ja:
             flags.add("has_ja")
+            flags.add("ja_plaque" if sl else "ja_head")
+        if sl:
+            flags.add("slides")
+        else:
+            flags.add("no_slides")
+        ja_text = s["name_ja"] if has_ja else ""
         if level == "spot":
             p = stories[s["parent"]]
             ctx["parent_href"] = E(s["parent"]) + ".html"
@@ -644,6 +735,28 @@ def main():
                 flags.add("has_spots")
             ctx["spot_count"] = ctx["city_count"] = len(kids)
             ctx["rows_html"] = "".join(list_row(k) for k in kids)
+            ja_text += "".join(stories[k]["name_ja"] for k in kids if stories[k]["name_ja"] != stories[k]["name_zh"])
+        if ja_text:
+            flags.add("font_ja")
+        ctx["font_text_zh"] = font_chars(s["name_zh"], "留意这三样一二三景点故事章节城市·0123456789")
+        ctx["font_text_ja"] = font_chars(ja_text)
+        if sl:
+            base = "img/%s/" % slug
+            sj = [{"src": base + x["file"], "cap": x["caption"], "credit": x["credit"], "href": x["source"]} for x in sl]
+            ctx["slides_json"] = E(json.dumps(sj, ensure_ascii=False, separators=(",", ":")), quote=True)
+            ctx["slide_count"] = len(sl)
+            ctx["first_slide_src"] = E(sj[0]["src"])
+            ctx["first_slide_cap"] = E(sj[0]["cap"], quote=True)
+            ctx["first_slide_credit"] = E(sj[0]["credit"])
+            ctx["first_slide_href"] = E(sj[0]["href"], quote=True)
+            lis = []
+            for x in sl:
+                who = CREDIT_TAIL.sub("", x["credit"])
+                lis.append('<li>%s — %s<a href="%s" rel="noopener noreferrer">Wikimedia Commons</a></li>'
+                           % (E(x["caption"]), E(who + ", ") if who else "", E(x["source"], quote=True)))
+            ctx["slide_credits"] = "".join(lis)
+        else:
+            ctx["slides_json"] = ""
         if v:
             if level == "japan":
                 titles = s["chapters"]
@@ -723,6 +836,14 @@ def main():
              audio_found, stale, " ".join("%s %d" % (k, st[k]) for k in STATUSES)))
     if len(written) != len(stories):
         sys.exit("pages written (%d) != slugs (%d)" % (len(written), len(stories)))
+    print("slides: stories with slides %d | slide images %d | problems %d"
+          % (len(slides), sum(len(x) for x in slides.values()), len(slide_problems)))
+    if slide_problems:
+        print("SLIDES FAILED (%d), those stories render with no slides:" % len(slide_problems), file=sys.stderr)
+        for f in slide_problems:
+            print("  - " + f, file=sys.stderr)
+        if not failures:
+            sys.exit(1)
     if failures:
         print("VOICE FAILED (%d), those stories keep their placeholder page:" % len(failures), file=sys.stderr)
         for f in failures:

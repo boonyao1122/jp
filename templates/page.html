@@ -6,6 +6,10 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="light dark">
 <title>{{page_title}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&amp;display=swap&amp;text={{font_text_zh}}">
+{{#font_ja}}<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&amp;display=swap&amp;text={{font_text_ja}}">{{/font_ja}}
 <link rel="stylesheet" href="style.css?v={{css_v}}">
 </head>
 <body class="{{variant}}">
@@ -15,7 +19,7 @@
 
 <header class="head">
 <h1>{{name_zh}}</h1>
-{{#has_ja}}<p class="ja" lang="ja">{{name_ja}}</p>{{/has_ja}}
+{{#ja_head}}<p class="ja" lang="ja">{{name_ja}}</p>{{/ja_head}}
 </header>
 {{#japan}}<p class="lede">这趟旅行，大致是从江户走回奈良。</p>{{/japan}}
 
@@ -25,9 +29,24 @@
 
 {{#voiced}}
 {{#japan}}<p class="now" data-now>{{first_title}}</p>{{/japan}}
-<section class="player" data-player data-tracks="{{tracks_json}}" aria-label="播放器">
+<section class="player{{#no_slides}} no-slides{{/no_slides}}" data-player data-tracks="{{tracks_json}}" data-slides="{{slides_json}}" aria-label="播放器">
 <audio preload="metadata" src="{{first_src}}"></audio>
-<div class="stage" data-stage>
+<div class="screen{{#no_slides}} no-slides{{/no_slides}}" data-screen>
+{{#slides}}<div class="frame" data-frame>
+<img class="slide is-on" data-layer src="{{first_slide_src}}" alt="{{first_slide_cap}}" decoding="async">
+<img class="slide" data-layer alt="" aria-hidden="true" decoding="async">
+<span class="vignette" aria-hidden="true"></span>
+<span class="flash" data-flash aria-hidden="true"></span>
+<p class="frame-note" data-frame-note hidden>图片载入中</p>
+{{#ja_plaque}}<p class="plaque" lang="ja">{{name_ja}}</p>{{/ja_plaque}}
+</div>
+<div class="cap" data-cap>
+<p class="cap-text"><span class="count" data-count>1/{{slide_count}}</span><span data-cap-text>{{first_slide_cap}}</span></p>
+<a class="cap-credit" data-cap-credit href="{{first_slide_href}}" rel="noopener noreferrer">{{first_slide_credit}}</a>
+</div>{{/slides}}
+<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
+</div>
+<div class="deck" data-stage>
 <canvas class="aura" data-aura width="1" height="1" aria-hidden="true"></canvas>
 <span class="glow" data-glow aria-hidden="true" hidden></span>
 <button type="button" class="skip skip-back" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
@@ -40,7 +59,6 @@
 </div>
 <button type="button" class="skip skip-fwd" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
 </div>
-<div class="sub" data-sub aria-live="off"><p class="sub-prev" data-sub-prev></p><p class="sub-cur" data-sub-cur></p></div>
 <input class="scrub" type="range" min="0" max="{{duration_s}}" step="1" value="0" data-scrub aria-label="播放进度">
 <div class="times"><span data-cur>0:00</span><span data-tot>{{duration_fmt}}</span></div>
 <p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
@@ -49,11 +67,12 @@
 
 {{#spot}}{{#voiced}}
 <section class="card" aria-labelledby="look-h">
-<h2 id="look-h">留意这 3 样</h2>
+<h2 id="look-h">留意这三样</h2>
 <ol class="look">{{look_items}}</ol>
 </section>
 <article class="story">{{story_html}}</article>
 {{#has_sources}}<details class="sources"><summary>资料来源</summary><ul>{{source_items}}</ul></details>{{/has_sources}}
+{{#slides}}<details class="sources"><summary>图片来源</summary><ol>{{slide_credits}}</ol></details>{{/slides}}
 {{/voiced}}
 <p class="more-link"><a class="linkrow" href="{{parent_href}}">听{{parent_name}}的故事</a></p>
 {{/spot}}
@@ -62,6 +81,7 @@
 {{#voiced}}
 <details class="more" data-more><summary>读全文</summary><div class="story">{{story_html}}</div></details>
 {{#has_sources}}<details class="sources"><summary>资料来源</summary><ul>{{source_items}}</ul></details>{{/has_sources}}
+{{#slides}}<details class="sources"><summary>图片来源</summary><ol>{{slide_credits}}</ol></details>{{/slides}}
 {{/voiced}}
 {{#has_spots}}
 <h2 class="sec">景点故事 · {{spot_count}}</h2>
@@ -74,6 +94,7 @@
 <ol class="rows chapters">{{chapter_rows}}</ol>
 {{#voiced}}
 <details class="more" data-more><summary>读全文</summary><div class="story">{{story_html}}</div></details>
+{{#slides}}<details class="sources"><summary>图片来源</summary><ol>{{slide_credits}}</ol></details>{{/slides}}
 {{/voiced}}
 <h2 class="sec">城市 · {{city_count}}</h2>
 <ul class="rows">{{rows_html}}</ul>
