@@ -6,7 +6,7 @@ order: 3
 name_zh: 长谷寺
 name_ja: 長谷寺
 status: voiced
-voice_hash: e3b055e54673
+voice_hash: 04507dc26f04
 look_for:
   - 山坡上能看到海的观景处
   - 低矮曲折的弁财天洞
@@ -16,6 +16,10 @@ ja_names:
   - 德道
   - 弁财天
   - 坂东
+book_refs:
+  - 'Handbook 1913, Route 2, 1 Kamakura, txt line 12987: "the figure can only be indistinctly seen by the dim light of a few candles"'
+  - 'Handbook 1913, Route 2, 1 Kamakura, txt line 12992: "brown lacquer gilded over, and its height is 30 ft."'
+  - 'Handbook 1913, Route 2, 1 Kamakura, txt line 12979: "an eminence commanding a beautiful view of the sea-shore towards Misaki, and over the Kamakura plain"'
 sources:
   - https://en.wikipedia.org/wiki/Hase-dera_(Kamakura)
   - https://ja.wikipedia.org/wiki/長谷寺_(鎌倉市)
@@ -25,19 +29,21 @@ sources:
   - https://ja.wikipedia.org/wiki/坂東三十三観音
   - https://en.wikipedia.org/wiki/Enoshima
   - https://ja.wikipedia.org/wiki/江島神社
+  - https://rurubu.jp/andmore/spot/80013829
+  - https://archive.org/details/handbookfortrave01john
 ---
-一千三百年前，有位和尚，叫德道。他用一棵大樟树，造了两尊观音。一尊留在奈良的长谷寺。另一尊，被放进了海里。
+请你想一想，没有电灯的年代，来看这尊观音，是什么样子。
 
-传说，这尊观音漂了十几年，漂到了镰仓附近，三浦半岛的海边。人们把它请到镰仓，就在这面山坡上，修了寺。
+一百多年前，一本写给外国旅人的日本指南，《日本旅行手册》，这样写道：要看这尊观音，得给寺里的僧人一点小钱，请他开门。殿里只有几支蜡烛，只能隐约看到她。
 
-请你进殿看看它。它有十一张脸，九米多高，全身贴着金。它是日本最大的木雕像之一，木头是樟木。
+今天，请你走进大殿，慢慢看她。她有十一张脸，九米多高，全身贴着金，木头是樟木。书里也说，她是漆过再贴金的。
 
-这里是坂东三十三座观音寺里的第四座。很多人走遍这三十三座寺，来祈福。
+传说，一千三百年前，和尚德道，用一棵大樟树，造了两尊观音。一尊留在奈良的长谷寺，另一尊被放进海里。漂了十几年，漂到镰仓附近。人们就在这面山坡上，修了寺。
 
-出来以后，走到观景台。这座寺从山脚一直建到半山腰。从这里，能看到镰仓的街道和由比滨的海。
+这里是坂东三十三座观音寺里的第四座。
 
-再去看那个低矮的山洞。洞里弯弯曲曲，你要低着头走。洞壁上，刻有弁财天，江之岛的女神。傍晚，你就会去她的岛上。
+出来以后，走到观景台。书里说，这座寺在高处，能看到海，也能看到镰仓的平地。
 
-地藏堂的四周，有一排排小地藏像。很多是父母，为失去的孩子立的。请你轻轻走过。离开以前，再去看一眼那尊金色的观音。
+再去看那个低矮的山洞。洞里弯弯曲曲，要低着头走。洞壁上刻着弁财天，江之岛的女神。傍晚，你就会去她的岛上。
 
-旅行快结束时，你也会去奈良。另一尊观音的传说，就是从那里开始的。
+地藏堂四周，有一排排小地藏像。很多是父母，为失去的孩子立的。请你轻轻走过。
