@@ -6,7 +6,7 @@ order: 1
 name_zh: 天龙寺
 name_ja: 天龍寺
 status: voiced
-voice_hash: 188078d74acc
+voice_hash: edc911896ebe
 look_for:
   - 曹源池的水面
   - 池后的岚山山坡
@@ -15,6 +15,8 @@ ja_names:
   - 足利尊氏
   - 梦窗疏石
   - 后醍醐天皇
+book_refs:
+  - 'Handbook 1913, Route 37, Saga no Shaka-do / Tenryu-ji, txt line 42145: "an ancient foundation restored after destruction in the civil war of 1868" (the book says 1868; the spoken year 1864 comes from the temple, not the book)'
 sources:
   - https://www.tenryuji.com/about/
   - https://www.tenryuji.com/precincts/
@@ -31,7 +33,7 @@ sources:
 
 可是，建寺的钱从哪里来？他们想了一个办法，派船去中国做生意。赚来的钱，就用来盖寺。这种船，就叫天龙寺船。这座寺的背后，是一笔海上的生意。
 
-它被烧过很多次。禁门之变的战火，也烧过它。现在的房子，多半是明治后期重建的。
+它被烧过很多次。一百多年前，当年的《日本旅行手册》提到这座寺，说它是古老的大寺，毁在内战的战火里，后来又重建。寺里自己的记录说，那一次烧掉它的，是一八六四年禁门之变的战火。现在的房子，多半是明治后期重建的。
 
 不过，进寺以后，请你先别急着看大殿，先走到池边。这是曹源池，是梦窗疏石造的庭园。池水后面，远处是岚山的山坡。
 
