@@ -20,11 +20,35 @@
 
 
 
-<p class="soon" role="status">故事准备中，很快更新</p>
 
 
 
+<section class="player" data-player data-tracks="[{&quot;src&quot;: &quot;a/tsutenkaku.mp3&quot;, &quot;title&quot;: &quot;通天阁&quot;, &quot;dur&quot;: 80.47}]" aria-label="播放器">
+<audio preload="metadata" src="a/tsutenkaku.mp3"></audio>
+<div class="controls">
+<button type="button" class="skip" data-skip="-15" aria-label="后退15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2L7 6l5 4V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z" fill="currentColor"/></svg><span>15</span></button>
+<div class="main">
+<button type="button" class="play" data-play aria-label="播放">
+<svg class="i-play" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+<svg class="i-pause" viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg>
+</button>
+<span class="play-label" data-label>播放</span>
+</div>
+<button type="button" class="skip" data-skip="15" aria-label="快进15秒"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5V2l5 4-5 4V7a6 6 0 1 0 6 6h2a8 8 0 1 1-8-8z" fill="currentColor"/></svg><span>15</span></button>
+</div>
+<input class="scrub" type="range" min="0" max="80.47" step="1" value="0" data-scrub aria-label="播放进度">
+<div class="times"><span data-cur>0:00</span><span data-tot>1:20</span></div>
+<p class="audio-error" data-error role="alert" hidden>声音没载入，先看下面的文字。有网络后再点一次 ▶</p>
+</section>
 
+
+
+<section class="card" aria-labelledby="look-h">
+<h2 id="look-h">留意这 3 样</h2>
+<ol class="look"><li>亮成圣诞树的塔身</li><li>塔身上日立的发光广告</li><li>塔上部南面的大钟</li></ol>
+</section>
+<article class="story"><p>请你抬头看。这座塔，不是第一代。</p><p>一场大博览会以后，才有了新世界这一带。一九一二年，第一代通天阁建成。样子很怪。下面像巴黎的凯旋门，上面架了半截埃菲尔铁塔。一条空中缆车，把它和旁边的游乐园连在一起。</p><p>战争年代，旁边的电影院失火，塔也被烧坏了。后来塔被拆掉，钢材拿去用在战争上。</p><p>战后，附近的居民想把它找回来。你面前的这一座，就是他们推动重建的，也叫通天阁。设计它的人，是内藤多仲，就是你在东京听过的，东京铁塔的那位设计者。</p><p>通天阁连塔顶的避雷针算在内，一共一百零八米高。塔上的观景台，有一尊比利肯像。要是你上去了，摸一摸它的脚底，据说会带来好运。</p><p>现在，站远一点，看整座塔。塔身上，有日立的发光广告，已经挂了很多年。塔的上部，南边那一面，有一个大钟。</p><p>这些天的晚上，塔被灯光打扮成一棵大圣诞树，一直亮到圣诞节。一座被拆掉的塔，又被造了回来。</p></article>
+<details class="sources"><summary>资料来源</summary><ul><li><a href="https://ja.wikipedia.org/wiki/通天閣" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/通天閣</a></li><li><a href="https://en.wikipedia.org/wiki/Tsutenkaku" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Tsutenkaku</a></li><li><a href="https://tsutenkaku.co.jp/pdf/Tsutenkaku-companyprofile.pdf" rel="noopener noreferrer">https://tsutenkaku.co.jp/pdf/Tsutenkaku-companyprofile.pdf</a></li><li><a href="https://osaka-info.jp/spot/tsutenkaku/" rel="noopener noreferrer">https://osaka-info.jp/spot/tsutenkaku/</a></li><li><a href="https://ja.wikipedia.org/wiki/ルナパーク_(大阪)" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/ルナパーク_(大阪)</a></li><li><a href="https://ja.wikipedia.org/wiki/新世界_(大阪)" rel="noopener noreferrer">https://ja.wikipedia.org/wiki/新世界_(大阪)</a></li><li><a href="https://www.tsutenkaku.co.jp/pdf/Tsutenkaku_Neon-Renewal20230228.pdf" rel="noopener noreferrer">https://www.tsutenkaku.co.jp/pdf/Tsutenkaku_Neon-Renewal20230228.pdf</a></li><li><a href="https://bestcalendar.jp/press/162503" rel="noopener noreferrer">https://bestcalendar.jp/press/162503</a></li><li><a href="https://www.haveagood-holiday.com/zh-CN/articles/namba-hikari-tabi-2026" rel="noopener noreferrer">https://www.haveagood-holiday.com/zh-CN/articles/namba-hikari-tabi-2026</a></li><li><a href="https://www.tsutenkaku.co.jp/annai/index.html" rel="noopener noreferrer">https://www.tsutenkaku.co.jp/annai/index.html</a></li></ul></details>
 
 <p class="more-link"><a class="linkrow" href="osaka.html">听大阪的故事</a></p>
 
@@ -33,6 +57,6 @@
 
 
 </main>
-
+<script src="player.js?v=3cb77350" defer></script>
 </body>
 </html>
