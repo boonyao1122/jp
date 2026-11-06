@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "贝阿托拍的大佛，约一八六四",
+   "credit": "Felice Beato, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:KITLV_-_89895_-_Beato,_Felice_-_Buddha_at_Kamakura_in_Japan_-_presumably_1863-1865.tif"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "另一张老照片，约一八六五年",
+   "credit": "https://wellcomeimages.org/indexplus/obf_images/fe/da/376acaa8e596d895daac6388c2, CC BY 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:The_bronze_statue_of_Dai-Bouts_Wellcome_V0037653.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "今天的大佛，头顶是天空",
+   "credit": "Suicasmo, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kamakura_Daibutsu_20170210.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "高德院的入口",
+   "credit": "Ethan Doyle White, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Entrance_to_the_K%C5%8Dtoku-in,_Kamakura.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "大佛背后的小窗",
+   "credit": "DimiTalen, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hatch_in_the_back_of_the_Daibutsu,_Kamakura,_2016.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "大佛肚子里，通向头部",
+   "credit": "Torsodog, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Interior_Kamakura_Daibutsu_head.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "镰仓大佛的正面",
+   "credit": "Gilles Desjardins, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kamakura_-_Grand_Bouddha.jpg"
+  }
+ ]
+}

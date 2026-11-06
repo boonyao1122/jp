@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "八岛岳亭画的源实朝，一八二五",
+   "credit": "Yashima Gakutei (八島岳亭; c. 1786 – 1868), Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Painting_of_Minamoto_no_Sanetomo_by_Yashima_Gakutei,_1825.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "传说实朝遇刺的地方",
+   "credit": "Urashimataro, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Sanetomo's_assassination_Crime_scene.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "鹤冈八幡宫的大银杏",
+   "credit": "Unknown, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Giant_Ginkgo_in_Tsurugaoka_Hachiman_Shrine.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "银杏倒下以后的大台阶",
+   "credit": "Urashimataro, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hachimangu_without_the_tree.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "通向海边的参道和鸟居",
+   "credit": "Syced, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Torii_of_Tsurugaoka_Hachimangu,_near_the_seaside.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "鹤冈八幡宫的社殿",
+   "credit": "Ocdp, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tsurugaoka_Hachimangu_001.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "寿福寺里的源实朝供养塔",
+   "credit": "Tarourashima, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Minamoto-no-Sanetomo's-cenotaph.jpg"
+  }
+ ]
+}

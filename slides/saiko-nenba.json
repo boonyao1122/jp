@@ -1,0 +1,52 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "西湖和富士山",
+   "credit": "Osumi Akari, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Mt._Fuji_with_Saiko_pictured_from_Lake_Saiko_Nenma-hama.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "空中看根场和富士山",
+   "credit": "Bob Tan, CC BY 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Aerial_panorama_of_Mount_Fuji_with_Saiko_Iyashi-no-Sato_Nenba_in_the_foreground._June_2023.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "从红叶台望根场",
+   "credit": "funk bass, CC BY 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:%E7%B4%85%E8%91%89%E5%8F%B0%E3%81%AE%E5%B1%95%E6%9C%9B%E5%8F%B0%E3%81%8B%E3%82%89%E8%A5%BF%E6%B9%96%E3%81%84%E3%82%84%E3%81%97%E3%81%AE%E9%87%8C%E6%A0%B9%E5%A0%B4%E3%82%92%E8%A6%8B%E3%82%8B_-_panoramio.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "照老样子重建的茅草屋",
+   "credit": "Davide Mauro, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Iyashinosato_village_01.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "一间间茅草屋",
+   "credit": "Davide Mauro, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Iyashinosato_village_02.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "根场的兜造茅屋",
+   "credit": "ja:User:Masanori88, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Saiko-iyashinosato-nenba1.JPG"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "兜造的民家，东京檜原村",
+   "credit": "誾千代, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%AA%9C%E5%8E%9F%E6%9D%91%E6%95%B0%E9%A6%AC.JPG"
+  },
+  {
+   "file": "08.jpg",
+   "caption": "茅屋和远山",
+   "credit": "Davide Mauro, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Iyashinosato_village_05.jpg"
+  }
+ ]
+}

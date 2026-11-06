@@ -1,0 +1,52 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "北斋画的登山人，江户时代",
+   "credit": "Katsushika Hokusai, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Fuji_pilgrim_hokusai.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "富士山雪水涌出的池",
+   "credit": "lumoplank, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Oshino_Hakkai_-_Oshino6874.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "出口池，拜的第一池",
+   "credit": "Suikotei, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Deguchi_Pond,_Oshino_Hakkai_01.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "菖蒲池，拜的最后一池",
+   "credit": "Suikotei, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Shobu_Pond,_Oshino_Hakkai.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "涌池，水最多最清",
+   "credit": "663highland, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:231028_Waku-ike_Oshino_Hakkai_springs_Oshino_Yamanashi_pref_Japan01s3.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "底抜池",
+   "credit": "Suikotei, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Sokonashi_Pond,_Oshino_Hakkai.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "中池和远处的富士山",
+   "credit": "MaedaAkihiko, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Oshino-Hakkai-Nakaike.jpg"
+  },
+  {
+   "file": "08.jpg",
+   "caption": "池边的茅屋和水车",
+   "credit": "lumoplank, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Oshino_Hakkai_-_Oshino6878.jpg"
+  }
+ ]
+}

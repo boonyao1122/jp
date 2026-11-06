@@ -1,0 +1,52 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "长谷寺的观音堂",
+   "credit": "Junichi, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kamakura_Hasedera_Kannondou.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "长谷寺的大殿",
+   "credit": "Bernard Gagnon, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hase-dera.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "大殿的屋檐",
+   "credit": "Mustang Joe, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hase-dera_Temple,_Kamakura,_Japan_(14645090803).jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "山坡上看到的镰仓和海",
+   "credit": "sailko, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hasedera_kannon,_veduta_su_kamakura_02.JPG"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "成排的小地藏像",
+   "credit": "Joe deSousa, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Jiz%C5%8D_statues,_Hase-dera_Temple,_Kamakura,_Japan%3B_2014.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "数不清的小地藏",
+   "credit": "Ethan Doyle White, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hundreds_of_Jizo_Figurines_at_Hasedera,_Kamakura.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "里面佛堂的石头墙",
+   "credit": "DimiTalen, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Rock_garden_fa%C3%A7ade_of_the_Inner_Buddha_Hall,_Hase-dera,_Kamakura,_2016.jpg"
+  },
+  {
+   "file": "08.jpg",
+   "caption": "笑眯眯的和地藏",
+   "credit": "Urashimataro, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hasedera-Kamakura--Nagomijizo.jpg"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "天女让海里升起江之岛",
+   "credit": "Utagawa Kuniyoshi, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Island_Enoshima._The_Fuji_can_be_seen_far_away.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "北斋画的江之岛，约一八三一",
+   "credit": "Katsushika Hokusai, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hokusai25_enoshima.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "江户时代参拜弁财天的人群",
+   "credit": "Andō, Hiroshige, 1797-1858, artist, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:S%C5%8Dsh%C5%AB_enoshima_benzaiten_kaicy%C5%8D_sankei_gunsh%C5%AB_no_zu_LCCN2004666340.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "江户时代画的江之岛岩屋",
+   "credit": "Utagawa Hiroshige, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:%E6%9C%AC%E6%9C%9D%E5%90%8D%E6%89%80_%E7%9B%B8%E5%B7%9E%E6%B1%9F%E3%83%8E%E5%B6%8B%E5%B2%A9%E5%B1%8B%E4%B9%8B%E5%9B%B3-Soshu,_Enoshima_Iwaya_no_Zu_MET_DP120493.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "今天的江之岛岩屋",
+   "credit": "Daderot, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Iwaya_Caves_-_Enoshima,_Japan_-_DSC07964.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "江岛神社的弁财天",
+   "credit": "Daderot, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Benzaiten_shrine_-_Enoshima,_Japan_-_DSC07640.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "从七里滨望过去的江之岛",
+   "credit": "Yoshikazu TAKADA from Tokyo, Japan, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Enoshima_Island_(19691146941).jpg"
+  }
+ ]
+}

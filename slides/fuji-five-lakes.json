@@ -1,0 +1,52 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "一九二七年的富士五湖游览图",
+   "credit": "Nihon Meisho Zuesha (日本名所圖繪), Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E5%A3%AB%E7%99%BB%E5%B1%B1%E3%81%A8%E4%BA%94%E6%B9%96%E3%82%81%E3%81%90%E3%82%8A%E5%9C%96%E7%B9%AA_-_Map_for_Climbing_Mt._Fuji_and_Visiting_the_Five_Lakes,_1927_(obverse).jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "熔岩上长出的青木原树海",
+   "credit": "Alpsdake, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Aokigahara_and_Misaka_Mountains.JPG"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "西湖和富士山",
+   "credit": "Osumi Akari, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Mt._Fuji_with_Saiko_pictured_from_Lake_Saiko_Nenma-hama.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "本栖湖",
+   "credit": "Alpsdake, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Lake_Motosu_from_Panoramadai.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "精进湖",
+   "credit": "Alpsdake, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Lake_Sh%C5%8Dji_from_Panoramadai.JPG"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "山中湖",
+   "credit": "Σ64, CC BY 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Lake_Yamanaka_02.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "一九一八年的河口湖明信片",
+   "credit": "Postkarte aus dem Jahre 1918 aus Japan, geschrieben von Ernst Hanschk, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Fuji-from-Kawaguchi_1918_Madein-Japan.jpg"
+  },
+  {
+   "file": "08.jpg",
+   "caption": "北斋画的三坂水面，约一八三一",
+   "credit": "Katsushika Hokusai, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hokusai42_fuji-lake.jpg"
+  }
+ ]
+}

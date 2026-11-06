@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "笔直对着富士山的本町通",
+   "credit": "DimiTalen, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Honcho_Street_with_Mount_Fuji_in_the_daytime,_Fujiyoshida,_2016.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "傍晚的本町通",
+   "credit": "DimiTalen, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Honcho_Street_with_Mount_Fuji_in_the_evening,_Fujiyoshida,_2016.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "本町通的商店街",
+   "credit": "Yobito KAYANUMA, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E5%A3%AB%E5%90%89%E7%94%B0_-_panoramio.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "北口本宫的大鸟居",
+   "credit": "江戸村のとくぞう, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kitaguchi_Hongu_Fuji_Sengen_jinja_Torii.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "登山的行者，约一八八零年",
+   "credit": "Kusakabe Kimbei, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Fuji_Pilgrim_Kusakabe_Kimbei.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "北斋画的登山人，江户时代",
+   "credit": "Katsushika Hokusai, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Fuji_pilgrim_hokusai.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "手绘上色的登山者老照片",
+   "credit": "Kusakabe Kimbei, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kusakabe_Kimbei_-_1_Pilgrim_going_up_Fujiyama.jpg"
+  }
+ ]
+}
