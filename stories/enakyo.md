@@ -6,14 +6,17 @@ order: 1
 name_zh: 惠那峡
 name_ja: 恵那峡
 status: voiced
-voice_hash: 472d0ab061f3
+voice_hash: fa5992d37d12
 look_for:
   - 公园小路边的伞岩
   - 船上找屏风岩和品字岩
   - 红色拱桥惠那峡大桥
+book_refs:
+  - 'Handbook 1913, Route 29, Ena-san, txt line 35613: "commands a magnificent panorama of the mountains of Central Japan"'
 ja_names:
   - 志贺重昂
   - 伞岩
+  - 惠那山
 sources:
   - https://www.city.ena.lg.jp/material/files/group/2/ena100_11.pdf
   - https://www.kankou-gifu.jp/spot/detail_1341.html
@@ -26,12 +29,17 @@ sources:
   - https://ja.wikipedia.org/wiki/中山道
   - https://tenki.jp/kouyou/5/24/30223.html
   - https://koyo.walkerplus.com/detail/ar0621e13192/data.html
+  - https://ja.wikipedia.org/wiki/恵那山
+  - https://commons.wikimedia.org/wiki/File:Ena_Ravine_and_Mount_Ena.JPG
+  - https://archive.org/details/handbookfortrave01john
 ---
 眼前这片水，看上去像天生的，其实是一座水坝造出来的。
 
 一百多年前，地理学家志贺重昂，给这段河谷起了名字，叫惠那峡。那时候，这里没有湖。一九二四年，水坝完工，河水涨起来，才有了你眼前这片湖面。从水坝往上游，大约十公里，都是这片水。
 
 先有名字，后有湖。
+
+这片水的上方，远远立着一座山，叫惠那山。一百多年前，《日本旅行手册》里写过它。书里说，站在山上，能看见中部日本的群山，视野非常开阔。
 
 上船以后，留意两岸的岩石。很多岩石都有名字。有的像屏风，有的像军舰，有的像狮子。还有一块，像汉字的品字。
 

@@ -6,11 +6,13 @@ order: 2
 name_zh: 妻笼老街
 name_ja: 妻籠宿
 status: voiced
-voice_hash: 4d472725f877
+voice_hash: 076e49b19ce4
 look_for:
   - 路突然拐成直角的地方
   - 寺下一带最早修好的老房子
   - 老街一头复原的告示牌
+book_refs:
+  - 'Handbook 1913, Route 28, Tsumago, txt line 33356: "at the vill. of Tsumago"; Route 33, txt line 37823: "alight at Midono station, for the vill. of Tsumago, 3 m. distant"'
 ja_names:
   - 桝形
   - 妻笼
@@ -29,10 +31,15 @@ sources:
   - https://www.go-nagano.net/tradition-and-culture/id21649
   - https://www.mlit.go.jp/tagengo-db/R1-01471.html
   - https://www.mlit.go.jp/tagengo-db/R1-01468.html
+  - https://ja.wikipedia.org/wiki/南木曽駅
+  - https://ja.wikipedia.org/wiki/南木曽町
+  - https://archive.org/details/handbookfortrave01john
 ---
 低头看看脚下这条街。它没有被拆掉，不是运气，是一个决定。
 
 这里是中山道上的第四十二个驿站。江户后期，这个小镇上，旅店有三十多家。明治以后，铁路和新的大路，都修在了木曾川边。驿站没了用处，镇子一天天冷清下去。
+
+一百多年前，《日本旅行手册》里，妻笼只是一个小村子。旅人在火车站下车，还要再走一段路，才到这里。
 
 一九六八年，镇上开始整修老房子，先从寺下这一段做起。后来，居民们订下一份宪章。家和地，不卖，不出租，不拆。
 

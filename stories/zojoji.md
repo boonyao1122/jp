@@ -6,39 +6,40 @@ order: 9
 name_zh: 增上寺
 name_ja: 増上寺
 status: voiced
-voice_hash: 2b755b65afb9
+voice_hash: 19adfedab35e
 look_for:
   - 正在大修的三解脱门
   - 成排的小地藏像
   - 大殿后面升起的东京铁塔
 ja_names:
   - 三解脱门
+book_refs:
+  - 'Handbook 1913, Route 4, 1. Shiba Park, txt line 14835: "In each of these one finds oneself in a blaze of gold, colours, and elaborate arabesques"'
+  - 'Handbook 1913, Route 4, 1. Shiba Park, txt line 14842: "he alone ascended to the sanctum, the greater Daimyos ranged themselves next to him in the corridor below, and the lesser nobility occupied the oratory"'
+  - 'Handbook 1913, Route 4, 1. Shiba Park, txt line 15037: "Her obsequies, in 1877, were the last performed within these precincts"'
+  - 'Handbook 1913, Route 4, 1. Shiba Park, txt line 14727: "only the large gate (Sammon) dating from 1623 being saved"'
+  - 'Handbook 1913, Route 4, 1. Shiba Park, txt line 15061: "the Great Gate (Sammon). Notice that it is lacquered red, not simply painted"'
 sources:
+  - https://archive.org/details/handbookfortrave01john
+  - https://www.mlit.go.jp/tagengo-db/R2-01136.html
   - https://en.wikipedia.org/wiki/Z%C5%8Dj%C5%8D-ji
-  - https://ja.wikipedia.org/wiki/増上寺
-  - https://www.zojoji.or.jp/en/
   - https://www.zojoji.or.jp/info/history.html
   - https://www.zojoji.or.jp/keidai/
   - https://www.zojoji.or.jp/news/
-  - https://www.zojoji.or.jp/news/1396.html
   - https://www.gotokyo.org/jp/spot/47/index.html
   - https://japan-documented.com/places/zojoji-temple/
-  - https://en.japantravel.com/places/japan/zojoji-temple/522
-  - https://www.mlit.go.jp/tagengo-db/R2-01125.html
+  - https://en.wikipedia.org/wiki/Princess_Kazu
+  - https://ja.wikipedia.org/wiki/和宮親子内親王
   - https://www.mlit.go.jp/tagengo-db/en/R2-01141.html
-  - https://www.timeout.com/tokyo/museums/zojoji-temple
-  - https://www.explorejapan.com/zojo-ji-temple-tokyo
 ---
-这座寺的正门，叫三解脱门。它已经站了四百多年，是东京最古老的木造建筑之一。
+一百多年前，一本写给外国旅人的日本指南，叫日本旅行手册。它写到这座寺里的将军陵庙，说走进去，人像站在一片金光里。金色，彩色，繁复的花纹，天气好的时候，晃得人睁不开眼。
 
-一九四五年的空袭里，寺里的大殿和国宝级的将军陵墓，都被烧掉了。这座门，躲过了战火。
+那时的人看见了。你现在看不到了。一九四五年的空袭，把陵庙烧掉了。
 
-现在它正在大修，要修好几年。如果你看到门被围了起来，就是这个原因。
+书里还说，当年将军来祭拜祖先，只有他一个人，能走上最里面的内殿。地位高的大名，站在下面的走廊里。
 
-这座寺，一三九三年就有了。一五九零年，德川家康选中了它，做德川家的家庙。一五九八年，寺搬到了现在的地方。六位将军，安葬在这里。
+书里记下的最后一场丧礼，在一八七七年。那是第十四代将军的夫人，当时天皇的姑母。
 
-现在，到寺院的北边，找一找成排的小地藏像。它们戴着红色的小帽子，围着小围兜，身边插着小风车。有人在这里，求孩子平安长大。也有失去孩子的父母，在这里想念他们。请轻声走过，不要碰。
+那本书也看到了这座门，三解脱门。它是少数躲过战火的老建筑。现在它正在大修，要修到二零三二年前后。如果门被围了起来，就是这个原因。
 
-现在的大殿，是一九七四年重建的。抬头看大殿的后面。东京铁塔，正从屋顶后面升起来。
-
-一座古寺，一座新塔，同在一个画面里。
+到寺院北边，还能找到成排的小地藏像，戴着红色的小帽子。再抬头，看大殿的后面，东京铁塔升了起来。

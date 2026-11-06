@@ -6,8 +6,14 @@ order: 9
 name_zh: 木曾路与中山道
 name_ja: 木曽路・中山道
 status: voiced
-voice_hash: 82950b6aa4aa
+voice_hash: ad6886b13b17
 look_for: []
+book_refs:
+  - 'Handbook 1913, Route 28, Nakasendo, txt line 33205: "so named in contradistinction to the Tokaido"'
+  - 'Handbook 1913, Route 28, Kiso forest law, txt line 33382: "might not have so much as a twig broken off"; txt 33389: "Any peasant found in possession of a utensil made of one of the forbidden kinds of wood was arrested"'
+  - 'Handbook 1913, Route 28, Nemme no Toko, txt line 33444: "a rocky platform called the Nemme no Toko, or Bed of Awakening"; txt 33450: Urashima "awoke on this spot from his long dream"'
+  - 'Handbook 1913, Route 28, Kiso-no-Kakehashi, txt line 33477: "another spot famous in old walking days ... where the narrow foot-path clung with difficulty to the precipitous rock"'
+  - 'Handbook 1913, Route 28, Kiso-no-Kakehashi, txt line 33483: "Collectors of old colour prints will recognise the scene"'
 ja_names:
   - 和宫
   - 中山道
@@ -16,30 +22,31 @@ ja_names:
   - 妻笼
   - 马笼
   - 惠那峡
+  - 浦岛太郎
 sources:
-  - https://ja.wikipedia.org/wiki/中山道
+  - https://archive.org/details/handbookfortrave01john
   - https://en.wikipedia.org/wiki/Nakasendō
-  - https://ja.wikipedia.org/wiki/和宮親子内親王
-  - https://ja.wikipedia.org/wiki/中山道幹線
+  - https://ja.wikipedia.org/wiki/中山道
   - https://kiso-magome.com/about
-  - https://kiso-magome.com/
+  - https://www.rinya.maff.go.jp/chubu/kiso/morigatari/kisogoboku.html
+  - https://ja.wikipedia.org/wiki/木曽五木
+  - https://ja.wikipedia.org/wiki/寝覚の床
+  - https://ja.wikipedia.org/wiki/木曽の桟
+  - https://www.japan-ukiyoe-museum.com/?p=2196
+  - https://ja.wikipedia.org/wiki/和宮親子内親王
   - https://tsumago.jp/learn/
-  - https://www.bunka.go.jp/seisaku/bunkazai/shokai/hozonchiku/pdf/94428201_43.pdf
   - https://ja.wikipedia.org/wiki/妻籠宿
   - https://ja.wikipedia.org/wiki/馬籠宿
-  - https://zh.wikipedia.org/wiki/馬籠宿
   - https://ja.wikipedia.org/wiki/恵那峡
 ---
-一八六一年，和宫公主要从京都嫁到江户，嫁给将军。她没有走海边那条大路，走的是山里这一条。
+一百多年前，一本写给外国旅人的日本指南，《日本旅行手册》，写到了这条路。它叫中山道，意思是，中间的山路。一路上，设了六十九个驿站。
 
-这条路叫中山道。它从江户的日本桥出发，一路钻进内陆，走到京都的三条。一路上，设了六十九个驿站。海边那条路，叫东海道。穿过木曾山谷的那一段，人们叫它木曾路。
+书里说，木曾的山林，当年归大名管，规矩很严。有几种好树，连一根树枝，也不许折。当年的山里，还有守林人专门看着。谁家有用禁木做的器具，就会被抓起来。
 
-这条山路为什么受欢迎？江户初年，幕府就把它修整好了。不少大名，走它去江户当差。海边那条路，大河一涨水，就不让过河。山里这条路，这样的河比较少。据说，住宿也比海边便宜。
+书里还写到，木曾川的河床里，有一块平平的岩石。人们叫它醒来之床。传说，浦岛太郎，做了一场很长的梦，就是在这块岩石上醒来的。
 
-后来，铁路来了。明治时代，东西方向的铁路干线，原本打算沿着这条山路修，最后改走了海边。这条山路，就慢慢冷清了。
+再往前，书里提到一条走路年代很有名的栈道。窄窄的小路，紧紧贴着陡岩。书里说，收藏老版画的人，一眼就认得这个地方。一八六一年，和宫公主嫁去江户，走的也是这条山路。后来铁路来了，这里才慢慢冷清。
 
-可是冷清，反而成了礼物。今天你会在山谷里，遇到妻笼和马笼，都是老驿站小镇。一个，是镇上的人自己决定，留住老街。一个，被大火烧过，又重新盖了起来。
-
-你要走的这一段，就在木曾的山谷里。在那之前，你先到惠那峡。那里的风景，是山水和一座水坝一起造出来的。
+今天你要走的这一段，就在木曾的山谷里。你会遇到妻笼和马笼，都是老驿站小镇。在那之前，先到惠那峡。那里的风景，是山水和一座水坝一起造出来的。
 
 带着这个念头走，这条路，是被人放下，才被留住的。
