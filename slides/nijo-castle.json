@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "二条城的内护城河和石墙",
+   "credit": "そらみみ (Soramimi), CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Inner_Moat_in_front_of_Hommaru-Yaguramon_Gate_of_Nijo_Castle.JPG"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "唐门",
+   "credit": "そらみみ (Soramimi), CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Karamon_Gate_of_Nijo_Castle.JPG"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "唐门上的彩色雕刻",
+   "credit": "Sailko, CC BY 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kyoto,_castello_nijo,_porta_karamon,_01.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "二之丸御殿",
+   "credit": "Wiiii, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Nijo-jo_Ninomaru-goten_2009.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "二之丸御殿门楣的雕饰",
+   "credit": "Jean-Pierre Dalbéra from Paris, France, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:D%C3%A9cor_du_linteau_%C3%A0_l%27entr%C3%A9e_du_palais_Ninomaru_(Ch%C3%A2teau_de_Nijo,_Kyoto)_(43105940821).jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "御殿屋顶上的纹饰",
+   "credit": "Nacaru, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ninomaru-Goten_Palace_roof_motif.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "明治时代拍的二条城",
+   "credit": "Kusakabe Kimbei, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:KITLV_-_110659_-_Kusakabe,_Kimbei_-_Nijho_castle_in_Kyoto_in_Japan_-_circa_1890.tif"
+  }
+ ]
+}

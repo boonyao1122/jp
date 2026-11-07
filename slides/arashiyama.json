@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "广重画的岚山樱花，约一八三四年",
+   "credit": "Utagawa Hiroshige, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:%E4%BA%AC%E9%83%BD%E5%90%8D%E6%89%80%E4%B9%8B%E5%86%85_%E3%81%82%E3%82%89%E3%81%97%E5%B1%B1%E6%BA%80%E8%8A%B1-Cherry_Blossoms_at_Arashiyama,_from_the_series_Famous_Places_of_Ky%C5%8Dto_MET_DP120462.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "广重画的撑筏人",
+   "credit": "Utagawa Hiroshige, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hiroshige_Poling_a_raft_on_a_river.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "明治时代急流里的船",
+   "credit": "Rijksmuseum, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Boot_in_de_stroomversnellingen_van_de_Hozurivier_op_Kyoto_Hozugawa_Rapids_Kyoto_(titel_op_object),_RP-F-F01102-D.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "渡月桥",
+   "credit": "User: (WT-shared) ChubbyWimbus at wts wikivoyage, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Togetsukyo_Bridge_in_Arashiyama,_Kyoto.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "大堰川的堰与岚山",
+   "credit": "そらみみ, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kadono_Weir,_Oigawa_River_and_Mount_Arashiyama_from_Togetsukyo_Bridge_1.JPG"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "今天的保津川下行船",
+   "credit": "江戸村のとくぞう, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hozugawa-Kudari_201126b.jpg"
+  }
+ ]
+}

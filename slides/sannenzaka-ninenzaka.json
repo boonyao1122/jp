@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "三年坂的石阶",
+   "credit": "Aporon999, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Sannenzaka-kyoto.JPG"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "三年坂两边的老街屋",
+   "credit": "Andrea Schaffer from Sydney, Australia, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Sannenzaka_street,_Kyoto_(3811257874).jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "黄昏的三年坂",
+   "credit": "そらみみ (Soramimi), CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Sanneizaka_(Sannenzaka)_near_Kiyomizudera_Temple_at_dusk.JPG"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "二年坂",
+   "credit": "Aporon999, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ninenzaka-kyoto.JPG"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "二年坂的老店",
+   "credit": "そらみみ, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ninenzaka_near_Kiyomizudera_Temple.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "夜里的二年坂",
+   "credit": "Aporon999, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ninenzaka-yoru.JPG"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "清晨的八坂通与八坂塔",
+   "credit": "Basile Morin, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Yasaka-dori_early_morning_with_street_lanterns_and_the_Tower_of_Yasaka_(Hokan-ji_Temple),_Kyoto,_Japan.jpg"
+  }
+ ]
+}

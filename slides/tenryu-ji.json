@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "天龙寺的曹源池",
+   "credit": "Don Ramey Logan, CC BY 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Sogenchi_Garden_Tenryu-ji_temple_Kyoto_Japan_Don_Ramey_Logan.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "池后是岚山的山坡",
+   "credit": "ttshr1970, CC BY 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tenryu-ji,_Sogenchi_Teien_(Garden)_-1_(November_2008)_-_panoramio.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "天龙寺背后的岚山",
+   "credit": "lumoplank, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Arashiyama,_Part_II_-_Arashiyama7538.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "梦窗疏石像",
+   "credit": "Unknown authorUnknown author, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Muso_Soseki.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "庭园里的小溪",
+   "credit": "Marco Almbauer, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tenry%C5%AB-ji_Garten.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "天龙寺的殿堂",
+   "credit": "TarnishedPath, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tenryu-ji_Temple_in_Kyoto.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "足利尊氏像",
+   "credit": "Urashimataro, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ashikaga_Takauji.JPG"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "平安宫旧址，平安京的宫城",
+   "credit": "Saigen Jiro, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Heian_Palace,_gaikan.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "广重画的京都金阁寺，约一八三四年",
+   "credit": "歌川広重（国立国会図書館所蔵）, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Famous_Places_of_Kyoto-Kinkakuji-by_Utagawa_Hiroshige-National_Diet_Library.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "广重画的四条河原纳凉，约一八三四年",
+   "credit": "Utagawa Hiroshige II, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kyoto_Shijo_yu-suzumi-Cooling_Off_at_the_Kamo_River_near_Shijo_in_Kyoto_MET_DP123612.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "广重画的雪中祇园社，约一八三四年",
+   "credit": "Utagawa; Hiroshige (I) , Utagawa died 1858; Mitaya Kihachi (Eisendo) Hiroshige (, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Het_Gion_heiligdom_in_de_sneeuw-Rijksmuseum_RP-P-1956-738.jpeg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "一九〇七年的京都八坂塔",
+   "credit": "Robert Weir Allan, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Yasaka_Pagoda,_Kyoto_1907.jpg"
+  }
+ ]
+}

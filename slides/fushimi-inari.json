@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "嘴里叼着钥匙的石狐狸",
+   "credit": "Tomi Mäkitalo, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kitsune_holding_a_Key_at_Fushimi-Inari_Taisha_-_panoramio.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "稻荷神社前的狐狸像",
+   "credit": "Geoffrey.landis at English Wikipedia, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Inari-kitsune_fox_in_front_of_an_Inari_shrine_with_a_key_in_its_mouth.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "伏见稻荷大社的本殿",
+   "credit": "Hyppolyte de Saint-Rambert, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Fushimi_Inari-taisha_le_Honden_du_sanctuaire.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "千本鸟居的双排红门",
+   "credit": "Luka Peternel, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Fushimi-Inari-Shrine-Senbon-Torii-2016-Luka-Peternel.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "鸟居上写着供奉者的名字",
+   "credit": "Josep M. Gracia, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:FUS_-_Inscribed_Senbon_torii_at_Fushimi_Inari-taisha,_Kyoto,_Japan,_2015.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "山路上一道接一道的鸟居",
+   "credit": "PLBechly, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:2018_Senbon_Torii_path.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "山路旁的小鸟居",
+   "credit": "Hyppolyte de Saint-Rambert, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Fushimi_Inari_Taisha_Senbon_torii_d%C3%A9color%C3%A9s.jpg"
+  }
+ ]
+}

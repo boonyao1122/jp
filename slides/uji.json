@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "十日元硬币上的凤凰堂",
+   "credit": "AKS.9955, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:10_Yen_(Japan).jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "平等院屋脊上的凤凰",
+   "credit": "No machine-readable author provided. Fg2 assumed (based on copyright claims)., Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Byodoin-Phoenix-M1234.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "古画里的柳树与桥",
+   "credit": "Unknown authorUnknown author, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:The_River_Bridge_at_Uji_-_Google_Art_Project.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "十七世纪屏风上的宇治桥",
+   "credit": "AnonymousUnknown author, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Willows_and_Bridge_at_Uji_River,_six_panel_screens,_17th_century,_Honolulu_Museum_of_Art.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "今天的宇治桥",
+   "credit": "京都東, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Uji-Bridge.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "宇治采茶图",
+   "credit": "廣重 (Hiroshige), Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Uji_Chatsumi_Zu.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "旧书里的采茶女",
+   "credit": "Rijksmuseum, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Drie_jonge_vrouwen_plukken_thee_te_Uji,_RP-F-2001-7-1572-1.jpg"
+  }
+ ]
+}

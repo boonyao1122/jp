@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "沿着水渠的哲学之道",
+   "credit": "Reggaeman, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tetsugaku_no_Michi_01.JPG"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "哲学家西田几多郎，约一九三〇年",
+   "credit": "Earthbound1960, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Portrait-of-Kitaro-Nishida-1930.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "画家桥本关雪的作品",
+   "credit": "Hashimoto Kansetsu, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kansetsu_Hashimoto_-_Old_Monkey_with_Cherry_in_Autumn_-_Google_Art_Project.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "水渠边的樱花",
+   "credit": "Kirin7739, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Cherry_blossoms_at_%22Tetsugaku_no_Michi%22.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "绿荫下的石板路",
+   "credit": "BriYYZ from Toronto, Canada, CC BY-SA 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Philosophers_Path_(7005737014).jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "路边的石碑",
+   "credit": "Yanajin33, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Tetsugaku_no_michi_-_Stone_monument.jpg"
+  }
+ ]
+}
