@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "屋台会馆里展出的屋台",
+   "credit": "Mti, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Takayama_festival_Yatai_Kaikan_No,1.JPG"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "屋台上精细的雕刻",
+   "credit": "Mti, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Takayama_festival_Yatai_Kaikan_No,5.JPG"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "高山祭的屋台游行",
+   "credit": "Chme82, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Takayama_Matsuri-2017-5.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "秋祭中的屋台",
+   "credit": "Sjaak Kempe from Groningen, The Netherlands, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:20131009_07_Takayama_-_Autumn_festival_(10477368084).jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "樱山八幡宫",
+   "credit": "Mti, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Sakurayama-hachiman-g%C5%AB_in_2010_No,2.JPG"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "日光东照宫阳明门，明治时期",
+   "credit": "No machine-readable author provided. Fg2 assumed (based on copyright claims)., Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Nikko_Toshogu_Yomeimon_M3249.jpg"
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "旧照片里的松本城，近代早期",
+   "credit": "不明Unknown, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Matsumoto_Castle_Old_Photograph.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "雪后的松本城天守",
+   "credit": "Japanexperterna.se, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Matsumoto_Castle_snow.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "秋天里的松本城",
+   "credit": "lumoplank, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Matsumoto_Castle_-_Matsumoto6540.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "城下町的绳手通商店街",
+   "credit": "663highland, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:130608_Nawate_shop_street_Matsumoto_Nagano_pref_Japan02n.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "中町通黑白格子的仓库墙",
+   "credit": "663highland, CC BY 2.5, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Nakamachi_street_Matsumoto_Nagano_pref_Japan01s3.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "城边的女鸟羽川",
+   "credit": "DimiTalen, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:View_to_the_east_of_the_Metoba_River_from_Sensai_Bridge,_Matsumoto,_2016.jpg"
+  }
+ ]
+}

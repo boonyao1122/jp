@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "飞驒国分寺的大银杏",
+   "credit": "Ginkgotree, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ginkgo_Tree_Hida_Kokubunji_Temple.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "粗大的银杏树干",
+   "credit": "島倉徳八, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:%E9%A3%9B%E9%A8%A8%E5%9B%BD%E5%88%86%E5%AF%BA_%E5%A4%A7%E9%8A%80%E6%9D%8F.01.JPG"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "雪天里的大银杏",
+   "credit": "そらみみ, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Grand_ginkgo_tree_of_Hida-Kokubunji_Temple_in_a_snowy_day.JPG"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "寺里的三重塔",
+   "credit": "Alexkom000, CC BY 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:2024-10-27_Takayama,_Hida-kokubunji,_Three-storied_Pagoda_2.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "飞驒国分寺本堂",
+   "credit": "Twilight2640, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Hida_kokubunji_temple_main_hall.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "雪中的寺门",
+   "credit": "そらみみ, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Gate_of_Hida-Kokubunji_Temple_in_a_snowy_day.JPG"
+  }
+ ]
+}

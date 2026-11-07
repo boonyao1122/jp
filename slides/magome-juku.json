@@ -1,0 +1,46 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "广重画的马笼宿，约一八三五年",
+   "credit": "Utagawa Hiroshige, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kisokaido43_Magome.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "英泉画的马笼远望，约一八三五年",
+   "credit": "Keisai Eisen, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:NDL-DC_1306272-Keisai_Eisen-%E5%9B%9B%E5%8D%81%E5%9B%9B_%E6%9C%A8%E6%9B%BD%E8%A1%97%E9%81%93%E9%A6%AC%E7%AF%AD%E9%A7%85%E5%B3%A0%E3%83%A8%E3%83%AA%E9%81%A0%E6%9C%9B%E4%B9%8B%E5%9B%B3-crd.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "马笼铺石板的坡路",
+   "credit": "SElefant, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Magome-Juku_StoneSlope.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "路边的水车",
+   "credit": "そらみみ, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Water_wheel_in_foursquare_of_Magome-juku.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "坡上的水车小屋",
+   "credit": "DimiTalen, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Watermill_on_the_Nakasend%C5%8D_above_Magome-juku,_Nakatsugawa,_2016.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "生在马笼的作家岛崎藤村",
+   "credit": "Unknown authorUnknown author, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Shimazaki_Toson2.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "藤村纪念馆",
+   "credit": "SElefant, CC BY-SA 3.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Magome-Juku_Touson_Memorial_Hall.jpg"
+  }
+ ]
+}

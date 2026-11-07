@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "旧照片里的松本城，近代早期",
+   "credit": "不明Unknown, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Matsumoto_Castle_Old_Photograph.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "黑色外墙的五层天守",
+   "credit": "lumoplank, CC0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Matsumoto_Castle_-_Matsumoto6546.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "天守旁带红栏杆的月见橹",
+   "credit": "Fg2, Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Matsumoto-Castle-far_right.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "护城河里倒映的天守",
+   "credit": "Kelly Drewett, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Matsumoto_Castle_and_Reflection.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "天守里陡峭的木楼梯",
+   "credit": "Yazan Badran from Brussels, Belgium, CC BY 2.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Matsumoto_Castle_(254800805).jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "夏日的松本城天守",
+   "credit": "Mti, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Matsumoto_Castle_Keep_Tower_in_2014-8-14_No,24.JPG"
+  }
+ ]
+}

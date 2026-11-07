@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "红色拱桥惠那峡大桥",
+   "credit": "Alpsdake, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Enakyo_Bridge_from_south.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "惠那峡的伞岩",
+   "credit": "Alpsdake, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Kasaishi_Enakyo.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "峡谷两岸的岩壁",
+   "credit": "Alpsdake, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Ena_Ravine.JPG"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "狮子岩与将军岩",
+   "credit": "Alpsdake, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Shishiiwa_and_Shoguniwa_of_Ena_Ravine.JPG"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "水库围出来的峡谷",
+   "credit": "takami torao (Koiroha (talk) 10:45, 9 December 2009 (UTC)), Public domain, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Enakyo03.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "从峡谷望笠置山",
+   "credit": "Alpsdake, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Mount_Kasagi_from_Ena_Gorge.jpg"
+  }
+ ]
+}

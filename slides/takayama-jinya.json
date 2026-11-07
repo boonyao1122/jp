@@ -1,0 +1,40 @@
+{
+ "slides": [
+  {
+   "file": "01.jpg",
+   "caption": "高山阵屋的正门",
+   "credit": "Wpcpey, CC BY 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Takayama_Jinya_Entrance_201706.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "caption": "阵屋的屋顶与庭院",
+   "credit": "Alexkom000, CC BY 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:2024-10-27_Takayama_Jinya.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "caption": "阵屋里的大广间一带",
+   "credit": "Wpcpey, CC BY 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Takayama_Jinya_inside_view_201706.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "caption": "雪中的阵屋大门",
+   "credit": "そらみみ, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Gate_of_Takayama_Jinya_House_in_a_snowy_day.JPG"
+  },
+  {
+   "file": "05.jpg",
+   "caption": "官府建筑的外观",
+   "credit": "K.F., CC BY 2.5, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Takayama_jinya.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "caption": "从阵屋看宫川上的中桥",
+   "credit": "そらみみ, CC BY-SA 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:View_of_Nakabashi_Bridge_from_Takayama_Jinya_House.JPG"
+  }
+ ]
+}
