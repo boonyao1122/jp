@@ -2,7 +2,7 @@
  "slides": [
   {
    "file": "01.jpg",
-   "caption": "平安宫旧址，平安京的宫城",
+   "caption": "平安宫遗址的说明牌",
    "credit": "Saigen Jiro, CC0, Wikimedia Commons",
    "source": "https://commons.wikimedia.org/wiki/File:Heian_Palace,_gaikan.jpg"
   },
@@ -14,7 +14,7 @@
   },
   {
    "file": "03.jpg",
-   "caption": "广重画的四条河原纳凉，约一八三四年",
+   "caption": "广重画的四条河原，约一八三四年",
    "credit": "Utagawa Hiroshige II, CC0, Wikimedia Commons",
    "source": "https://commons.wikimedia.org/wiki/File:Kyoto_Shijo_yu-suzumi-Cooling_Off_at_the_Kamo_River_near_Shijo_in_Kyoto_MET_DP123612.jpg"
   },
@@ -35,6 +35,12 @@
    "caption": "京都御所，天皇旧居",
    "credit": "Marie-Sophie Mejan, CC BY 4.0, Wikimedia Commons",
    "source": "https://commons.wikimedia.org/wiki/File:Kyoto_Imperial_Palace_(%E4%BA%AC%E9%83%BD%E5%BE%A1%E6%89%80,_Ky%C5%8Dto_Gosho)_2.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "caption": "平安神宫，为纪念建都而建",
+   "credit": "Jakub Hałun, CC BY 4.0, Wikimedia Commons",
+   "source": "https://commons.wikimedia.org/wiki/File:Taihei-kaku,_Heian-jing%C5%AB,_Kyoto,_20240820_0959_4961.jpg"
   }
  ]
 }
